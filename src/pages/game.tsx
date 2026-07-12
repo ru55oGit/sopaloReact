@@ -3,7 +3,7 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
+import OndemandVideoRoundedIcon from "@mui/icons-material/OndemandVideoRounded";
 import Layout from "../components/Layout";
 import WordSearchGrid from "../components/WordSearchGrid";
 import { useLanguage } from "../i18n/LanguageContext";
@@ -21,16 +21,9 @@ import {
 } from "../utils/weeklyRoscoState";
 
 const ACCENT = "#e74c3c";
-const ROUND_TIME_SECONDS = 60;
 const NEXT_ROUND_DELAY_SECONDS = 5;
 
-type Phase = "idle" | "playing" | "success" | "timeout" | "day_complete";
-
-function formatTime(totalSeconds: number): string {
-  const m = Math.floor(totalSeconds / 60);
-  const s = totalSeconds % 60;
-  return `${m}:${s.toString().padStart(2, "0")}`;
-}
+type Phase = "playing" | "success" | "day_complete";
 
 export default function Game() {
   const navigate = useNavigate();
@@ -54,9 +47,8 @@ export default function Game() {
     return saved.status === "completed" ? ROUNDS_PER_DAY : saved.currentRoundIndex;
   });
 
-  const initialPhase: Phase = roundIndex >= ROUNDS_PER_DAY ? "day_complete" : "idle";
+  const initialPhase: Phase = roundIndex >= ROUNDS_PER_DAY ? "day_complete" : "playing";
   const [phase, setPhase] = useState<Phase>(initialPhase);
-  const [timeLeft, setTimeLeft] = useState(ROUND_TIME_SECONDS);
   const [foundWords, setFoundWords] = useState<string[]>([]);
   const [countdown, setCountdown] = useState(NEXT_ROUND_DELAY_SECONDS);
 
@@ -77,25 +69,9 @@ export default function Game() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [round?.defWord, round?.emojiWord, phase]);
 
-  // Timer de la ronda.
+  // Al completar la ronda, esperar y pasar a la siguiente.
   useEffect(() => {
-    if (phase !== "playing") return;
-    const id = setInterval(() => {
-      setTimeLeft((prev) => {
-        if (prev <= 1) {
-          clearInterval(id);
-          setPhase("timeout");
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-    return () => clearInterval(id);
-  }, [phase]);
-
-  // Al terminar la ronda (éxito o timeout), esperar y pasar a la siguiente.
-  useEffect(() => {
-    if (phase !== "success" && phase !== "timeout") return;
+    if (phase !== "success") return;
 
     setCountdown(NEXT_ROUND_DELAY_SECONDS);
     const tick = setInterval(() => {
@@ -104,7 +80,7 @@ export default function Game() {
 
     const advance = setTimeout(() => {
       const nextResults = [...results];
-      nextResults[roundIndex] = phase === "success" ? "success" : "timeout";
+      nextResults[roundIndex] = "success";
       const nextIndex = roundIndex + 1;
       setResults(nextResults);
       saveDayState(dayKey, { currentRoundIndex: Math.min(nextIndex, ROUNDS_PER_DAY - 1), results: nextResults }, dayContext.scopeKey);
@@ -114,8 +90,7 @@ export default function Game() {
       } else {
         setRoundIndex(nextIndex);
         setFoundWords([]);
-        setTimeLeft(ROUND_TIME_SECONDS);
-        setPhase("idle");
+        setPhase("playing");
       }
     }, NEXT_ROUND_DELAY_SECONDS * 1000);
 
@@ -126,12 +101,6 @@ export default function Game() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [phase]);
 
-  function startRound() {
-    setFoundWords([]);
-    setTimeLeft(ROUND_TIME_SECONDS);
-    setPhase("playing");
-  }
-
   function handleWordFound(word: string) {
     setFoundWords((prev) => {
       if (prev.includes(word)) return prev;
@@ -141,12 +110,18 @@ export default function Game() {
     });
   }
 
+  // TODO: cuando esté AdSense, mostrar un rewarded ad acá antes de revelar.
+  function handleRevealWords() {
+    if (!round) return;
+    setFoundWords([normalizeForGrid(round.defWord), normalizeForGrid(round.emojiWord)]);
+    setPhase("success");
+  }
+
   function restartDay() {
     setResults(Array.from({ length: ROUNDS_PER_DAY }, () => "pending"));
     setRoundIndex(0);
     setFoundWords([]);
-    setTimeLeft(ROUND_TIME_SECONDS);
-    setPhase("idle");
+    setPhase("playing");
     saveDayState(dayKey, { currentRoundIndex: 0, results: Array.from({ length: ROUNDS_PER_DAY }, () => "pending") }, dayContext.scopeKey);
   }
 
@@ -188,7 +163,7 @@ export default function Game() {
   if (!round || !grid) return null;
 
   return (
-    <Layout onBack={() => navigate("/")} headerRightText={phase === "playing" ? formatTime(timeLeft) : undefined}>
+    <Layout onBack={() => navigate("/")}>
       <Box sx={{ width: "100%", px: { xs: 1.5, md: 2 }, pb: 2, display: "flex", flexDirection: "column", gap: 1.5 }}>
         <Typography sx={{ color: "#fff", fontWeight: 800, fontSize: 15, textAlign: "center" }}>
           {t.roundLabel(roundIndex + 1, ROUNDS_PER_DAY)}
@@ -233,46 +208,33 @@ export default function Game() {
             disabled={phase !== "playing"}
           />
 
-          {phase === "idle" && (
-            <Box sx={{
-              position: "absolute", inset: 0, top: "35%",
-              display: "flex", alignItems: "center", justifyContent: "center",
-              background: "linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.94) 30%)",
-            }}>
-              <Button
-                onClick={startRound}
-                variant="contained"
-                startIcon={<PlayArrowRoundedIcon sx={{ fontSize: "28px !important" }} />}
-                sx={{
-                  backgroundColor: "#fff", color: ACCENT, fontWeight: 800, fontSize: 18,
-                  px: 3, py: 1.4, borderRadius: 999, textTransform: "none",
-                  boxShadow: "0 0 0 4px rgba(255,255,255,0.35), 0 10px 24px rgba(0,0,0,0.4)",
-                }}
-              >
-                {t.startRoundButton}
-              </Button>
-            </Box>
-          )}
-
-          {(phase === "success" || phase === "timeout") && (
+          {phase === "success" && (
             <Box sx={{
               position: "absolute", inset: 0,
               display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 1,
               backgroundColor: "rgba(255,255,255,0.96)", textAlign: "center", px: 2,
             }}>
-              <Typography sx={{ fontSize: 40 }}>{phase === "success" ? "🎉" : "⏰"}</Typography>
-              <Typography sx={{ fontFamily: "Lobster, cursive", fontSize: 24, color: "#222" }}>
-                {phase === "success" ? t.successTitle : t.timeUpTitle}
-              </Typography>
-              {phase === "timeout" && (
-                <Typography sx={{ fontSize: 13, color: "#666" }}>
-                  {round.defWord.toUpperCase()} · {round.emojiWord.toUpperCase()}
-                </Typography>
-              )}
+              <Typography sx={{ fontSize: 40 }}>🎉</Typography>
+              <Typography sx={{ fontFamily: "Lobster, cursive", fontSize: 24, color: "#222" }}>{t.successTitle}</Typography>
               <Typography sx={{ fontSize: 13, color: "#999", mt: 1 }}>{t.nextRoundIn(countdown)}</Typography>
             </Box>
           )}
         </Box>
+
+        {phase === "playing" && (
+          <Button
+            onClick={handleRevealWords}
+            variant="outlined"
+            startIcon={<OndemandVideoRoundedIcon />}
+            sx={{
+              color: "#fff", borderColor: "rgba(255,255,255,0.6)", fontWeight: 700, fontSize: 13,
+              py: 1.2, borderRadius: 999, textTransform: "none",
+              "&:hover": { borderColor: "#fff", backgroundColor: "rgba(255,255,255,0.08)" },
+            }}
+          >
+            {t.revealButton}
+          </Button>
+        )}
       </Box>
     </Layout>
   );

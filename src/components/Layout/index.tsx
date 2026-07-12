@@ -25,10 +25,9 @@ interface LayoutProps {
   children: React.ReactNode;
   onBack?: () => void;
   showFooter?: boolean;
-  headerRightText?: string;
 }
 
-const Layout: React.FC<LayoutProps> = ({ children, onBack, showFooter = false, headerRightText }) => {
+const Layout: React.FC<LayoutProps> = ({ children, onBack, showFooter = false }) => {
   const location = useLocation();
   const navigate = useNavigate();
   const { t, currentLanguage, setLanguage, availableLanguages } = useLanguage();
@@ -141,16 +140,6 @@ const Layout: React.FC<LayoutProps> = ({ children, onBack, showFooter = false, h
           }} onClick={() => window.location.replace("/")}>
             {t.appTitle}
           </Box>
-          {headerRightText && (
-            <Box sx={{
-              position: "absolute", right: 0, top: "50%", transform: "translateY(-50%)",
-              fontSize: 24, color: ACCENT, fontWeight: 700,
-              background: "#fff", px: 2, borderRadius: 2,
-              boxShadow: "0 1px 4px rgba(0,0,0,0.07)",
-            }}>
-              {headerRightText}
-            </Box>
-          )}
         </Box>
       )}
 

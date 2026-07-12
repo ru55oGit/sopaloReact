@@ -8,7 +8,7 @@ export interface DayMeta {
 
 export const ROUNDS_PER_DAY = 7;
 
-export type RoundResult = "pending" | "success" | "timeout";
+export type RoundResult = "pending" | "success";
 export type DayProgressStatus = "not_started" | "in_progress" | "completed";
 
 export interface DaySopaloState {
