@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 import Layout from "../components/Layout";
+import DaySopaPreview from "../components/DaySopaPreview";
 import { useLanguage } from "../i18n/LanguageContext";
 import {
   DayKey,
@@ -44,6 +45,13 @@ export default function Home() {
     return t.playButton;
   };
 
+  const selectedSuccessCount = selectedDayState.results.filter((r) => r === "success").length;
+  const selectedStatusWord =
+    selectedDayState.status === "completed" ? t.statusCompleted
+    : selectedDayState.status === "in_progress" ? t.statusInProgress
+    : t.statusNotStarted;
+  const selectedFractionLabel = selectedDayState.status === "not_started" ? "" : `${selectedSuccessCount}/${ROUNDS_PER_DAY}`;
+
   return (
     <Layout>
       <Box sx={{ width: "100%", px: { xs: 1.5, md: 2 }, pb: 2, display: "flex", flexDirection: "column", gap: 2 }}>
@@ -66,16 +74,12 @@ export default function Home() {
 
         {/* Card principal */}
         <Box sx={{ width: "100%", borderRadius: "24px", backgroundColor: CARD_BG, p: 2, boxShadow: "0 12px 24px rgba(0,0,0,0.18)" }}>
-          <Box sx={{
-            width: "100%", borderRadius: "16px", backgroundColor: "#f3f3f3",
-            p: 3, mb: 2, display: "flex", flexDirection: "column",
-            alignItems: "center", justifyContent: "center", gap: 1, minHeight: 140,
-          }}>
-            <Typography sx={{ fontSize: 13, color: "#888", fontWeight: 700 }}>{dayLabels[selectedDayKey].toUpperCase()}</Typography>
-            <Typography sx={{ fontSize: 42, fontWeight: 900, color: ACCENT, fontFamily: "monospace" }}>
-              {selectedDayState.results.filter((r) => r === "success").length}/{ROUNDS_PER_DAY}
-            </Typography>
-            <Typography sx={{ fontSize: 13, color: "#999" }}>{getSopaloStatusLabel(selectedDayState, statusLabels)}</Typography>
+          <Box sx={{ width: "100%", borderRadius: "16px", backgroundColor: "#f3f3f3", p: 1.25, mb: 2 }}>
+            <DaySopaPreview
+              dayLabel={dayLabels[selectedDayKey]}
+              statusLabel={selectedStatusWord}
+              fractionLabel={selectedFractionLabel}
+            />
           </Box>
 
           <Box sx={{ display: "flex", justifyContent: "center" }}>
