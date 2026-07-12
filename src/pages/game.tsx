@@ -21,7 +21,7 @@ import {
 } from "../utils/weeklyRoscoState";
 
 const ACCENT = "#e74c3c";
-const ROUND_TIME_SECONDS = 30;
+const ROUND_TIME_SECONDS = 60;
 const NEXT_ROUND_DELAY_SECONDS = 5;
 
 type Phase = "idle" | "playing" | "success" | "timeout" | "day_complete";
