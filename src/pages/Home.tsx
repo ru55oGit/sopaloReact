@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 import Layout from "../components/Layout";
 import DaySopaPreview from "../components/DaySopaPreview";
+import LanguageSelector from "../components/LanguageSelector";
 import { useLanguage } from "../i18n/LanguageContext";
 import {
   DayKey,
@@ -164,6 +165,8 @@ export default function Home() {
           <Typography sx={{ color: "rgba(255,255,255,0.85)", lineHeight: 1.7 }}>{t.howToPlayText}</Typography>
         </Box>
       </Box>
+
+      <LanguageSelector />
     </Layout>
   );
 }
