@@ -50,6 +50,7 @@ export default function Game() {
   const initialPhase: Phase = roundIndex >= ROUNDS_PER_DAY ? "day_complete" : "playing";
   const [phase, setPhase] = useState<Phase>(initialPhase);
   const [foundWords, setFoundWords] = useState<string[]>([]);
+  const [revealed, setRevealed] = useState(false);
   const [countdown, setCountdown] = useState(NEXT_ROUND_DELAY_SECONDS);
 
   const round: SopaloRound | undefined = dayContext.rounds[roundIndex];
@@ -90,6 +91,7 @@ export default function Game() {
       } else {
         setRoundIndex(nextIndex);
         setFoundWords([]);
+        setRevealed(false);
         setPhase("playing");
       }
     }, NEXT_ROUND_DELAY_SECONDS * 1000);
@@ -112,15 +114,14 @@ export default function Game() {
 
   // TODO: cuando esté AdSense, mostrar un rewarded ad acá antes de revelar.
   function handleRevealWords() {
-    if (!round) return;
-    setFoundWords([normalizeForGrid(round.defWord), normalizeForGrid(round.emojiWord)]);
-    setPhase("success");
+    setRevealed(true);
   }
 
   function restartDay() {
     setResults(Array.from({ length: ROUNDS_PER_DAY }, () => "pending"));
     setRoundIndex(0);
     setFoundWords([]);
+    setRevealed(false);
     setPhase("playing");
     saveDayState(dayKey, { currentRoundIndex: 0, results: Array.from({ length: ROUNDS_PER_DAY }, () => "pending") }, dayContext.scopeKey);
   }
@@ -183,6 +184,11 @@ export default function Game() {
             <Box>
               <Typography sx={{ fontSize: 11, color: "#888", fontWeight: 700, textTransform: "uppercase" }}>{t.definitionLabel}</Typography>
               <Typography sx={{ fontSize: 14, color: "#333" }}>{round.defClue}</Typography>
+              {revealed && (
+                <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: 1 }}>
+                  {round.defWord.toUpperCase()}
+                </Typography>
+              )}
             </Box>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
@@ -197,6 +203,11 @@ export default function Game() {
             </Box>
             <Typography sx={{ fontSize: 11, color: "#888", fontWeight: 700, textTransform: "uppercase" }}>{t.emojiLabel}</Typography>
             <Typography sx={{ fontSize: 26 }}>{round.emojiClue}</Typography>
+            {revealed && (
+              <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: 1 }}>
+                {round.emojiWord.toUpperCase()}
+              </Typography>
+            )}
           </Box>
         </Box>
 
@@ -221,7 +232,7 @@ export default function Game() {
           )}
         </Box>
 
-        {phase === "playing" && (
+        {phase === "playing" && !revealed && (
           <Button
             onClick={handleRevealWords}
             variant="outlined"
