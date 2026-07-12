@@ -191,7 +191,7 @@ export default function Game() {
               )}
             </Box>
           </Box>
-          <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
+          <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
             <Box sx={{
               minWidth: 32, height: 32, borderRadius: "50%", flexShrink: 0,
               backgroundColor: foundWords.includes(normalizeForGrid(round.emojiWord)) ? "#22c55e" : `${ACCENT}18`,
@@ -201,13 +201,15 @@ export default function Game() {
             }}>
               {foundWords.includes(normalizeForGrid(round.emojiWord)) ? "✓" : "2"}
             </Box>
-            <Typography sx={{ fontSize: 11, color: "#888", fontWeight: 700, textTransform: "uppercase" }}>{t.emojiLabel}</Typography>
-            <Typography sx={{ fontSize: 26 }}>{round.emojiClue}</Typography>
-            {revealed && (
-              <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: 1 }}>
-                {round.emojiWord.toUpperCase()}
-              </Typography>
-            )}
+            <Box>
+              <Typography sx={{ fontSize: 11, color: "#888", fontWeight: 700, textTransform: "uppercase" }}>{t.emojiLabel}</Typography>
+              <Typography sx={{ fontSize: 26 }}>{round.emojiClue}</Typography>
+              {revealed && (
+                <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: 1 }}>
+                  {round.emojiWord.toUpperCase()}
+                </Typography>
+              )}
+            </Box>
           </Box>
         </Box>
 
