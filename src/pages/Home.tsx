@@ -141,7 +141,7 @@ export default function Home() {
                       </Typography>
                     </>
                   ) : (
-                    <Typography sx={{ fontSize: 12, color: "#7a7a7a", fontWeight: 700, textAlign: "center", py: 2 }}>
+                    <Typography sx={{ fontSize: 12, color: "#7a7a7a", fontWeight: 700, textAlign: "center", p: 2 }}>
                       {t.unlocksOn} {dayLabels[day.key]}
                     </Typography>
                   )}

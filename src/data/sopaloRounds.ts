@@ -4,6 +4,8 @@ import { DayKey, ROUNDS_PER_DAY, WEEK_DAYS } from "../utils/weeklyRoscoState";
 export interface SopaloRound {
   defWord: string;
   defClue: string;
+  defWord2: string;
+  defClue2: string;
   emojiWord: string;
   emojiClue: string;
 }
@@ -32,12 +34,18 @@ export function getSopaloDayContext(
   const dayIndex = WEEK_DAYS.findIndex((d) => d.key === dayKey);
   const emojiSet = getBonusSetForDay(dayIndex, referenceDate, language);
 
-  const defEntries = pickGridSafeEntries(roscoContext.roscos[dayKey], ROUNDS_PER_DAY);
+  // Pedimos el doble de definiciones grid-safe para tener un segundo lote
+  // (defWord2) sin repetir palabra con el primero (defWord).
+  const defEntriesPool = pickGridSafeEntries(roscoContext.roscos[dayKey], ROUNDS_PER_DAY * 2);
+  const defEntries = defEntriesPool.slice(0, ROUNDS_PER_DAY);
+  const defEntries2 = defEntriesPool.slice(ROUNDS_PER_DAY, ROUNDS_PER_DAY * 2);
   const emojiEntries = pickGridSafeEntries(emojiSet, ROUNDS_PER_DAY);
 
   const rounds: SopaloRound[] = Array.from({ length: ROUNDS_PER_DAY }, (_, i) => ({
     defWord: (defEntries[i] ?? defEntries[0]).word,
     defClue: (defEntries[i] ?? defEntries[0]).definition,
+    defWord2: (defEntries2[i] ?? defEntries2[0] ?? defEntries[0]).word,
+    defClue2: (defEntries2[i] ?? defEntries2[0] ?? defEntries[0]).definition,
     emojiWord: (emojiEntries[i] ?? emojiEntries[0]).word,
     emojiClue: (emojiEntries[i] ?? emojiEntries[0]).definition,
   }));

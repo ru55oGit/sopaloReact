@@ -55,20 +55,26 @@ export default function Game() {
 
   const round: SopaloRound | undefined = dayContext.rounds[roundIndex];
   const [grid, setGrid] = useState<WordSearchGridResult | null>(null);
-  const gridWordsRef = useRef<{ defWord: string; emojiWord: string } | null>(null);
+  const gridWordsRef = useRef<{ defWord: string; defWord2: string; emojiWord: string } | null>(null);
 
   // Genera una grilla nueva cada vez que arrancamos una ronda distinta.
   useEffect(() => {
     if (!round || phase === "day_complete") return;
     const defWord = normalizeForGrid(round.defWord);
+    const defWord2 = normalizeForGrid(round.defWord2);
     const emojiWord = normalizeForGrid(round.emojiWord);
-    if (gridWordsRef.current?.defWord === defWord && gridWordsRef.current?.emojiWord === emojiWord && grid) {
+    if (
+      gridWordsRef.current?.defWord === defWord &&
+      gridWordsRef.current?.defWord2 === defWord2 &&
+      gridWordsRef.current?.emojiWord === emojiWord &&
+      grid
+    ) {
       return; // ya generada para esta ronda
     }
-    gridWordsRef.current = { defWord, emojiWord };
-    setGrid(generateWordSearchGrid([round.defWord, round.emojiWord]));
+    gridWordsRef.current = { defWord, defWord2, emojiWord };
+    setGrid(generateWordSearchGrid([round.defWord, round.defWord2, round.emojiWord]));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [round?.defWord, round?.emojiWord, phase]);
+  }, [round?.defWord, round?.defWord2, round?.emojiWord, phase]);
 
   // Al completar la ronda, esperar y pasar a la siguiente.
   useEffect(() => {
@@ -107,7 +113,7 @@ export default function Game() {
     setFoundWords((prev) => {
       if (prev.includes(word)) return prev;
       const next = [...prev, word];
-      if (next.length >= 2) setPhase("success");
+      if (next.length >= 3) setPhase("success");
       return next;
     });
   }
@@ -207,6 +213,26 @@ export default function Game() {
               {revealed && (
                 <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: 1 }}>
                   {round.emojiWord.toUpperCase()}
+                </Typography>
+              )}
+            </Box>
+          </Box>
+          <Box sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
+            <Box sx={{
+              minWidth: 32, height: 32, borderRadius: "50%", flexShrink: 0,
+              backgroundColor: foundWords.includes(normalizeForGrid(round.defWord2)) ? "#22c55e" : `${ACCENT}18`,
+              border: `2px solid ${foundWords.includes(normalizeForGrid(round.defWord2)) ? "#22c55e" : ACCENT}`,
+              display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 800,
+              color: foundWords.includes(normalizeForGrid(round.defWord2)) ? "#fff" : ACCENT,
+            }}>
+              {foundWords.includes(normalizeForGrid(round.defWord2)) ? "✓" : "3"}
+            </Box>
+            <Box>
+              <Typography sx={{ fontSize: 11, color: "#888", fontWeight: 700, textTransform: "uppercase" }}>{t.definitionLabel}</Typography>
+              <Typography sx={{ fontSize: 14, color: "#333" }}>{round.defClue2}</Typography>
+              {revealed && (
+                <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: 1 }}>
+                  {round.defWord2.toUpperCase()}
                 </Typography>
               )}
             </Box>
