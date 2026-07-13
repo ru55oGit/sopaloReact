@@ -24,11 +24,12 @@ function buildGrid(rows: HighlightRow[]): { letters: string[][]; highlighted: Se
   const highlighted = new Set<string>();
 
   for (const { row, text } of rows) {
-    const clean = normalizeForGrid(text).replace(/\s+/g, "").slice(0, DAY_SOPA_SIZE);
+    const clean = normalizeForGrid(text).replace(/\s+/g, " ").slice(0, DAY_SOPA_SIZE);
     if (!clean) continue;
     const startCol = Math.max(0, Math.floor((DAY_SOPA_SIZE - clean.length) / 2));
     for (let i = 0; i < clean.length && startCol + i < DAY_SOPA_SIZE; i++) {
       const col = startCol + i;
+      if (clean[i] === " ") continue; // deja la letra al azar y sin resaltar como separador
       letters[row][col] = clean[i];
       highlighted.add(`${row}-${col}`);
     }
