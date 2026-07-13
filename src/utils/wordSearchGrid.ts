@@ -34,12 +34,21 @@ export interface WordSearchGridResult {
   placements: PlacedWord[];
 }
 
+// Mapa explícito en vez de NFD + strip de diacríticos: la Ñ no es una "N con
+// tilde" que haya que aplanar, es una letra propia del español y tiene que
+// seguir viéndose como Ñ en la grilla.
+const ACCENT_FOLD: Record<string, string> = {
+  Á: "A", À: "A", Â: "A", Ä: "A", Ã: "A",
+  É: "E", È: "E", Ê: "E", Ë: "E",
+  Í: "I", Ì: "I", Î: "I", Ï: "I",
+  Ó: "O", Ò: "O", Ô: "O", Ö: "O", Õ: "O",
+  Ú: "U", Ù: "U", Û: "U", Ü: "U",
+  Ç: "C",
+};
+
 export function normalizeForGrid(word: string): string {
-  return word
-    .normalize("NFD")
-    .replace(/\p{Diacritic}/gu, "")
-    .toUpperCase()
-    .trim();
+  const upper = word.toUpperCase().trim();
+  return [...upper].map((ch) => ACCENT_FOLD[ch] ?? ch).join("");
 }
 
 function shuffle<T>(arr: T[]): T[] {
