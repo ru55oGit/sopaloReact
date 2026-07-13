@@ -121,6 +121,7 @@ export default function Home() {
                     p: 1.5, opacity: available ? 1 : 0.5,
                     boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
                     display: "flex", flexDirection: "column", alignItems: "center", gap: 0.5,
+                    minHeight: 224,
                     cursor: available ? "pointer" : "not-allowed",
                   }}
                 >
