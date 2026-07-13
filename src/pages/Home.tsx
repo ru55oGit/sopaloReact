@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 import Layout from "../components/Layout";
 import DaySopaPreview from "../components/DaySopaPreview";
+import MiniSopaFraction from "../components/MiniSopaFraction";
 import LanguageSelector from "../components/LanguageSelector";
 import { useLanguage } from "../i18n/LanguageContext";
 import {
@@ -128,9 +129,12 @@ export default function Home() {
                   </Typography>
                   {available ? (
                     <>
-                      <Typography sx={{ fontSize: 26, fontWeight: 900, color: ACCENT, fontFamily: "monospace" }}>
-                        {successCount}/{ROUNDS_PER_DAY}
-                      </Typography>
+                      <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
+                        <MiniSopaFraction
+                          fractionLabel={`${successCount}/${ROUNDS_PER_DAY}`}
+                          completed={successCount === ROUNDS_PER_DAY}
+                        />
+                      </Box>
                       <Typography sx={{ fontSize: 11, textAlign: "center", color: "#7a7a7a", fontWeight: 700, mb: 1 }}>
                         {getSopaloStatusLabel(dayState, statusLabels)}
                       </Typography>

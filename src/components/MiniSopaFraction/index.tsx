@@ -2,34 +2,34 @@ import { useMemo } from "react";
 import Box from "@mui/material/Box";
 import { buildSopaPreviewGrid } from "../../utils/sopaPreviewGrid";
 
-const FOUND_COLOR = "#22c55e";
-const LONGEST_DAY = "MIERCOLES";
-export const DAY_SOPA_SIZE = LONGEST_DAY.length + 2; // 2 letras más que el día más largo
+const ACCENT = "#e74c3c";
+const DONE_COLOR = "#22c55e";
+export const MINI_SOPA_SIZE = 5;
 
-interface DaySopaPreviewProps {
-  dayLabel: string;
-  statusLabel: string;
+interface MiniSopaFractionProps {
   fractionLabel: string;
+  completed: boolean;
 }
 
-export default function DaySopaPreview({ dayLabel, statusLabel, fractionLabel }: DaySopaPreviewProps) {
+export default function MiniSopaFraction({ fractionLabel, completed }: MiniSopaFractionProps) {
   const { letters, highlighted } = useMemo(
     () =>
-      buildSopaPreviewGrid(DAY_SOPA_SIZE, [
-        { row: 0, text: dayLabel },
-        { row: DAY_SOPA_SIZE - 2, text: statusLabel },
-        { row: DAY_SOPA_SIZE - 1, text: fractionLabel },
+      buildSopaPreviewGrid(MINI_SOPA_SIZE, [
+        { row: Math.floor(MINI_SOPA_SIZE / 2), text: fractionLabel },
       ]),
-    [dayLabel, statusLabel, fractionLabel]
+    [fractionLabel]
   );
+
+  const highlightColor = completed ? DONE_COLOR : ACCENT;
 
   return (
     <Box
       sx={{
         display: "grid",
-        gridTemplateColumns: `repeat(${DAY_SOPA_SIZE}, 1fr)`,
+        gridTemplateColumns: `repeat(${MINI_SOPA_SIZE}, 1fr)`,
         gap: "2px",
-        width: "100%",
+        width: "70%",
+        maxWidth: 110,
         aspectRatio: "1 / 1",
       }}
     >
@@ -46,10 +46,10 @@ export default function DaySopaPreview({ dayLabel, statusLabel, fractionLabel }:
                 justifyContent: "center",
                 borderRadius: "3px",
                 fontWeight: 800,
-                fontSize: { xs: 10, sm: 12 },
+                fontSize: { xs: 12, sm: 13 },
                 fontFamily: "monospace",
-                backgroundColor: isHighlighted ? FOUND_COLOR : "#f3f3f3",
-                color: isHighlighted ? "#fff" : "#999",
+                backgroundColor: isHighlighted ? highlightColor : "#f3f3f3",
+                color: isHighlighted ? "#fff" : "#bbb",
               }}
             >
               {letter}
