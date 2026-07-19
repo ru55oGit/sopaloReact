@@ -260,7 +260,13 @@ const resolveScheduleItem = (referenceDate = new Date()) => {
     (new Date(weekStart).getTime() - new Date(CYCLE_BASE_DATE).getTime()) / MS_PER_WEEK,
   );
   const setIndex = ((weeksSinceBase % CYCLE_SIZE) + CYCLE_SIZE) % CYCLE_SIZE;
-  const setId = `set-${String(setIndex + 1).padStart(3, "0")}`;
+  // Invertido respecto a enroscaloReact (que recorre set-001..set-018 en
+  // orden directo): Sopalo recorre el mismo ciclo de 18 sets al revés,
+  // para que jugando ambos la misma semana nunca salgan las mismas
+  // definiciones (18 es par, así que la inversión no tiene semana fija
+  // donde coincidan).
+  const invertedSetIndex = CYCLE_SIZE - 1 - setIndex;
+  const setId = `set-${String(invertedSetIndex + 1).padStart(3, "0")}`;
   return { weekStart, setId };
 };
 
