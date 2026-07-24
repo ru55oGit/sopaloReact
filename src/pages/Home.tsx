@@ -19,6 +19,7 @@ import {
   isDayAvailable,
 } from "../utils/weeklyRoscoState";
 import { getSopaloDayContext } from "../data/sopaloRounds";
+import { getDaysSinceLastPlayed } from "../utils/lastPlayedState";
 
 const ACCENT = "#e74c3c";
 const CARD_BG = "#eb6f62";
@@ -27,6 +28,7 @@ export default function Home() {
   const navigate = useNavigate();
   const { t, currentLanguage } = useLanguage();
   const currentDayKey = getCurrentDayKey();
+  const daysSincePlayed = getDaysSinceLastPlayed();
   const [selectedDayKey, setSelectedDayKey] = useState<DayKey>(currentDayKey);
 
   const dayLabels: Record<DayKey, string> = {
@@ -36,7 +38,11 @@ export default function Home() {
   const statusLabels = { completed: t.statusCompleted, inProgress: t.statusInProgress, notStarted: t.statusNotStarted };
 
   const nowHour = new Date().getHours();
-  const greeting = nowHour < 12 ? t.greetingMorning : nowHour < 20 ? t.greetingAfternoon : t.greetingEvening;
+  const timeGreeting = nowHour < 12 ? t.greetingMorning : nowHour < 20 ? t.greetingAfternoon : t.greetingEvening;
+  const greeting =
+    daysSincePlayed != null && daysSincePlayed > 1
+      ? `${timeGreeting}, ${t.daysWithoutPlayingMessage(daysSincePlayed)}.`
+      : timeGreeting;
 
   const selectedDayContext = getSopaloDayContext(selectedDayKey, new Date(), currentLanguage);
   const selectedDayState = getDayState(selectedDayKey, selectedDayContext.scopeKey);
@@ -57,26 +63,28 @@ export default function Home() {
   return (
     <Layout>
       <Box sx={{ width: "100%", px: { xs: 1.5, md: 2 }, pb: 2, display: "flex", flexDirection: "column", gap: 2 }}>
-        <Typography variant="h2" sx={{
-          color: "#fff", fontWeight: 700, letterSpacing: "1px",
-          fontFamily: "Lobster, cursive", textAlign: "center", width: "100%",
-        }}>
-          {t.appTitle}
-        </Typography>
+        <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+          <Typography variant="h2" sx={{
+            color: "#fff", fontWeight: 700, letterSpacing: "1px",
+            fontFamily: "Lobster, cursive", textAlign: "center", width: "100%",
+          }}>
+            {t.appTitle}
+          </Typography>
 
-        <Typography variant="h6" sx={{
-          color: "rgba(255,255,255,0.64)", fontStyle: "italic",
-          letterSpacing: "2px", textAlign: "center", fontSize: { xs: 18, md: 22 },
-        }}>
-          {t.tagline}
-        </Typography>
+          <Typography variant="h6" sx={{
+            color: "rgba(255,255,255,0.64)", fontStyle: "italic",
+            letterSpacing: "2px", textAlign: "center", fontSize: { xs: 18, md: 22 },
+          }}>
+            {t.tagline}
+          </Typography>
+        </Box>
 
         <Typography sx={{ color: "#ffe6e6", fontSize: 18, fontWeight: 600 }}>{greeting}</Typography>
         <Typography sx={{ color: "#fff", fontSize: 24, fontWeight: 700, lineHeight: 1.4 }}>{t.readyToPlay}</Typography>
 
         {/* Card principal */}
         <Box sx={{ width: "100%", borderRadius: "24px", backgroundColor: CARD_BG, p: 2, boxShadow: "0 12px 24px rgba(0,0,0,0.18)" }}>
-          <Box sx={{ width: "100%", borderRadius: "16px", backgroundColor: "#f3f3f3", p: 1.25, mb: 2 }}>
+          <Box sx={{ width: "100%", aspectRatio: "1", borderRadius: "16px", backgroundColor: "#f3f3f3", p: 1.25, mb: 2 }}>
             <DaySopaPreview
               dayLabel={dayLabels[selectedDayKey]}
               statusLabel={selectedStatusWord}

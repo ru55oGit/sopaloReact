@@ -13,6 +13,7 @@ export interface Translation {
   greetingMorning: string;
   greetingAfternoon: string;
   greetingEvening: string;
+  daysWithoutPlayingMessage: (days: number) => string;
   readyToPlay: string;
   playButton: string;
   continueGame: string;
@@ -59,6 +60,7 @@ const es: Translation = {
   greetingMorning: "Buenos días",
   greetingAfternoon: "Buenas tardes",
   greetingEvening: "Buenas noches",
+  daysWithoutPlayingMessage: (days) => `hace ${days} días que no jugás`,
   readyToPlay: "¿Listo para jugar Sopalo?",
   playButton: "JUGAR",
   continueGame: "CONTINUAR",
@@ -99,6 +101,7 @@ const en: Translation = {
   greetingMorning: "Good morning",
   greetingAfternoon: "Good afternoon",
   greetingEvening: "Good evening",
+  daysWithoutPlayingMessage: (days) => `it's been ${days} days since you last played`,
   readyToPlay: "Ready to play Sopalo?",
   playButton: "PLAY",
   continueGame: "CONTINUE",
@@ -139,6 +142,7 @@ const pt: Translation = {
   greetingMorning: "Bom dia",
   greetingAfternoon: "Boa tarde",
   greetingEvening: "Boa noite",
+  daysWithoutPlayingMessage: (days) => `faz ${days} dias que você não joga`,
   readyToPlay: "Pronto para jogar Sopalo?",
   playButton: "JOGAR",
   continueGame: "CONTINUAR",
@@ -179,6 +183,7 @@ const fr: Translation = {
   greetingMorning: "Bonjour",
   greetingAfternoon: "Bon après-midi",
   greetingEvening: "Bonsoir",
+  daysWithoutPlayingMessage: (days) => `ça fait ${days} jours que tu n'as pas joué`,
   readyToPlay: "Prêt à jouer à Sopalo ?",
   playButton: "JOUER",
   continueGame: "CONTINUER",
@@ -219,6 +224,7 @@ const de: Translation = {
   greetingMorning: "Guten Morgen",
   greetingAfternoon: "Guten Tag",
   greetingEvening: "Guten Abend",
+  daysWithoutPlayingMessage: (days) => `du hast seit ${days} Tagen nicht gespielt`,
   readyToPlay: "Bereit, Sopalo zu spielen?",
   playButton: "SPIELEN",
   continueGame: "WEITER",

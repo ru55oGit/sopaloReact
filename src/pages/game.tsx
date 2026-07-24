@@ -19,6 +19,7 @@ import {
   isDayKey,
   isDayAvailable,
 } from "../utils/weeklyRoscoState";
+import { recordLastPlayed } from "../utils/lastPlayedState";
 
 const ACCENT = "#e74c3c";
 const NEXT_ROUND_DELAY_SECONDS = 5;
@@ -37,6 +38,10 @@ export default function Game() {
     () => getSopaloDayContext(dayKey, new Date(), currentLanguage),
     [dayKey, currentLanguage]
   );
+
+  useEffect(() => {
+    recordLastPlayed();
+  }, []);
 
   const [results, setResults] = useState<RoundResult[]>(() => {
     const saved = getDayState(dayKey, dayContext.scopeKey);
