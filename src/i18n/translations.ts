@@ -50,7 +50,7 @@ export interface Translation {
 }
 
 const es: Translation = {
-  appTitle: "Sopalo",
+  appTitle: "Ensopalo",
   home: "Inicio",
   playMenu: "Jugar",
   language: "Idioma",
@@ -61,7 +61,7 @@ const es: Translation = {
   greetingAfternoon: "Buenas tardes",
   greetingEvening: "Buenas noches",
   daysWithoutPlayingMessage: (days) => `hace ${days} días que no jugás`,
-  readyToPlay: "¿Listo para jugar Sopalo?",
+  readyToPlay: "¿Listo para jugar Ensopalo?",
   playButton: "JUGAR",
   continueGame: "CONTINUAR",
   viewResult: "COMPLETADO",
@@ -73,8 +73,8 @@ const es: Translation = {
   statusNotStarted: "Sin jugar",
   daySun: "Domingo", dayMon: "Lunes", dayTue: "Martes", dayWed: "Miércoles",
   dayThu: "Jueves", dayFri: "Viernes", daySat: "Sábado",
-  aboutTitle: "¿Qué es Sopalo?",
-  aboutText: "Sopalo es la sopa de letras diaria. Cada ronda te da dos definiciones y un emoji: tenés que encontrar las tres palabras escondidas en la grilla, deslizando el dedo desde la primera letra hasta la última. Cada día trae 7 rondas nuevas.",
+  aboutTitle: "¿Qué es Ensopalo?",
+  aboutText: "Ensopalo es la sopa de letras diaria. Cada ronda te da dos definiciones y un emoji: tenés que encontrar las tres palabras escondidas en la grilla, deslizando el dedo desde la primera letra hasta la última. Cada día trae 7 rondas nuevas.",
   howToPlayTitle: "¿Cómo jugar?",
   howToPlayText: "Cada ronda te muestra dos definiciones y un emoji: tenés que encontrar las tres palabras escondidas en la grilla. Deslizá desde la primera letra de la palabra hasta la última, en línea recta (horizontal, vertical o diagonal). Si te trabás, podés apretar \"Ver anuncio para descubrir las palabras\" y te las mostramos. Completá las 7 rondas para terminar el día.",
 
@@ -91,7 +91,7 @@ const es: Translation = {
 };
 
 const en: Translation = {
-  appTitle: "Sopalo",
+  appTitle: "Ensopalo",
   home: "Home",
   playMenu: "Play",
   language: "Language",
@@ -102,7 +102,7 @@ const en: Translation = {
   greetingAfternoon: "Good afternoon",
   greetingEvening: "Good evening",
   daysWithoutPlayingMessage: (days) => `it's been ${days} days since you last played`,
-  readyToPlay: "Ready to play Sopalo?",
+  readyToPlay: "Ready to play Ensopalo?",
   playButton: "PLAY",
   continueGame: "CONTINUE",
   viewResult: "COMPLETED",
@@ -114,8 +114,8 @@ const en: Translation = {
   statusNotStarted: "Not played",
   daySun: "Sunday", dayMon: "Monday", dayTue: "Tuesday", dayWed: "Wednesday",
   dayThu: "Thursday", dayFri: "Friday", daySat: "Saturday",
-  aboutTitle: "What is Sopalo?",
-  aboutText: "Sopalo is the daily word search. Each round gives you two definitions and an emoji: find all three hidden words in the grid by swiping from the first letter to the last. Every day brings 7 new rounds.",
+  aboutTitle: "What is Ensopalo?",
+  aboutText: "Ensopalo is the daily word search. Each round gives you two definitions and an emoji: find all three hidden words in the grid by swiping from the first letter to the last. Every day brings 7 new rounds.",
   howToPlayTitle: "How to play?",
   howToPlayText: "Each round shows you two definitions and an emoji: find all three hidden words in the grid. Swipe from the word's first letter to its last, in a straight line (horizontal, vertical or diagonal). Stuck? Tap \"Watch an ad to reveal the words\" and we'll show them to you. Complete all 7 rounds to finish the day.",
 
@@ -132,7 +132,7 @@ const en: Translation = {
 };
 
 const pt: Translation = {
-  appTitle: "Sopalo",
+  appTitle: "Ensopalo",
   home: "Início",
   playMenu: "Jogar",
   language: "Idioma",
@@ -143,7 +143,7 @@ const pt: Translation = {
   greetingAfternoon: "Boa tarde",
   greetingEvening: "Boa noite",
   daysWithoutPlayingMessage: (days) => `faz ${days} dias que você não joga`,
-  readyToPlay: "Pronto para jogar Sopalo?",
+  readyToPlay: "Pronto para jogar Ensopalo?",
   playButton: "JOGAR",
   continueGame: "CONTINUAR",
   viewResult: "COMPLETO",
@@ -155,8 +155,8 @@ const pt: Translation = {
   statusNotStarted: "Não jogado",
   daySun: "Domingo", dayMon: "Segunda", dayTue: "Terça", dayWed: "Quarta",
   dayThu: "Quinta", dayFri: "Sexta", daySat: "Sábado",
-  aboutTitle: "O que é o Sopalo?",
-  aboutText: "Sopalo é o caça-palavras diário. Cada rodada te dá duas definições e um emoji: encontre as três palavras escondidas na grade, deslizando o dedo da primeira letra até a última. Todo dia traz 7 rodadas novas.",
+  aboutTitle: "O que é o Ensopalo?",
+  aboutText: "Ensopalo é o caça-palavras diário. Cada rodada te dá duas definições e um emoji: encontre as três palavras escondidas na grade, deslizando o dedo da primeira letra até a última. Todo dia traz 7 rodadas novas.",
   howToPlayTitle: "Como jogar?",
   howToPlayText: "Cada rodada mostra duas definições e um emoji: encontre as três palavras escondidas na grade. Deslize da primeira letra da palavra até a última, em linha reta (horizontal, vertical ou diagonal). Se travar, toque em \"Assistir a um anúncio para revelar as palavras\" e nós te mostramos. Complete as 7 rodadas para terminar o dia.",
 
@@ -173,7 +173,7 @@ const pt: Translation = {
 };
 
 const fr: Translation = {
-  appTitle: "Sopalo",
+  appTitle: "Ensopalo",
   home: "Accueil",
   playMenu: "Jouer",
   language: "Langue",
@@ -184,7 +184,7 @@ const fr: Translation = {
   greetingAfternoon: "Bon après-midi",
   greetingEvening: "Bonsoir",
   daysWithoutPlayingMessage: (days) => `ça fait ${days} jours que tu n'as pas joué`,
-  readyToPlay: "Prêt à jouer à Sopalo ?",
+  readyToPlay: "Prêt à jouer à Ensopalo ?",
   playButton: "JOUER",
   continueGame: "CONTINUER",
   viewResult: "TERMINÉ",
@@ -196,8 +196,8 @@ const fr: Translation = {
   statusNotStarted: "Pas joué",
   daySun: "Dimanche", dayMon: "Lundi", dayTue: "Mardi", dayWed: "Mercredi",
   dayThu: "Jeudi", dayFri: "Vendredi", daySat: "Samedi",
-  aboutTitle: "Qu'est-ce que Sopalo ?",
-  aboutText: "Sopalo est la grille de mots mêlés quotidienne. Chaque manche te donne deux définitions et un emoji : trouve les trois mots cachés dans la grille en glissant du doigt depuis la première lettre jusqu'à la dernière. Chaque jour apporte 7 nouvelles manches.",
+  aboutTitle: "Qu'est-ce que Ensopalo ?",
+  aboutText: "Ensopalo est la grille de mots mêlés quotidienne. Chaque manche te donne deux définitions et un emoji : trouve les trois mots cachés dans la grille en glissant du doigt depuis la première lettre jusqu'à la dernière. Chaque jour apporte 7 nouvelles manches.",
   howToPlayTitle: "Comment jouer ?",
   howToPlayText: "Chaque manche te montre deux définitions et un emoji : trouve les trois mots cachés dans la grille. Glisse depuis la première lettre du mot jusqu'à la dernière, en ligne droite (horizontale, verticale ou diagonale). Bloqué ? Appuie sur « Regarder une pub pour révéler les mots » et on te les montre. Termine les 7 manches pour finir la journée.",
 
@@ -214,7 +214,7 @@ const fr: Translation = {
 };
 
 const de: Translation = {
-  appTitle: "Sopalo",
+  appTitle: "Ensopalo",
   home: "Start",
   playMenu: "Spielen",
   language: "Sprache",
@@ -225,7 +225,7 @@ const de: Translation = {
   greetingAfternoon: "Guten Tag",
   greetingEvening: "Guten Abend",
   daysWithoutPlayingMessage: (days) => `du hast seit ${days} Tagen nicht gespielt`,
-  readyToPlay: "Bereit, Sopalo zu spielen?",
+  readyToPlay: "Bereit, Ensopalo zu spielen?",
   playButton: "SPIELEN",
   continueGame: "WEITER",
   viewResult: "ABGESCHLOSSEN",
@@ -237,8 +237,8 @@ const de: Translation = {
   statusNotStarted: "Nicht gespielt",
   daySun: "Sonntag", dayMon: "Montag", dayTue: "Dienstag", dayWed: "Mittwoch",
   dayThu: "Donnerstag", dayFri: "Freitag", daySat: "Samstag",
-  aboutTitle: "Was ist Sopalo?",
-  aboutText: "Sopalo ist das tägliche Wortsuchrätsel. Jede Runde gibt dir zwei Definitionen und ein Emoji: Finde alle drei versteckten Wörter im Raster, indem du vom ersten bis zum letzten Buchstaben wischst. Jeden Tag gibt es 7 neue Runden.",
+  aboutTitle: "Was ist Ensopalo?",
+  aboutText: "Ensopalo ist das tägliche Wortsuchrätsel. Jede Runde gibt dir zwei Definitionen und ein Emoji: Finde alle drei versteckten Wörter im Raster, indem du vom ersten bis zum letzten Buchstaben wischst. Jeden Tag gibt es 7 neue Runden.",
   howToPlayTitle: "Wie spielt man?",
   howToPlayText: "Jede Runde zeigt dir zwei Definitionen und ein Emoji: Finde alle drei versteckten Wörter im Raster. Wische vom ersten bis zum letzten Buchstaben des Wortes in gerader Linie (horizontal, vertikal oder diagonal). Kommst du nicht weiter, tippe auf „Werbung ansehen, um die Wörter aufzudecken“ und wir zeigen sie dir. Schließe alle 7 Runden ab, um den Tag zu beenden.",
 
