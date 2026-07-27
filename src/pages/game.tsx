@@ -3,7 +3,10 @@ import { useNavigate, useSearchParams } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import Modal from "@mui/material/Modal";
+import IconButton from "@mui/material/IconButton";
 import OndemandVideoRoundedIcon from "@mui/icons-material/OndemandVideoRounded";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import Layout from "../components/Layout";
 import WordSearchGrid from "../components/WordSearchGrid";
 import { useLanguage } from "../i18n/LanguageContext";
@@ -40,23 +43,38 @@ function roundWordsKey(round: SopaloRound): string {
 function HangmanWord({ word, found }: { word: string; found: boolean }) {
   if (found) {
     return (
-      <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: 1 }}>
+      <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: -1 }}>
         {word.toUpperCase()}
       </Typography>
     );
   }
   const blanks = [...word].map((ch) => (ch === " " ? "  " : "_")).join(" ");
   return (
-    <Typography sx={{ fontSize: 15, color: "#bbb", fontWeight: 800, letterSpacing: 1, fontFamily: "monospace" }}>
+    <Typography sx={{ fontSize: 15, color: "#bbb", fontWeight: 800, letterSpacing: -1, fontFamily: "monospace" }}>
       {blanks}
     </Typography>
   );
 }
 
-function ImageClueThumb({ loader }: { loader: () => Promise<{ default: ComponentType }> }) {
+function ImageClueThumb({
+  loader,
+  size = 64,
+  onClick,
+}: {
+  loader: () => Promise<{ default: ComponentType }>;
+  size?: number;
+  onClick?: () => void;
+}) {
   const Comp = useMemo(() => lazy(loader), [loader]);
   return (
-    <Box sx={{ width: 64, height: 64, flexShrink: 0, borderRadius: "8px", overflow: "hidden", backgroundColor: "#fff", border: "1px solid #eee" }}>
+    <Box
+      onClick={onClick}
+      sx={{
+        width: size, height: size, flexShrink: 0, borderRadius: "8px", overflow: "hidden",
+        backgroundColor: "#fff", border: "1px solid #eee",
+        cursor: onClick ? "zoom-in" : "default",
+      }}
+    >
       <Suspense fallback={<Box sx={{ width: "100%", height: "100%" }} />}>
         <Comp />
       </Suspense>
@@ -106,6 +124,7 @@ export default function Game() {
   const [foundWords, setFoundWords] = useState<string[]>([]);
   const [revealed, setRevealed] = useState(false);
   const [countdown, setCountdown] = useState(NEXT_ROUND_DELAY_SECONDS);
+  const [zoomedImage, setZoomedImage] = useState<{ loader: () => Promise<{ default: ComponentType }> } | null>(null);
 
   const round: SopaloRound | undefined = dayContext.rounds[roundIndex];
   const totalWords = round ? totalWordsInRound(round) : 0;
@@ -229,27 +248,32 @@ export default function Game() {
             const clueFoundCount = clue.words.filter((w) => foundWords.includes(normalizeForGrid(w))).length;
             const clueDone = clueFoundCount === clue.words.length;
             return (
-              <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
-                <Box sx={{
-                  minWidth: 32, height: 32, borderRadius: "50%", flexShrink: 0,
-                  backgroundColor: clueDone ? "#22c55e" : `${ACCENT}18`,
-                  border: `2px solid ${clueDone ? "#22c55e" : ACCENT}`,
-                  display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 800,
-                  color: clueDone ? "#fff" : ACCENT,
-                }}>
-                  {clueDone ? "✓" : idx + 1}
+              <Box key={idx} sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
+                <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0.5, flexShrink: 0, width: 40 }}>
+                  <Typography sx={{ fontSize: 9, color: "#888", fontWeight: 700, textTransform: "uppercase", textAlign: "center" }}>{clue.label}</Typography>
+                  <Box sx={{
+                    minWidth: 32, height: 32, borderRadius: "50%", flexShrink: 0,
+                    backgroundColor: clueDone ? "#22c55e" : `${ACCENT}18`,
+                    border: `2px solid ${clueDone ? "#22c55e" : ACCENT}`,
+                    display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 800,
+                    color: clueDone ? "#fff" : ACCENT,
+                  }}>
+                    {clueDone ? "✓" : idx + 1}
+                  </Box>
                 </Box>
-                <Box sx={{ flex: 1, minWidth: 0 }}>
-                  <Typography sx={{ fontSize: 11, color: "#888", fontWeight: 700, textTransform: "uppercase" }}>{clue.label}</Typography>
-                  <Box sx={{ display: "flex", alignItems: "center", gap: 1, mt: 0.25 }}>
-                    {clue.image && <ImageClueThumb loader={clue.image.loader} />}
-                    {clue.emoji && <Typography sx={{ fontSize: 26 }}>{clue.emoji}</Typography>}
-                    {clue.text && <Typography sx={{ fontSize: 14, color: "#333" }}>{clue.text}</Typography>}
-                    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
-                      {clue.words.map((w, i) => (
-                        <HangmanWord key={i} word={w} found={revealed || foundWords.includes(normalizeForGrid(w))} />
-                      ))}
-                    </Box>
+                <Box sx={{ display: "flex", alignItems: "center", gap: 1.25, flex: 1, minWidth: 0 }}>
+                  {clue.image && (
+                    <ImageClueThumb
+                      loader={clue.image.loader}
+                      onClick={() => setZoomedImage({ loader: clue.image!.loader })}
+                    />
+                  )}
+                  {clue.emoji && <Typography sx={{ fontSize: 26 }}>{clue.emoji}</Typography>}
+                  {clue.text && <Typography sx={{ fontSize: 14, color: "#333" }}>{clue.text}</Typography>}
+                  <Box sx={{ display: "flex", flexWrap: "wrap", columnGap: "24px", rowGap: "4px", minWidth: 0 }}>
+                    {clue.words.map((w, i) => (
+                      <HangmanWord key={i} word={w} found={revealed || foundWords.includes(normalizeForGrid(w))} />
+                    ))}
                   </Box>
                 </Box>
               </Box>
@@ -293,6 +317,25 @@ export default function Game() {
           </Button>
         )}
       </Box>
+
+      <Modal
+        open={zoomedImage !== null}
+        onClose={() => setZoomedImage(null)}
+        sx={{ display: "flex", alignItems: "center", justifyContent: "center", p: 3 }}
+      >
+        <Box sx={{ position: "relative", outline: "none" }}>
+          <IconButton
+            onClick={() => setZoomedImage(null)}
+            sx={{
+              position: "absolute", top: -44, right: 0, color: "#fff",
+              backgroundColor: "rgba(0,0,0,0.4)", "&:hover": { backgroundColor: "rgba(0,0,0,0.6)" },
+            }}
+          >
+            <CloseRoundedIcon />
+          </IconButton>
+          {zoomedImage && <ImageClueThumb loader={zoomedImage.loader} size={280} />}
+        </Box>
+      </Modal>
     </Layout>
   );
 }
