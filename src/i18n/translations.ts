@@ -40,6 +40,10 @@ export interface Translation {
   roundLabel: (n: number, total: number) => string;
   definitionLabel: string;
   emojiLabel: string;
+  categoryFunkos: string;
+  categoryEscudos: string;
+  categorySombras: string;
+  categoryLogos: string;
   revealButton: string;
   successTitle: string;
   nextRoundIn: (s: number) => string;
@@ -81,6 +85,10 @@ const es: Translation = {
   roundLabel: (n, total) => `Ronda ${n}/${total}`,
   definitionLabel: "Definición",
   emojiLabel: "Emoji",
+  categoryFunkos: "Funkos",
+  categoryEscudos: "Escudos",
+  categorySombras: "Sombras",
+  categoryLogos: "Logos",
   revealButton: "Ver anuncio para descubrir las palabras",
   successTitle: "¡Muy bien!",
   nextRoundIn: (s) => `Siguiente ronda en ${s}...`,
@@ -122,6 +130,10 @@ const en: Translation = {
   roundLabel: (n, total) => `Round ${n}/${total}`,
   definitionLabel: "Definition",
   emojiLabel: "Emoji",
+  categoryFunkos: "Funkos",
+  categoryEscudos: "Crests",
+  categorySombras: "Shadows",
+  categoryLogos: "Logos",
   revealButton: "Watch an ad to reveal the words",
   successTitle: "Well done!",
   nextRoundIn: (s) => `Next round in ${s}...`,
@@ -163,6 +175,10 @@ const pt: Translation = {
   roundLabel: (n, total) => `Rodada ${n}/${total}`,
   definitionLabel: "Definição",
   emojiLabel: "Emoji",
+  categoryFunkos: "Funkos",
+  categoryEscudos: "Escudos",
+  categorySombras: "Sombras",
+  categoryLogos: "Logos",
   revealButton: "Assistir a um anúncio para revelar as palavras",
   successTitle: "Muito bem!",
   nextRoundIn: (s) => `Próxima rodada em ${s}...`,
@@ -204,6 +220,10 @@ const fr: Translation = {
   roundLabel: (n, total) => `Manche ${n}/${total}`,
   definitionLabel: "Définition",
   emojiLabel: "Emoji",
+  categoryFunkos: "Funkos",
+  categoryEscudos: "Écussons",
+  categorySombras: "Ombres",
+  categoryLogos: "Logos",
   revealButton: "Regarder une pub pour révéler les mots",
   successTitle: "Bien joué !",
   nextRoundIn: (s) => `Manche suivante dans ${s}...`,
@@ -245,6 +265,10 @@ const de: Translation = {
   roundLabel: (n, total) => `Runde ${n}/${total}`,
   definitionLabel: "Definition",
   emojiLabel: "Emoji",
+  categoryFunkos: "Funkos",
+  categoryEscudos: "Wappen",
+  categorySombras: "Schatten",
+  categoryLogos: "Logos",
   revealButton: "Werbung ansehen, um die Wörter aufzudecken",
   successTitle: "Gut gemacht!",
   nextRoundIn: (s) => `Nächste Runde in ${s}...`,

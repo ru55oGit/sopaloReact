@@ -1,0 +1,604 @@
+{
+  "listado": [
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "el chavo|del 8",
+      "pregunta": "1",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "lionel|messi",
+      "pregunta": "2",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "pennywise",
+      "pregunta": "3",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "star|lord",
+      "pregunta": "4",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "wall e",
+      "pregunta": "5",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "albert|einstein",
+      "pregunta": "6",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "marilyn|monroe",
+      "pregunta": "7",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "angus|young",
+      "pregunta": "8",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "vito|corleone",
+      "pregunta": "9",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "tiger|woods",
+      "pregunta": "10",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "john|wick",
+      "pregunta": "11",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "carrie",
+      "pregunta": "12",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "voldemort",
+      "pregunta": "13",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "checo|perez",
+      "pregunta": "14",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "freddie|mercury",
+      "pregunta": "15",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "amy|winehouse",
+      "pregunta": "16",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "muhammad|ali",
+      "pregunta": "17",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "lebron|james",
+      "pregunta": "18",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "daniel|larusso",
+      "pregunta": "19",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "Merlina",
+      "pregunta": "20",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "shaggy",
+      "pregunta": "21",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "spike lee",
+      "pregunta": "22",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "meteoro",
+      "pregunta": "23",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "harry|potter",
+      "pregunta": "24",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "el guason",
+      "pregunta": "25",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "walter|white",
+      "pregunta": "26",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "michael|jordan",
+      "pregunta": "27",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "elvis|presley",
+      "pregunta": "28",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "miguel",
+      "pregunta": "29",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "ed|sheeran",
+      "pregunta": "30",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "indiana|jones",
+      "pregunta": "31",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "slash",
+      "pregunta": "32",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "ant man",
+      "pregunta": "33",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "frankenstein",
+      "pregunta": "34",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "hannibal|lecter",
+      "pregunta": "35",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "stan|lee",
+      "pregunta": "36",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "alfred|hitchcock",
+      "pregunta": "37",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "shang chi",
+      "pregunta": "38",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "Ellen|DeGeneres",
+      "pregunta": "39",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "demogorgon",
+      "pregunta": "40",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "alex|morgan",
+      "pregunta": "41",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "chester",
+      "pregunta": "42",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "diego|maradona",
+      "pregunta": "43",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "once",
+      "pregunta": "44",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "dr strange",
+      "pregunta": "45",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "boba fett",
+      "pregunta": "46",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "sheldon|cooper",
+      "pregunta": "47",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "la mujer|maravilla",
+      "pregunta": "48",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "john|lennon",
+      "pregunta": "49",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y Celebridades",
+      "respuesta": "hermione|granger",
+      "pregunta": "50",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "Ironman",
+      "pregunta": "51",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "Bono",
+      "pregunta": "52",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "Britney|Spears",
+      "pregunta": "53",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "tony|hawk",
+      "pregunta": "54",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "lewis|hamilton",
+      "pregunta": "55",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "roger|federer",
+      "pregunta": "56",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "capitan|america",
+      "pregunta": "57",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "elsa",
+      "pregunta": "58",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "negan",
+      "pregunta": "59",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "woody",
+      "pregunta": "60",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "daenerys|targaryen",
+      "pregunta": "61",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "sonic",
+      "pregunta": "62",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "axl|rose",
+      "pregunta": "63",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "bella",
+      "pregunta": "64",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "Mike|Wheeler",
+      "pregunta": "65",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "deadpool",
+      "pregunta": "66",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "grogu",
+      "pregunta": "67",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "jefe|gorgory",
+      "pregunta": "68",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "Stephen|Curry",
+      "pregunta": "69",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "marty|mcfly",
+      "pregunta": "70",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "bombon",
+      "pregunta": "71",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "hawkeye",
+      "pregunta": "72",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "sirius|black",
+      "pregunta": "73",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "batman",
+      "pregunta": "74",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "daredevil",
+      "pregunta": "75",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "lilo",
+      "pregunta": "76",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "ahsoka",
+      "pregunta": "77",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "Will|Byers",
+      "pregunta": "78",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "dr emmett|brown",
+      "pregunta": "79",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "rocky|balboa",
+      "pregunta": "80",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "Kylo|Ren",
+      "pregunta": "81",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "ms marvel",
+      "pregunta": "82",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "elton|john",
+      "pregunta": "83",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "neo",
+      "pregunta": "84",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "cristiano|ronaldo",
+      "pregunta": "85",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "froddo",
+      "pregunta": "86",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "tom",
+      "pregunta": "87",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "majin boo",
+      "pregunta": "88",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "the wasp",
+      "pregunta": "89",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "taz",
+      "pregunta": "90",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "rose",
+      "pregunta": "91",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "mr bean",
+      "pregunta": "92",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "ted lasso",
+      "pregunta": "93",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "monica|geller",
+      "pregunta": "94",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "ted mosby",
+      "pregunta": "95",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "flash",
+      "pregunta": "96",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "jon snow",
+      "pregunta": "97",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "skeletor",
+      "pregunta": "98",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "leon o",
+      "pregunta": "99",
+      "categoria": "Funkos"
+    },
+    {
+      "titulo": "Personajes y celebridades",
+      "respuesta": "goku",
+      "pregunta": "100",
+      "categoria": "Funkos"
+    }
+  ]
+}

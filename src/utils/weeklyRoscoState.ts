@@ -6,7 +6,7 @@ export interface DayMeta {
   shortLabel: string;
 }
 
-export const ROUNDS_PER_DAY = 7;
+export const ROUNDS_PER_DAY = 4;
 
 export type RoundResult = "pending" | "success";
 export type DayProgressStatus = "not_started" | "in_progress" | "completed";

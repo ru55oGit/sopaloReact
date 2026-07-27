@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { Suspense, lazy, useEffect, useMemo, useRef, useState, ComponentType } from "react";
 import { useNavigate, useSearchParams } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -7,7 +7,8 @@ import OndemandVideoRoundedIcon from "@mui/icons-material/OndemandVideoRounded";
 import Layout from "../components/Layout";
 import WordSearchGrid from "../components/WordSearchGrid";
 import { useLanguage } from "../i18n/LanguageContext";
-import { getSopaloDayContext, SopaloRound } from "../data/sopaloRounds";
+import { getSopaloDayContext, SopaloRound, RoundClue } from "../data/sopaloRounds";
+import { ImageCategoryKey } from "../data/imaginaloRounds";
 import { generateWordSearchGrid, normalizeForGrid, WordSearchGridResult } from "../utils/wordSearchGrid";
 import {
   DayKey,
@@ -26,6 +27,43 @@ const NEXT_ROUND_DELAY_SECONDS = 5;
 
 type Phase = "playing" | "success" | "day_complete";
 
+function totalWordsInRound(round: SopaloRound): number {
+  return round.clues.reduce((sum, c) => sum + c.words.length, 0);
+}
+
+function roundWordsKey(round: SopaloRound): string {
+  return round.clues.flatMap((c) => c.words).map(normalizeForGrid).join("|");
+}
+
+// Muestra la palabra encontrada, o guiones (uno por letra, tipo ahorcado)
+// mientras no se encontró todavía.
+function HangmanWord({ word, found }: { word: string; found: boolean }) {
+  if (found) {
+    return (
+      <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: 1 }}>
+        {word.toUpperCase()}
+      </Typography>
+    );
+  }
+  const blanks = [...word].map((ch) => (ch === " " ? "  " : "_")).join(" ");
+  return (
+    <Typography sx={{ fontSize: 15, color: "#bbb", fontWeight: 800, letterSpacing: 1, fontFamily: "monospace" }}>
+      {blanks}
+    </Typography>
+  );
+}
+
+function ImageClueThumb({ loader }: { loader: () => Promise<{ default: ComponentType }> }) {
+  const Comp = useMemo(() => lazy(loader), [loader]);
+  return (
+    <Box sx={{ width: 64, height: 64, flexShrink: 0, borderRadius: "8px", overflow: "hidden", backgroundColor: "#fff", border: "1px solid #eee" }}>
+      <Suspense fallback={<Box sx={{ width: "100%", height: "100%" }} />}>
+        <Comp />
+      </Suspense>
+    </Box>
+  );
+}
+
 export default function Game() {
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();
@@ -34,8 +72,19 @@ export default function Game() {
   const dayParam = searchParams.get("day");
   const dayKey: DayKey = isDayKey(dayParam) ? dayParam : getCurrentDayKey();
 
+  const categoryLabels: Record<ImageCategoryKey, string> = useMemo(
+    () => ({
+      funkos: t.categoryFunkos,
+      escudos: t.categoryEscudos,
+      sombras: t.categorySombras,
+      logos: t.categoryLogos,
+    }),
+    [t]
+  );
+
   const dayContext = useMemo(
-    () => getSopaloDayContext(dayKey, new Date(), currentLanguage),
+    () => getSopaloDayContext(dayKey, new Date(), currentLanguage, categoryLabels, t.definitionLabel, t.emojiLabel),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [dayKey, currentLanguage]
   );
 
@@ -59,31 +108,21 @@ export default function Game() {
   const [countdown, setCountdown] = useState(NEXT_ROUND_DELAY_SECONDS);
 
   const round: SopaloRound | undefined = dayContext.rounds[roundIndex];
+  const totalWords = round ? totalWordsInRound(round) : 0;
   const [grid, setGrid] = useState<WordSearchGridResult | null>(null);
-  const gridWordsRef = useRef<{ defWord: string; defWord2: string; defWord3: string; defWord4: string; emojiWord: string } | null>(null);
+  const gridWordsRef = useRef<string | null>(null);
 
   // Genera una grilla nueva cada vez que arrancamos una ronda distinta.
   useEffect(() => {
     if (!round || phase === "day_complete") return;
-    const defWord = normalizeForGrid(round.defWord);
-    const defWord2 = normalizeForGrid(round.defWord2);
-    const defWord3 = normalizeForGrid(round.defWord3);
-    const defWord4 = normalizeForGrid(round.defWord4);
-    const emojiWord = normalizeForGrid(round.emojiWord);
-    if (
-      gridWordsRef.current?.defWord === defWord &&
-      gridWordsRef.current?.defWord2 === defWord2 &&
-      gridWordsRef.current?.defWord3 === defWord3 &&
-      gridWordsRef.current?.defWord4 === defWord4 &&
-      gridWordsRef.current?.emojiWord === emojiWord &&
-      grid
-    ) {
-      return; // ya generada para esta ronda
-    }
-    gridWordsRef.current = { defWord, defWord2, defWord3, defWord4, emojiWord };
-    setGrid(generateWordSearchGrid([round.defWord, round.defWord2, round.defWord3, round.defWord4, round.emojiWord]));
+    const key = roundWordsKey(round);
+    if (gridWordsRef.current === key && grid) return; // ya generada para esta ronda
+
+    gridWordsRef.current = key;
+    const allWords = round.clues.flatMap((c) => c.words);
+    setGrid(generateWordSearchGrid(allWords));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [round?.defWord, round?.defWord2, round?.defWord3, round?.defWord4, round?.emojiWord, phase]);
+  }, [round, phase]);
 
   // Al completar la ronda, esperar y pasar a la siguiente.
   useEffect(() => {
@@ -122,7 +161,7 @@ export default function Game() {
     setFoundWords((prev) => {
       if (prev.includes(word)) return prev;
       const next = [...prev, word];
-      if (next.length >= 5) setPhase("success");
+      if (next.length >= totalWords) setPhase("success");
       return next;
     });
   }
@@ -185,34 +224,33 @@ export default function Game() {
           {t.roundLabel(roundIndex + 1, ROUNDS_PER_DAY)}
         </Typography>
 
-        <Box sx={{ borderRadius: "16px", backgroundColor: "#f3f3f3", p: 1.75, display: "flex", flexDirection: "column", gap: 1 }}>
-          {[
-            { word: round.defWord, label: t.definitionLabel, clue: round.defClue, emoji: false },
-            { word: round.emojiWord, label: t.emojiLabel, clue: round.emojiClue, emoji: true },
-            { word: round.defWord2, label: t.definitionLabel, clue: round.defClue2, emoji: false },
-            { word: round.defWord3, label: t.definitionLabel, clue: round.defClue3, emoji: false },
-            { word: round.defWord4, label: t.definitionLabel, clue: round.defClue4, emoji: false },
-          ].map((item, idx) => {
-            const found = foundWords.includes(normalizeForGrid(item.word));
+        <Box sx={{ borderRadius: "16px", backgroundColor: "#f3f3f3", p: 1.75, display: "flex", flexDirection: "column", gap: 1.25 }}>
+          {round.clues.map((clue: RoundClue, idx: number) => {
+            const clueFoundCount = clue.words.filter((w) => foundWords.includes(normalizeForGrid(w))).length;
+            const clueDone = clueFoundCount === clue.words.length;
             return (
-              <Box key={item.word} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
+              <Box key={idx} sx={{ display: "flex", alignItems: "flex-start", gap: 1.5 }}>
                 <Box sx={{
                   minWidth: 32, height: 32, borderRadius: "50%", flexShrink: 0,
-                  backgroundColor: found ? "#22c55e" : `${ACCENT}18`,
-                  border: `2px solid ${found ? "#22c55e" : ACCENT}`,
+                  backgroundColor: clueDone ? "#22c55e" : `${ACCENT}18`,
+                  border: `2px solid ${clueDone ? "#22c55e" : ACCENT}`,
                   display: "flex", alignItems: "center", justifyContent: "center", fontSize: 12, fontWeight: 800,
-                  color: found ? "#fff" : ACCENT,
+                  color: clueDone ? "#fff" : ACCENT,
                 }}>
-                  {found ? "✓" : idx + 1}
+                  {clueDone ? "✓" : idx + 1}
                 </Box>
-                <Box>
-                  <Typography sx={{ fontSize: 11, color: "#888", fontWeight: 700, textTransform: "uppercase" }}>{item.label}</Typography>
-                  <Typography sx={{ fontSize: item.emoji ? 26 : 14, color: "#333" }}>{item.clue}</Typography>
-                  {revealed && (
-                    <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: 1 }}>
-                      {item.word.toUpperCase()}
-                    </Typography>
-                  )}
+                <Box sx={{ flex: 1, minWidth: 0 }}>
+                  <Typography sx={{ fontSize: 11, color: "#888", fontWeight: 700, textTransform: "uppercase" }}>{clue.label}</Typography>
+                  <Box sx={{ display: "flex", alignItems: "center", gap: 1, mt: 0.25 }}>
+                    {clue.image && <ImageClueThumb loader={clue.image.loader} />}
+                    {clue.emoji && <Typography sx={{ fontSize: 26 }}>{clue.emoji}</Typography>}
+                    {clue.text && <Typography sx={{ fontSize: 14, color: "#333" }}>{clue.text}</Typography>}
+                    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+                      {clue.words.map((w, i) => (
+                        <HangmanWord key={i} word={w} found={revealed || foundWords.includes(normalizeForGrid(w))} />
+                      ))}
+                    </Box>
+                  </Box>
                 </Box>
               </Box>
             );

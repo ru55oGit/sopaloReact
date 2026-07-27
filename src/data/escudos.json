@@ -1,0 +1,604 @@
+{
+  "listado": [
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "River|Plate",
+      "pregunta": "1",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Napoli",
+      "pregunta": "2",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Barcelona",
+      "pregunta": "3",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Valencia",
+      "pregunta": "4",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Bayer|Munich",
+      "pregunta": "5",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Roma",
+      "pregunta": "6",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Cruz|Azul",
+      "pregunta": "7",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Real|Madrid",
+      "pregunta": "8",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Racing|Club",
+      "pregunta": "9",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "San Pablo",
+      "pregunta": "10",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Gremio",
+      "pregunta": "11",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Atletico|de Madrid",
+      "pregunta": "12",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Borussia|Dortmund",
+      "pregunta": "13",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Milan",
+      "pregunta": "14",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Manchester|City",
+      "pregunta": "15",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Colo Colo",
+      "pregunta": "16",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Inter de|Porto Alegre",
+      "pregunta": "17",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Once|Caldas",
+      "pregunta": "18",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Manchester|United",
+      "pregunta": "19",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Cruzeiro",
+      "pregunta": "20",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Atletico|Nacional",
+      "pregunta": "21",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Lazio",
+      "pregunta": "22",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Chelsea",
+      "pregunta": "23",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Wolfsburgo",
+      "pregunta": "24",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "San Lorenzo",
+      "pregunta": "25",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Flamengo",
+      "pregunta": "26",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Hamburgo",
+      "pregunta": "27",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Sevilla",
+      "pregunta": "28",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Juventus",
+      "pregunta": "29",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Arsenal",
+      "pregunta": "30",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Bayer|Leverkusen",
+      "pregunta": "31",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Lanus",
+      "pregunta": "32",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Osasuna",
+      "pregunta": "33",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "America",
+      "pregunta": "34",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Inter de|Milan",
+      "pregunta": "35",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Malaga",
+      "pregunta": "36",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Liverpool",
+      "pregunta": "37",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Schalke 04",
+      "pregunta": "38",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Torino",
+      "pregunta": "39",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Everton",
+      "pregunta": "40",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Universidad|de chile",
+      "pregunta": "41",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Estudiantes|de la plata",
+      "pregunta": "42",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Sampdoria",
+      "pregunta": "43",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Velez|Sarsfield",
+      "pregunta": "44",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Betis",
+      "pregunta": "45",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Siena",
+      "pregunta": "46",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Necaxa",
+      "pregunta": "47",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "West|Bromwich",
+      "pregunta": "48",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Perugia",
+      "pregunta": "49",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Villareal",
+      "pregunta": "50",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Herta|Berlin",
+      "pregunta": "51",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Rosario|Central",
+      "pregunta": "52",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Santos",
+      "pregunta": "53",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Millonarios",
+      "pregunta": "54",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Universidad|Catolica",
+      "pregunta": "55",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Fiorentina",
+      "pregunta": "56",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Atlas",
+      "pregunta": "57",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Tottenham|Hotspur",
+      "pregunta": "58",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Palmeiras",
+      "pregunta": "59",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Werder|Bremen",
+      "pregunta": "60",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Bologna",
+      "pregunta": "61",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Newcastle",
+      "pregunta": "62",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Levante",
+      "pregunta": "63",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Palermo",
+      "pregunta": "64",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Tigre",
+      "pregunta": "65",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Junior de|Barranquilla",
+      "pregunta": "66",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "corinthians",
+      "pregunta": "67",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Fluminense",
+      "pregunta": "68",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Newells|Old Boys",
+      "pregunta": "69",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Deportivo|Cali",
+      "pregunta": "70",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "West|Ham",
+      "pregunta": "71",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Monterrey",
+      "pregunta": "72",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "chievo|verona",
+      "pregunta": "73",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Aston|Villa",
+      "pregunta": "74",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Empoli",
+      "pregunta": "75",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Vasco da|Gama",
+      "pregunta": "76",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "America|de Cali",
+      "pregunta": "77",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Colon",
+      "pregunta": "78",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Gimnasia|de la plata",
+      "pregunta": "79",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Parma",
+      "pregunta": "80",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Banfield",
+      "pregunta": "81",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Rayo|Vallecano",
+      "pregunta": "82",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "olympique|de marsella",
+      "pregunta": "83",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Genoa",
+      "pregunta": "84",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Independiente|santa fe",
+      "pregunta": "85",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Real|Sociedad",
+      "pregunta": "86",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Fulham",
+      "pregunta": "87",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Independiente|de avellaneda",
+      "pregunta": "88",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Stuttgart",
+      "pregunta": "89",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Espanyol de|Barcelona",
+      "pregunta": "90",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Hellas|Verona",
+      "pregunta": "91",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Union",
+      "pregunta": "92",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Paris|Saint Germain",
+      "pregunta": "93",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Southampton",
+      "pregunta": "94",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "leicester",
+      "pregunta": "95",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Boca Juniors",
+      "pregunta": "96",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Hannover 96",
+      "pregunta": "97",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Celta de Vigo",
+      "pregunta": "98",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Watford",
+      "pregunta": "99",
+      "categoria": "escudos"
+    },
+    {
+      "titulo": "Escudos de fútbol",
+      "respuesta": "Cagliari",
+      "pregunta": "100",
+      "categoria": "escudos"
+    }
+  ]
+}

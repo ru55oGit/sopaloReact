@@ -1,0 +1,1036 @@
+{
+  "listado": [
+    {
+      "titulo": "Sombras",
+      "respuesta": "garfield",
+      "pregunta": "1",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "blinky",
+      "pregunta": "2",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "gargamel",
+      "pregunta": "3",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "babar",
+      "pregunta": "4",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "disco|stu",
+      "pregunta": "5",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Inspector|Ardilla",
+      "pregunta": "6",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "apu",
+      "pregunta": "7",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "freezer",
+      "pregunta": "8",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "pitufo|goloso",
+      "pregunta": "9",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "he man",
+      "pregunta": "10",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "oliver|atom",
+      "pregunta": "11",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "mickey|mouse",
+      "pregunta": "12",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "mario",
+      "pregunta": "13",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "son gohan",
+      "pregunta": "14",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "quique|gavilan",
+      "pregunta": "15",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Kearney",
+      "pregunta": "16",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "jefe|Gotier",
+      "pregunta": "17",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Monstruo|Buu",
+      "pregunta": "18",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "astro",
+      "pregunta": "19",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "pitufo|fortachon",
+      "pregunta": "20",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Puerco|porky",
+      "pregunta": "21",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "dr hibbert",
+      "pregunta": "22",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "El Pato|Donald",
+      "pregunta": "23",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Mark|Lenders",
+      "pregunta": "24",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "milhouse",
+      "pregunta": "25",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "pluto",
+      "pregunta": "26",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "lisa|simpson",
+      "pregunta": "27",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "tiro loco|mcgraw",
+      "pregunta": "28",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "akira",
+      "pregunta": "29",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "robotina",
+      "pregunta": "30",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "masha|y el oso",
+      "pregunta": "31",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "maggie|simpson",
+      "pregunta": "32",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "super|sonico",
+      "pregunta": "33",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Joe|quimby ",
+      "pregunta": "34",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "goofy",
+      "pregunta": "35",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "huckleberry|hound",
+      "pregunta": "36",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "la hormiga",
+      "pregunta": "37",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "el pajaro|loco",
+      "pregunta": "38",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "el inspector",
+      "pregunta": "39",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "el fantasma|del espacio",
+      "pregunta": "40",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "pitufo|vanidoso",
+      "pregunta": "41",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "los gemelos|fantasticos",
+      "pregunta": "42",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "artie|ziff",
+      "pregunta": "43",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Pequeño Ayudante|de Santa Claus",
+      "pregunta": "44",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "carl|carlson",
+      "pregunta": "45",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "cleto",
+      "pregunta": "46",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "uter",
+      "pregunta": "47",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "edna|krabappel",
+      "pregunta": "48",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "barney",
+      "pregunta": "49",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "patan",
+      "pregunta": "50",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "jeremias|springfield",
+      "pregunta": "51",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "jessica|Lovejoy",
+      "pregunta": "52",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "kent|brockman",
+      "pregunta": "53",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "kirk|van houten",
+      "pregunta": "54",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Mindy|Simmons",
+      "pregunta": "55",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "montgomery|burns",
+      "pregunta": "56",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "la mujer|maravilla",
+      "pregunta": "57",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "profesor|frink",
+      "pregunta": "58",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Ralph|Wiggum",
+      "pregunta": "59",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "cometin|sonico",
+      "pregunta": "60",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "sam|bigotes",
+      "pregunta": "61",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "leon o",
+      "pregunta": "62",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "astro boy",
+      "pregunta": "63",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "la hormiga|atomica",
+      "pregunta": "64",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "el oso|yogi",
+      "pregunta": "65",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "jem",
+      "pregunta": "66",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "herbert|powell",
+      "pregunta": "67",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "benito",
+      "pregunta": "68",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "la pantera|rosa",
+      "pregunta": "69",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "funzo",
+      "pregunta": "70",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Richie|Rich",
+      "pregunta": "71",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "duffman",
+      "pregunta": "72",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "pikachu",
+      "pregunta": "73",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "lucero|sonico",
+      "pregunta": "74",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "jasper",
+      "pregunta": "75",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "battle cat",
+      "pregunta": "76",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "jefe|Wiggum",
+      "pregunta": "77",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "super|raton",
+      "pregunta": "78",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "jimbo",
+      "pregunta": "79",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Hans|Topo",
+      "pregunta": "80",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "frank|grimes",
+      "pregunta": "81",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "don gato",
+      "pregunta": "82",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "pitufo|filosofo",
+      "pregunta": "83",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "dr nick",
+      "pregunta": "84",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "birdman",
+      "pregunta": "85",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "vegeta",
+      "pregunta": "86",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "larry|burns",
+      "pregunta": "87",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Luann|Van Houten",
+      "pregunta": "88",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "rayo de|plata",
+      "pregunta": "89",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "lionel|hutz",
+      "pregunta": "90",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "kang",
+      "pregunta": "91",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "krusty",
+      "pregunta": "92",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "el gallo|claudio",
+      "pregunta": "93",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "heidi",
+      "pregunta": "94",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "el jardinero|willy",
+      "pregunta": "95",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "papa|pitufo",
+      "pregunta": "96",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Ultra|sonico",
+      "pregunta": "97",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "mr Croquet",
+      "pregunta": "98",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "el inspector|gadget",
+      "pregunta": "99",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "martin|prince",
+      "pregunta": "100",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "hombre|abejorro",
+      "pregunta": "101",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "el oso|hormiguero",
+      "pregunta": "102",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "orko",
+      "pregunta": "103",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "mcbain",
+      "pregunta": "104",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "rayo mcqueen",
+      "pregunta": "105",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "rasca",
+      "pregunta": "106",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "luiggi",
+      "pregunta": "107",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "bugs|bunny",
+      "pregunta": "108",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "el pato|lucas",
+      "pregunta": "109",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "gil",
+      "pregunta": "110",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "bart|simpson",
+      "pregunta": "111",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Piccolo",
+      "pregunta": "112",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Maude|Flanders",
+      "pregunta": "113",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "buzz|lightyear",
+      "pregunta": "114",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "benji|price",
+      "pregunta": "115",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "oficial|matute",
+      "pregunta": "116",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "marge|simpson",
+      "pregunta": "117",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "mate",
+      "pregunta": "118",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Otto Mann",
+      "pregunta": "119",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "cerebro",
+      "pregunta": "120",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "homero|simpson",
+      "pregunta": "121",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "flash",
+      "pregunta": "122",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "pepe le pew",
+      "pregunta": "123",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "son goku",
+      "pregunta": "124",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "ned|flanders",
+      "pregunta": "125",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "scooby|doo",
+      "pregunta": "126",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "moe",
+      "pregunta": "127",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "pinky",
+      "pregunta": "128",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "superman",
+      "pregunta": "129",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "mandibulin",
+      "pregunta": "130",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "el coyote",
+      "pregunta": "131",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "silvestre",
+      "pregunta": "132",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Pica",
+      "pregunta": "133",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "mojo",
+      "pregunta": "134",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "pablo|marmol",
+      "pregunta": "135",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "bobby",
+      "pregunta": "136",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "odie",
+      "pregunta": "137",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "taz",
+      "pregunta": "138",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "baloo",
+      "pregunta": "139",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "patty",
+      "pregunta": "140",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "bruce|harper",
+      "pregunta": "141",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Johnny|Bravo",
+      "pregunta": "142",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "shaggy",
+      "pregunta": "143",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "marvin",
+      "pregunta": "144",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "nelson",
+      "pregunta": "145",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "popeye",
+      "pregunta": "146",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "lenny",
+      "pregunta": "147",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "d'artagnan",
+      "pregunta": "148",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "speedy|gonzalez",
+      "pregunta": "149",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "lou",
+      "pregunta": "150",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Betty|Marmol",
+      "pregunta": "151",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Pedro|Picapiedras",
+      "pregunta": "152",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Peter|Griffin",
+      "pregunta": "153",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "tweety",
+      "pregunta": "154",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "jerry",
+      "pregunta": "155",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "winnie pooh",
+      "pregunta": "156",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "krillin",
+      "pregunta": "157",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "dumbo",
+      "pregunta": "158",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "poochie",
+      "pregunta": "159",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "terri y|sherri",
+      "pregunta": "160",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Motita",
+      "pregunta": "161",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "seymour|skinner",
+      "pregunta": "162",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "superintendente|chalmers",
+      "pregunta": "163",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "malefica",
+      "pregunta": "164",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "gordo|tony",
+      "pregunta": "165",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "selma",
+      "pregunta": "166",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Ariel",
+      "pregunta": "167",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Helen|Lovejoy",
+      "pregunta": "168",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Peter|Pan",
+      "pregunta": "169",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Simba",
+      "pregunta": "170",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Bob|esponja",
+      "pregunta": "171",
+      "categoria": "sombras"
+    },
+    {
+      "titulo": "Sombras",
+      "respuesta": "Pinocho",
+      "pregunta": "172",
+      "categoria": "sombras"
+    }
+  ]
+}

@@ -195,7 +195,7 @@ const toLocalIsoDate = (date: Date): string => {
   return `${yyyy}-${mm}-${dd}`;
 };
 
-const getWeekStart = (referenceDate = new Date()): string => {
+export const getWeekStart = (referenceDate = new Date()): string => {
   const localDate = new Date(referenceDate);
   localDate.setHours(0, 0, 0, 0);
   const sunday = new Date(localDate);
