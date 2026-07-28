@@ -1,6 +1,7 @@
 import { ComponentType } from "react";
 import { getActiveRoscoContext, getBonusSetForDay, RoscoEntry } from "./weeklyRoscos";
 import { getImaginaloRoundClues, ImageCategoryKey } from "./imaginaloRounds";
+import { getEmojinaloRoundClues, EmojinaloCategoryKey } from "./emojinaloRounds";
 import { DayKey, ROUNDS_PER_DAY, WEEK_DAYS } from "../utils/weeklyRoscoState";
 
 // Cada ronda del día es un conjunto de "pistas" (clues). Cada pista puede
@@ -16,7 +17,7 @@ export interface RoundClue {
   text?: string;
 }
 
-export type RoundKind = "images" | "legacy";
+export type RoundKind = "images" | "emojinalo" | "legacy";
 
 export interface SopaloRound {
   kind: RoundKind;
@@ -85,13 +86,31 @@ function buildImagesRound(
   };
 }
 
+function buildEmojinaloRound(
+  dayIndex: number,
+  referenceDate: Date,
+  language: string,
+  emojinaloLabels: Record<EmojinaloCategoryKey, string>
+): SopaloRound {
+  const emojinaloClues = getEmojinaloRoundClues(dayIndex, referenceDate, language);
+  return {
+    kind: "emojinalo",
+    clues: emojinaloClues.map((c) => ({
+      label: emojinaloLabels[c.category],
+      words: c.words,
+      emoji: c.emoji,
+    })),
+  };
+}
+
 export function getSopaloDayContext(
   dayKey: DayKey,
   referenceDate = new Date(),
   language = "es",
   categoryLabels: Record<ImageCategoryKey, string> = { funkos: "Funkos", escudos: "Escudos", sombras: "Sombras", logos: "Logos" },
   definitionLabel = "Definición",
-  emojiLabel = "Emoji"
+  emojiLabel = "Emoji",
+  emojinaloLabels: Record<EmojinaloCategoryKey, string> = { country: "País", capital: "Capital", whatis: "Qué es", movie: "Película", series: "Serie" }
 ): SopaloDayContext {
   const roscoContext = getActiveRoscoContext(referenceDate, language);
   const dayIndex = WEEK_DAYS.findIndex((d) => d.key === dayKey);
@@ -103,6 +122,9 @@ export function getSopaloDayContext(
   const rounds: SopaloRound[] = Array.from({ length: ROUNDS_PER_DAY }, (_, i) => {
     if (i === 0) {
       return buildImagesRound(dayIndex, referenceDate, language, categoryLabels);
+    }
+    if (i === 1) {
+      return buildEmojinaloRound(dayIndex, referenceDate, language, emojinaloLabels);
     }
     return buildLegacyRound(i, defPool, emojiPool, definitionLabel, emojiLabel);
   });

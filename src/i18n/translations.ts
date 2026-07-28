@@ -44,6 +44,11 @@ export interface Translation {
   categoryEscudos: string;
   categorySombras: string;
   categoryLogos: string;
+  categoryCountry: string;
+  categoryCapital: string;
+  categoryWhatis: string;
+  categoryMovie: string;
+  categorySeries: string;
   revealButton: string;
   successTitle: string;
   nextRoundIn: (s: number) => string;
@@ -89,6 +94,11 @@ const es: Translation = {
   categoryEscudos: "Escudos",
   categorySombras: "Sombras",
   categoryLogos: "Logos",
+  categoryCountry: "País",
+  categoryCapital: "Capital",
+  categoryWhatis: "Qué es",
+  categoryMovie: "Película",
+  categorySeries: "Serie",
   revealButton: "Ver anuncio para descubrir las palabras",
   successTitle: "¡Muy bien!",
   nextRoundIn: (s) => `Siguiente ronda en ${s}...`,
@@ -134,6 +144,11 @@ const en: Translation = {
   categoryEscudos: "Crests",
   categorySombras: "Shadows",
   categoryLogos: "Logos",
+  categoryCountry: "Country",
+  categoryCapital: "Capital",
+  categoryWhatis: "What is it",
+  categoryMovie: "Movie",
+  categorySeries: "TV Show",
   revealButton: "Watch an ad to reveal the words",
   successTitle: "Well done!",
   nextRoundIn: (s) => `Next round in ${s}...`,
@@ -179,6 +194,11 @@ const pt: Translation = {
   categoryEscudos: "Escudos",
   categorySombras: "Sombras",
   categoryLogos: "Logos",
+  categoryCountry: "País",
+  categoryCapital: "Capital",
+  categoryWhatis: "O que é",
+  categoryMovie: "Filme",
+  categorySeries: "Série",
   revealButton: "Assistir a um anúncio para revelar as palavras",
   successTitle: "Muito bem!",
   nextRoundIn: (s) => `Próxima rodada em ${s}...`,
@@ -224,6 +244,11 @@ const fr: Translation = {
   categoryEscudos: "Écussons",
   categorySombras: "Ombres",
   categoryLogos: "Logos",
+  categoryCountry: "Pays",
+  categoryCapital: "Capitale",
+  categoryWhatis: "Qu'est-ce que c'est",
+  categoryMovie: "Film",
+  categorySeries: "Série",
   revealButton: "Regarder une pub pour révéler les mots",
   successTitle: "Bien joué !",
   nextRoundIn: (s) => `Manche suivante dans ${s}...`,
@@ -269,6 +294,11 @@ const de: Translation = {
   categoryEscudos: "Wappen",
   categorySombras: "Schatten",
   categoryLogos: "Logos",
+  categoryCountry: "Land",
+  categoryCapital: "Hauptstadt",
+  categoryWhatis: "Was ist das",
+  categoryMovie: "Film",
+  categorySeries: "Serie",
   revealButton: "Werbung ansehen, um die Wörter aufzudecken",
   successTitle: "Gut gemacht!",
   nextRoundIn: (s) => `Nächste Runde in ${s}...`,

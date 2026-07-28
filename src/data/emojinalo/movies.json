@@ -1,0 +1,902 @@
+[
+  {
+    "title": "Series",
+    "en": "Game of|thrones",
+    "sp": "Game of|thrones",
+    "pt": "Game of|Thrones",
+    "fr": "Le Trône|de Fer",
+    "de": "Game of|thrones",
+    "movie": "🎮🫅⚔️🐲🐺"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Dr Dolittle",
+    "sp": "Dr Dolittle",
+    "pt": "Dr Dolittle",
+    "fr": "Docteur|Dolittle",
+    "de": "Doktor|Dolittle",
+    "movie": "🧑🏽💬🐶💬"
+  },
+  {
+    "title": "Series",
+    "en": "Breaking|Bad",
+    "sp": "Breaking|Bad",
+    "pt": "Breaking|Bad",
+    "fr": "Breaking|Bad",
+    "de": "Breaking|Bad",
+    "movie": "💥👨‍🔬🧪🚐"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Psycho",
+    "sp": "Psicosis",
+    "pt": "Psicose",
+    "fr": "Psychose",
+    "de": "Psycho",
+    "movie": "🔪👱‍♀️ 🚿"
+  },
+  {
+    "title": "Series",
+    "en": "Stranger|Things",
+    "sp": "Stranger|Things",
+    "pt": "Stranger|Things",
+    "fr": "Stranger|Things",
+    "de": "Stranger|Things",
+    "movie": "👨‍🦲1️⃣1️⃣"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Apollo 13",
+    "sp": "Apolo 13",
+    "pt": "Apollo 13",
+    "fr": "Apollo 13",
+    "de": "Apollo 13",
+    "movie": "🚀🌕1️⃣3️⃣"
+  },
+  {
+    "title": "Series",
+    "en": "Friends",
+    "sp": "Friends",
+    "pt": "Friends",
+    "fr": "Friends",
+    "de": "Friends",
+    "movie": "👭🧑‍🤝‍🧑👬🛋️"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Kung fu|panda",
+    "sp": "Kung fu|panda",
+    "pt": "Kung Fu|Panda",
+    "fr": "Kung Fu|Panda",
+    "de": "Kung fu|panda",
+    "movie": "🥋👊🐼"
+  },
+  {
+    "title": "Series",
+    "en": "Lost",
+    "sp": "Lost",
+    "pt": "Lost",
+    "fr": "Lost",
+    "de": "Lost",
+    "movie": "🛩️🏝️❓🗺️"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Eat Pray|Love",
+    "sp": "Comer Rezar|Amar",
+    "pt": "Comer Orar|Amar",
+    "fr": "Mange Prie|Aime",
+    "de": "Eat Pray|Love",
+    "movie": "🍝🙏❤️"
+  },
+  {
+    "title": "Series",
+    "en": "Dexter",
+    "sp": "Dexter",
+    "pt": "Dexter",
+    "fr": "Dexter",
+    "de": "Dexter",
+    "movie": "🔪👨‍⚕️🩸"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Bloods|Diamonds",
+    "sp": "Diamantes|de sangre",
+    "pt": "Diamante|de Sangue",
+    "fr": "Blood|Diamond",
+    "de": "Bloods|Diamonds",
+    "movie": "💎💎🩸"
+  },
+  {
+    "title": "Series",
+    "en": "The big bang|theory",
+    "sp": "The big bang|theory",
+    "pt": "The Big Bang|Theory",
+    "fr": "The Big Bang|Theory",
+    "de": "The big bang|theory",
+    "movie": "💥🌌🧑‍🔬"
+  },
+  {
+    "title": "Peliculas",
+    "en": "ET",
+    "sp": "ET",
+    "pt": "ET",
+    "fr": "ET",
+    "de": "ET Der|Außerirdische",
+    "movie": "👽☎️🏠"
+  },
+  {
+    "title": "Series",
+    "en": "How I met|your mother",
+    "sp": "How I met|your mother",
+    "pt": "How I Met|Your Mother",
+    "fr": "Comment j'ai|rencontré|votre mère",
+    "de": "How I met|your mother",
+    "movie": "🧑‍🦱💬👫👀➡️🤰🏻"
+  },
+  {
+    "title": "Peliculas",
+    "en": "American|Pie",
+    "sp": "American|Pie",
+    "pt": "American|Pie",
+    "fr": "American|Pie",
+    "de": "American|Pie",
+    "movie": "🇺🇸🎂"
+  },
+  {
+    "title": "Series",
+    "en": "House MD",
+    "sp": "Dr House",
+    "pt": "Dr House",
+    "fr": "Dr House",
+    "de": "Dr House",
+    "movie": "🧑‍⚕️🏠"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Men in|black",
+    "sp": "Hombres|de negro",
+    "pt": "Homens|de Preto",
+    "fr": "Men in|Black",
+    "de": "Men in|black",
+    "movie": "🕴🏽🕴️👽"
+  },
+  {
+    "title": "Series",
+    "en": "The walking|dead",
+    "sp": "The walking|dead",
+    "pt": "The Walking|Dead",
+    "fr": "The Walking|Dead",
+    "de": "The walking|dead",
+    "movie": "🚶‍♂️🧟‍♂️💀"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Free|willy",
+    "sp": "Liberen|a Willy",
+    "pt": "Free|Willy",
+    "fr": "Sauvez|Willy",
+    "de": "Free Willy|Ruf der Freiheit",
+    "movie": "🔑🔓🐋"
+  },
+  {
+    "title": "Series",
+    "en": "Sherlock",
+    "sp": "Sherlock",
+    "pt": "Sherlock",
+    "fr": "Sherlock",
+    "de": "Sherlock",
+    "movie": "🕵️‍♂️🔍"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Up",
+    "sp": "Up",
+    "pt": "Up|Altas|Aventuras",
+    "fr": "Là haut",
+    "de": "Oben",
+    "movie": "🎈🎈🏠🎈🎈"
+  },
+  {
+    "title": "Series",
+    "en": "Suits",
+    "sp": "Suits",
+    "pt": "Suits",
+    "fr": "Suits",
+    "de": "Suits",
+    "movie": "🤵💼⚖️"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Planet of|the Apes",
+    "sp": "El planeta|de los simios",
+    "pt": "Planeta|dos Macacos",
+    "fr": "La Planète|des Singes",
+    "de": "Planet|der Affen",
+    "movie": "🌎🥧🦍🐒"
+  },
+  {
+    "title": "Series",
+    "en": "The Queens|Gambit",
+    "sp": "Gambito|de Dama",
+    "pt": "O Gambito|da Rainha",
+    "fr": "Le Jeu|de la Dame",
+    "de": "Das|Damengambit",
+    "movie": "♟️👸"
+  },
+  {
+    "title": "Peliculas",
+    "en": "American|Beauty",
+    "sp": "Belleza|Americana",
+    "pt": "Beleza|Americana",
+    "fr": "American|Beauty",
+    "de": "American|Beauty",
+    "movie": "🌹🌹🌹👱‍♀️ 🇺🇸"
+  },
+  {
+    "title": "Series",
+    "en": "The Good|Doctor",
+    "sp": "The Good|Doctor",
+    "pt": "The Good|Doctor",
+    "fr": "Good|Doctor",
+    "de": "The Good|Doctor",
+    "movie": "👍👨‍⚕ ️"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Titanic",
+    "sp": "Titanic",
+    "pt": "Titanic",
+    "fr": "Titanic",
+    "de": "Titanic",
+    "movie": "😢🚢❄️💔"
+  },
+  {
+    "title": "Series",
+    "en": "Dark",
+    "sp": "Dark",
+    "pt": "Dark",
+    "fr": "Dark",
+    "de": "Dark",
+    "movie": "🇩🇪⏳⬛"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Gorillas in|the Mist",
+    "sp": "Gorilas en|la niebla",
+    "pt": "Nas Montanhas|dos Gorilas",
+    "fr": "Gorilles dans|la brume",
+    "de": "Gorillas|im Nebel",
+    "movie": "🦍🦍🌫️🌫️🌫️"
+  },
+  {
+    "title": "Series",
+    "en": "Lupin",
+    "sp": "Lupin",
+    "pt": "Lupin",
+    "fr": "Lupin",
+    "de": "Lupin",
+    "movie": "🇫🇷🧑🏿🥷💎"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Devils|wears Prada",
+    "sp": "El diablo|viste a|la moda",
+    "pt": "O Diabo|Veste Prada",
+    "fr": "Le Diable|s'habille|en Prada",
+    "de": "Der Teufel|trägt Prada",
+    "movie": "😈👗👠🧣"
+  },
+  {
+    "title": "Series",
+    "en": "Chernobyl",
+    "sp": "Chernobyl",
+    "pt": "Chernobyl",
+    "fr": "Chernobyl",
+    "de": "Chernobyl",
+    "movie": "🇷🇺☢️🏢"
+  },
+  {
+    "title": "Peliculas",
+    "en": "X men",
+    "sp": "X men",
+    "pt": "X Men",
+    "fr": "X Men",
+    "de": "X men",
+    "movie": "❌👨‍🦽👩‍🦳👱🙍‍♂️"
+  },
+  {
+    "title": "Series",
+    "en": "The Office",
+    "sp": "The Office",
+    "pt": "The Office",
+    "fr": "The Office",
+    "de": "The Office",
+    "movie": "🏢📎🗄️✂️😂"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Harry|Potter",
+    "sp": "Harry|Potter",
+    "pt": "Harry|Potter",
+    "fr": "Harry|Potter",
+    "de": "Harry|Potter",
+    "movie": "👦🏻👓⚡🏰"
+  },
+  {
+    "title": "Series",
+    "en": "True|Detective",
+    "sp": "True|Detective",
+    "pt": "True|Detective",
+    "fr": "True|Detective",
+    "de": "True|Detective",
+    "movie": " ✅🕵️‍♂️🕵️‍♀️🔍"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Spiderman",
+    "sp": "Spiderman",
+    "pt": "Homem|Aranha",
+    "fr": "Spider|Man",
+    "de": "Spiderman",
+    "movie": "🕷️👦🏻"
+  },
+  {
+    "title": "Series",
+    "en": "Dragon|Ball Z",
+    "sp": "Dragon|Ball Z",
+    "pt": "Dragon|Ball Z",
+    "fr": "Dragon|Ball Z",
+    "de": "Dragon|Ball Z",
+    "movie": "🔮🔮🔮🔮🐲👊"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Finding|Nemo",
+    "sp": "Buscando|a Nemo",
+    "pt": "Procurando|Nemo",
+    "fr": "Le Monde|de Nemo",
+    "de": "Findet|Nemo",
+    "movie": "🌊🔎🐠🐟"
+  },
+  {
+    "title": "Series",
+    "en": "Narcos",
+    "sp": "Narcos",
+    "pt": "Narcos",
+    "fr": "Narcos",
+    "de": "Narcos",
+    "movie": "🇨🇴👃🍙"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Mary|Poppins",
+    "sp": "Mary|Poppins",
+    "pt": "Mary|Poppins",
+    "fr": "Mary|Poppins",
+    "de": "Mary|Poppins",
+    "movie": "👜☂️"
+  },
+  {
+    "title": "Series",
+    "en": "Black|Mirror",
+    "sp": "Black|Mirror",
+    "pt": "Black|Mirror",
+    "fr": "Black|Mirror",
+    "de": "Black|Mirror",
+    "movie": "⚫🪞"
+  },
+  {
+    "title": "Peliculas",
+    "en": "The hunger|games",
+    "sp": "Los juegos|del hambre",
+    "pt": "Jogos|Vorazes",
+    "fr": "Hunger|Games",
+    "de": "Die Tribute|von Panem",
+    "movie": "😩🍽️🕹️"
+  },
+  {
+    "title": "Series",
+    "en": "Roma",
+    "sp": "Roma",
+    "pt": "Roma",
+    "fr": "Rome",
+    "de": "Roma",
+    "movie": "🇮🇹👑🛡️⚔️"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Fast and|furious",
+    "sp": "Rapido|y furioso",
+    "pt": "Velozes|e Furiosos",
+    "fr": "Fast and|Furious",
+    "de": "Fast and|furious",
+    "movie": "🚗💨😡"
+  },
+  {
+    "title": "Series",
+    "en": "Vikings",
+    "sp": "Vikings",
+    "pt": "Vikings",
+    "fr": "Vikings",
+    "de": "Vikings",
+    "movie": "🛠️🪓🛡️👑"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Cars",
+    "sp": "Cars",
+    "pt": "Carros",
+    "fr": "Cars",
+    "de": "Cars",
+    "movie": "🏁🚗 ⚡🖥️👸"
+  },
+  {
+    "title": "Series",
+    "en": "Better|Call Saul",
+    "sp": "Better|Call Saul",
+    "pt": "Better|Call Saul",
+    "fr": "Better|Call Saul",
+    "de": "Better|Call Saul",
+    "movie": "👍📞⚖️👱"
+  },
+  {
+    "title": "Peliculas",
+    "en": "The kings|speech",
+    "sp": "El discurso|del rey",
+    "pt": "O Discurso|do Rei",
+    "fr": "Le Discours|du roi",
+    "de": "Die Rede|des Königs",
+    "movie": "🎙️💬🫅"
+  },
+  {
+    "title": "Series",
+    "en": "The Crown",
+    "sp": "The Crown",
+    "pt": "The Crown",
+    "fr": "The Crown",
+    "de": "The Crown",
+    "movie": "👑🧑‍🦳🇬🇧"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Life|of pi",
+    "sp": "Una aventura|extra-|ordinaria",
+    "pt": "As Aventuras|de Pi",
+    "fr": "L'Odyssée|de Pi",
+    "de": "Schiffbruch|mit Tiger",
+    "movie": "👳🛣️🐯"
+  },
+  {
+    "title": "Series",
+    "en": "House of|Cards",
+    "sp": "House of|Cards",
+    "pt": "House of|Cards",
+    "fr": "House of|Cards",
+    "de": "House of|Cards",
+    "movie": "🏠🃏"
+  },
+  {
+    "title": "Peliculas",
+    "en": "500 Days|of Summer",
+    "sp": "500 Días|con Ella",
+    "pt": "500 Dias|com Ela",
+    "fr": "500 jours|ensemble",
+    "de": "500 Days|of Summer",
+    "movie": "5️⃣0️⃣0️⃣❤️🌞"
+  },
+  {
+    "title": "Series",
+    "en": "Peaky|Blinders",
+    "sp": "Peaky|Blinders",
+    "pt": "Peaky|Blinders",
+    "fr": "Peaky|Blinders",
+    "de": "Peaky|Blinders",
+    "movie": "🏴🥃🧢🔪👊"
+  },
+  {
+    "title": "Peliculas",
+    "en": "angels|and demons",
+    "sp": "ángeles|y demonios",
+    "pt": "Anjos|e Demônios",
+    "fr": "Anges|et Démons",
+    "de": "Illuminati",
+    "movie": "😇😈"
+  },
+  {
+    "title": "Series",
+    "en": "Mr robot",
+    "sp": "Mr robot",
+    "pt": "Mr Robot",
+    "fr": "Mr Robot",
+    "de": "Mr robot",
+    "movie": "👨‍💻🤖"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Crocodile|Dundee",
+    "sp": "Crocodile|Dundee",
+    "pt": "Crocodilo|Dundee",
+    "fr": "Crocodile|Dundee",
+    "de": "Crocodile|Dundee",
+    "movie": "🤠🐊"
+  },
+  {
+    "title": "Series",
+    "en": "Lost|in Space",
+    "sp": "Perdidos en|el espacio",
+    "pt": "Perdidos|no Espaço",
+    "fr": "Perdus dans|l'espace",
+    "de": "Lost|in Space",
+    "movie": "🛸🌌❓"
+  },
+  {
+    "title": "Peliculas",
+    "en": "jaws",
+    "sp": "Tiburón",
+    "pt": "Tubarão",
+    "fr": "Les Dents|de la mer",
+    "de": "Der weiße Hai",
+    "movie": "🦈"
+  },
+  {
+    "title": "Series",
+    "en": "Twin Peaks",
+    "sp": "Twin Peaks",
+    "pt": "Twin Peaks",
+    "fr": "Twin Peaks",
+    "de": "Twin Peaks",
+    "movie": "👥🏔"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Sharknado",
+    "sp": "Sharknado",
+    "pt": "Sharknado",
+    "fr": "Sharknado",
+    "de": "Sharknado",
+    "movie": "🦈🌪️"
+  },
+  {
+    "title": "Series",
+    "en": "Cobra Kai",
+    "sp": "Cobra Kai",
+    "pt": "Cobra Kai",
+    "fr": "Cobra Kai",
+    "de": "Cobra Kai",
+    "movie": "🐍🥋"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Lady and|the Tramp",
+    "sp": "La dama y|el vagabundo",
+    "pt": "A Dama|e o Vagabundo",
+    "fr": "La Belle|et le Clochard",
+    "de": "Susi und|Strolch",
+    "movie": "🐩👩‍❤️‍👨🐕"
+  },
+  {
+    "title": "Series",
+    "en": "The 100",
+    "sp": "Los 100",
+    "pt": "Os 100",
+    "fr": "Les 100",
+    "de": "The 100",
+    "movie": "💯🌍"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Home Alone",
+    "sp": "Mi Pobre|Angelito",
+    "pt": "Esqueceram|de Mim",
+    "fr": "Maman, j'ai raté|l'avion",
+    "de": "Kevin|Allein zu Haus",
+    "movie": "🏠👦🎄"
+  },
+  {
+    "title": "Series",
+    "en": "Six Feet|Under",
+    "sp": "Six Feet|Under",
+    "pt": "A Sete|Palmos",
+    "fr": "Six Feet|Under",
+    "de": "Six Feet|Under",
+    "movie": "6️⃣🦶⬇️"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Rambo",
+    "sp": "Rambo",
+    "pt": "Rambo",
+    "fr": "Rambo",
+    "de": "Rambo",
+    "movie": "💪🪖🔪"
+  },
+  {
+    "title": "Series",
+    "en": "Glee",
+    "sp": "Glee",
+    "pt": "Glee",
+    "fr": "Glee",
+    "de": "Glee",
+    "movie": "🎤🎶🕺"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Speed",
+    "sp": "Máxima|Velocidad",
+    "pt": "Velocidade|Máxima",
+    "fr": "Speed",
+    "de": "Speed",
+    "movie": "🚌💣💨"
+  },
+  {
+    "title": "Series",
+    "en": "The Sopranos",
+    "sp": "Los Soprano",
+    "pt": "Família|Soprano",
+    "fr": "Les|Soprano",
+    "de": "Die Sopranos",
+    "movie": "👨‍👩‍👦🎤🚗🔫"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Puss in|Boots",
+    "sp": "El gato|con botas",
+    "pt": "Gato|de Botas",
+    "fr": "Le Chat|Potté",
+    "de": "Der gestiefelte|Kater",
+    "movie": "😺👢"
+  },
+  {
+    "title": "Series",
+    "en": "The Black|Rabbit",
+    "sp": "El conejo|negro",
+    "pt": "O Coelho|Negro",
+    "fr": "Le Lapin|noir",
+    "de": "The Black|Rabbit",
+    "movie": "🐇⚫"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Indiana|Jones",
+    "sp": "Indiana|Jones",
+    "pt": "Indiana|Jones",
+    "fr": "Indiana|Jones",
+    "de": "Indiana|Jones",
+    "movie": "🗺️🏆🤠"
+  },
+  {
+    "title": "Series",
+    "en": "Ted Lasso",
+    "sp": "Ted Lasso",
+    "pt": "Ted Lasso",
+    "fr": "Ted Lasso",
+    "de": "Ted Lasso",
+    "movie": "⚽👨‍🦰😊"
+  },
+  {
+    "title": "Peliculas",
+    "en": "pinocchio",
+    "sp": "Pinocho",
+    "pt": "Pinóquio",
+    "fr": "Pinocchio",
+    "de": "pinocchio",
+    "movie": "🤥🪵"
+  },
+  {
+    "title": "Series",
+    "en": "House of|Dragon",
+    "sp": "House of|Dragon",
+    "pt": "A Casa|do Dragão",
+    "fr": "House of|the Dragon",
+    "de": "House of|Dragon",
+    "movie": "🏠🐉👑"
+  },
+  {
+    "title": "Series",
+    "en": "Criminal|Minds",
+    "sp": "Mentes|Criminales",
+    "pt": "Mentes|Criminosas",
+    "fr": "Esprits|criminels",
+    "de": "Criminal|Minds",
+    "movie": "🧠🔍🚓"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Ghostbusters",
+    "sp": "Caza|fantasmas",
+    "pt": "Caça|Fantasmas",
+    "fr": "SOS|Fantômes",
+    "de": "Ghostbusters|Die Geisterjäger",
+    "movie": "👻🚫"
+  },
+  {
+    "title": "Series",
+    "en": "it welcome|to Derry",
+    "sp": "it bienvenido|a Derry",
+    "pt": "It: Bem-vindos|a Derry",
+    "fr": "It: Bienvenue|à Derry",
+    "de": "It: Willkommen|in Derry",
+    "movie": "🤡🎈🏙️"
+  },
+  {
+    "title": "Peliculas",
+    "en": "ice age",
+    "sp": "La era|de hielo",
+    "pt": "A Era|do Gelo",
+    "fr": "L'Âge|de glace",
+    "de": "Ice Age|Jetzt taut's",
+    "movie": "❄️🦣"
+  },
+  {
+    "title": "Series",
+    "en": "Homeland",
+    "sp": "Homeland",
+    "pt": "Homeland",
+    "fr": "Homeland",
+    "de": "Homeland",
+    "movie": "🏠🌍"
+  },
+  {
+    "title": "Peliculas",
+    "en": "scary|movie",
+    "sp": "Scary|Movie",
+    "pt": "Todo Mundo|em Pânico",
+    "fr": "Scary|Movie",
+    "de": "scary|movie",
+    "movie": "😱😂🎬"
+  },
+  {
+    "title": "Series",
+    "en": "the bear",
+    "sp": "the bear",
+    "pt": "The Bear",
+    "fr": "The Bear",
+    "de": "the bear",
+    "movie": "👨‍🍳🐻"
+  },
+  {
+    "title": "Peliculas",
+    "en": "pearl|harbor",
+    "sp": "Pearl|Harbor",
+    "pt": "Pearl|Harbor",
+    "fr": "Pearl|Harbor",
+    "de": "pearl|harbor",
+    "movie": "⚓🔥✈️🇯🇵🇺🇸"
+  },
+  {
+    "title": "Series",
+    "en": "the squid|game",
+    "sp": "el juego|del calamar",
+    "pt": "Round 6",
+    "fr": "Squid Game",
+    "de": "the squid|game",
+    "movie": "🦑🎮"
+  },
+  {
+    "title": "Peliculas",
+    "en": "The Butterfly|Effect",
+    "sp": "El Efecto|Mariposa",
+    "pt": "O Efeito|Borboleta",
+    "fr": "L'Effet|papillon",
+    "de": "Der|Schmetterlingseffekt",
+    "movie": "🦋🔄"
+  },
+  {
+    "title": "Series",
+    "en": "Money|Heist",
+    "sp": "la casa|de papel",
+    "pt": "La Casa|de Papel",
+    "fr": "La Casa|de papel",
+    "de": "Haus|des Geldes",
+    "movie": "🇪🇸🏦💵💵🎭🔫"
+  },
+  {
+    "title": "Peliculas",
+    "en": "forrest|gump",
+    "sp": "Forrest|Gump",
+    "pt": "Forrest|Gump",
+    "fr": "Forrest|Gump",
+    "de": "Forrest|Gump",
+    "movie": "🏃‍♂️🍫🇺🇸🏓🦐"
+  },
+  {
+    "title": "Series",
+    "en": "you",
+    "sp": "you",
+    "pt": "You",
+    "fr": "You",
+    "de": "You",
+    "movie": "🫵"
+  },
+  {
+    "title": "Peliculas",
+    "en": "The Motorcycle|Diaries",
+    "sp": "Diarios|de motocicleta",
+    "pt": "Diários|de Motocicleta",
+    "fr": "Carnets|de voyage",
+    "de": "Die Reise|des jungen Che",
+    "movie": "🏍️📓"
+  },
+  {
+    "title": "Series",
+    "en": "The Umbrella|Academy",
+    "sp": "The Umbrella|Academy",
+    "pt": "The Umbrella|Academy",
+    "fr": "The Umbrella|Academy",
+    "de": "The Umbrella|Academy",
+    "movie": "☂️🏫"
+  },
+  {
+    "title": "Peliculas",
+    "en": "volcano",
+    "sp": "volcano",
+    "pt": "Vulcão",
+    "fr": "Volcano",
+    "de": "volcano",
+    "movie": "🌋"
+  },
+  {
+    "title": "Series",
+    "en": "Emily|in Paris",
+    "sp": "Emily|en Paris",
+    "pt": "Emily|in Paris",
+    "fr": "Emily|in Paris",
+    "de": "Emily|in Paris",
+    "movie": "👩🇫🇷🗼"
+  },
+  {
+    "title": "Peliculas",
+    "en": "Armageddon",
+    "sp": "Armageddon",
+    "pt": "Armageddon",
+    "fr": "Armageddon",
+    "de": "Armageddon",
+    "movie": "💥🌍🚀"
+  },
+  {
+    "title": "Series",
+    "en": "thirteen|reasons why",
+    "sp": "thirteen|reasons why",
+    "pt": "Os 13|Porquês",
+    "fr": "13 Reasons|Why",
+    "de": "Tote Mädchen|lügen nicht",
+    "movie": "1️⃣3️⃣❓"
+  },
+  {
+    "title": "Peliculas",
+    "en": "The Scorpion|King",
+    "sp": "El Rey|Escorpión",
+    "pt": "O Rei|Escorpião",
+    "fr": "Le Roi|Scorpion",
+    "de": "Der|Skorpionkönig",
+    "movie": "🦂👑"
+  },
+  {
+    "title": "Series",
+    "en": "the rain",
+    "sp": "the rain",
+    "pt": "The Rain",
+    "fr": "The Rain",
+    "de": "the rain",
+    "movie": "🌧️👧👦"
+  },
+  {
+    "title": "Peliculas",
+    "en": "The Ring",
+    "sp": "El Aro",
+    "pt": "O Chamado",
+    "fr": "The Ring",
+    "de": "The Ring",
+    "movie": "📞💍"
+  },
+  {
+    "title": "Series",
+    "en": "the witcher",
+    "sp": "the witcher",
+    "pt": "The Witcher",
+    "fr": "The Witcher",
+    "de": "the witcher",
+    "movie": "🧙‍♂️🗡️🐺"
+  }
+]

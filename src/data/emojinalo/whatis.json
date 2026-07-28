@@ -1,0 +1,1702 @@
+[
+  {
+    "emoji": "🍇",
+    "word": {
+      "es": "Uva",
+      "en": "Grape",
+      "pt": "Uva",
+      "fr": "Raisin",
+      "de": "Weintraube"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐶",
+    "word": {
+      "es": "Perro",
+      "en": "Dog",
+      "pt": "Cachorro",
+      "fr": "Chien",
+      "de": "Hund"
+    },
+    "category": {
+      "es": "Mascotas",
+      "en": "Pets",
+      "pt": "Animais de estimação",
+      "fr": "Animaux domestiques",
+      "de": "Haustiere"
+    }
+  },
+  {
+    "emoji": "⚽",
+    "word": {
+      "es": "Fútbol",
+      "en": "Football",
+      "pt": "Futebol",
+      "fr": "Football",
+      "de": "Fußball"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🥑",
+    "word": {
+      "es": "Palta",
+      "en": "Avocado",
+      "pt": "Abacate",
+      "fr": "Avocat",
+      "de": "Avocado"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🦊",
+    "word": {
+      "es": "Zorro",
+      "en": "Fox",
+      "pt": "Raposa",
+      "fr": "Renard",
+      "de": "Fuchs"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🦋",
+    "word": {
+      "es": "Mariposa",
+      "en": "Butterfly",
+      "pt": "Borboleta",
+      "fr": "Papillon",
+      "de": "Schmetterling"
+    },
+    "category": {
+      "es": "Insectos/Bichos",
+      "en": "Insects/Bugs",
+      "pt": "Insetos",
+      "fr": "Insectes",
+      "de": "Insekten"
+    }
+  },
+  {
+    "emoji": "🍈",
+    "word": {
+      "es": "Melón",
+      "en": "Melon",
+      "pt": "Melão",
+      "fr": "Melon",
+      "de": "Melone"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐱",
+    "word": {
+      "es": "Gato",
+      "en": "Cat",
+      "pt": "Gato",
+      "fr": "Chat",
+      "de": "Katze"
+    },
+    "category": {
+      "es": "Mascotas",
+      "en": "Pets",
+      "pt": "Animais de estimação",
+      "fr": "Animaux domestiques",
+      "de": "Haustiere"
+    }
+  },
+  {
+    "emoji": "🏀",
+    "word": {
+      "es": "Básquet",
+      "en": "Basketball",
+      "pt": "Basquete",
+      "fr": "Basketball",
+      "de": "Basketball"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🍆",
+    "word": {
+      "es": "Berenjena",
+      "en": "Eggplant",
+      "pt": "Berinjela",
+      "fr": "Aubergine",
+      "de": "Aubergine"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🐳",
+    "word": {
+      "es": "Ballena",
+      "en": "Whale",
+      "pt": "Baleia",
+      "fr": "Baleine",
+      "de": "Wal"
+    },
+    "category": {
+      "es": "Salvajes/Marinos",
+      "en": "Wild/Marine",
+      "pt": "Selvagens/Marinhos",
+      "fr": "Sauvages/Marins",
+      "de": "Wildtiere/Meerestiere"
+    }
+  },
+  {
+    "emoji": "🎮",
+    "word": {
+      "es": "Videojuegos",
+      "en": "Video games",
+      "pt": "Videojogos",
+      "fr": "Jeux vidéo",
+      "de": "Videospiele"
+    },
+    "category": {
+      "es": "Entretenimiento",
+      "en": "Entertainment",
+      "pt": "Entretenimento",
+      "fr": "Divertissement",
+      "de": "Unterhaltung"
+    }
+  },
+  {
+    "emoji": "🍉",
+    "word": {
+      "es": "Sandía",
+      "en": "Watermelon",
+      "pt": "Melancia",
+      "fr": "Pastèque",
+      "de": "Wassermelone"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐭",
+    "word": {
+      "es": "Ratón",
+      "en": "Mouse",
+      "pt": "Rato",
+      "fr": "Souris",
+      "de": "Maus"
+    },
+    "category": {
+      "es": "Mascotas",
+      "en": "Pets",
+      "pt": "Animais de estimação",
+      "fr": "Animaux domestiques",
+      "de": "Haustiere"
+    }
+  },
+  {
+    "emoji": "🏈",
+    "word": {
+      "es": "Fútbol americano",
+      "en": "American football",
+      "pt": "Futebol americano",
+      "fr": "Football américain",
+      "de": "American Football"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🥔",
+    "word": {
+      "es": "Papa",
+      "en": "Potato",
+      "pt": "Batata",
+      "fr": "Pomme de terre",
+      "de": "Kartoffel"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🐻",
+    "word": {
+      "es": "Oso pardo",
+      "en": "Brown bear",
+      "pt": "Urso pardo",
+      "fr": "Ours brun",
+      "de": "Braunbär"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🎸",
+    "word": {
+      "es": "Guitarra",
+      "en": "Guitar",
+      "pt": "Guitarra",
+      "fr": "Guitare",
+      "de": "Gitarre"
+    },
+    "category": {
+      "es": "Música",
+      "en": "Music",
+      "pt": "Música",
+      "fr": "Musique",
+      "de": "Musik"
+    }
+  },
+  {
+    "emoji": "🍊",
+    "word": {
+      "es": "Mandarina",
+      "en": "Tangerine",
+      "pt": "Tangerina",
+      "fr": "Mandarine",
+      "de": "Mandarine"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐮",
+    "word": {
+      "es": "Vaca",
+      "en": "Cow",
+      "pt": "Vaca",
+      "fr": "Vache",
+      "de": "Kuh"
+    },
+    "category": {
+      "es": "Mascotas/Granja",
+      "en": "Pets/Farm",
+      "pt": "Animais de estimação/Fazenda",
+      "fr": "Animaux domestiques/Ferme",
+      "de": "Haustiere/Bauernhof"
+    }
+  },
+  {
+    "emoji": "⚾",
+    "word": {
+      "es": "Béisbol",
+      "en": "Baseball",
+      "pt": "Beisebol",
+      "fr": "Baseball",
+      "de": "Baseball"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🥕",
+    "word": {
+      "es": "Zanahoria",
+      "en": "Carrot",
+      "pt": "Cenoura",
+      "fr": "Carotte",
+      "de": "Karotte"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🐼",
+    "word": {
+      "es": "Oso panda",
+      "en": "Panda bear",
+      "pt": "Urso panda",
+      "fr": "Panda",
+      "de": "Panda"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🐛",
+    "word": {
+      "es": "Oruga",
+      "en": "Caterpillar",
+      "pt": "Lagarta",
+      "fr": "Chenille",
+      "de": "Raupe"
+    },
+    "category": {
+      "es": "Insectos/Bichos",
+      "en": "Insects/Bugs",
+      "pt": "Insetos",
+      "fr": "Insectes",
+      "de": "Insekten"
+    }
+  },
+  {
+    "emoji": "🍋",
+    "word": {
+      "es": "Limón",
+      "en": "Lemon",
+      "pt": "Limão",
+      "fr": "Citron",
+      "de": "Zitrone"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐹",
+    "word": {
+      "es": "Hámster",
+      "en": "Hamster",
+      "pt": "Hamster",
+      "fr": "Hamster",
+      "de": "Hamster"
+    },
+    "category": {
+      "es": "Mascotas",
+      "en": "Pets",
+      "pt": "Animais de estimação",
+      "fr": "Animaux domestiques",
+      "de": "Haustiere"
+    }
+  },
+  {
+    "emoji": "🎾",
+    "word": {
+      "es": "Tenis",
+      "en": "Tennis",
+      "pt": "Tênis",
+      "fr": "Tennis",
+      "de": "Tennis"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🌽",
+    "word": {
+      "es": "Choclo",
+      "en": "Corn",
+      "pt": "Milho",
+      "fr": "Maïs",
+      "de": "Mais"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🐬",
+    "word": {
+      "es": "Delfín",
+      "en": "Dolphin",
+      "pt": "Golfinho",
+      "fr": "Dauphin",
+      "de": "Delfin"
+    },
+    "category": {
+      "es": "Salvajes/Marinos",
+      "en": "Wild/Marine",
+      "pt": "Selvagens/Marinhos",
+      "fr": "Sauvages/Marins",
+      "de": "Wildtiere/Meerestiere"
+    }
+  },
+  {
+    "emoji": "🎭",
+    "word": {
+      "es": "Teatro",
+      "en": "Theater",
+      "pt": "Teatro",
+      "fr": "Théâtre",
+      "de": "Theater"
+    },
+    "category": {
+      "es": "Entretenimiento",
+      "en": "Entertainment",
+      "pt": "Entretenimento",
+      "fr": "Divertissement",
+      "de": "Unterhaltung"
+    }
+  },
+  {
+    "emoji": "🍌",
+    "word": {
+      "es": "Banana",
+      "en": "Banana",
+      "pt": "Banana",
+      "fr": "Banane",
+      "de": "Banane"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐰",
+    "word": {
+      "es": "Conejo",
+      "en": "Rabbit",
+      "pt": "Coelho",
+      "fr": "Lapin",
+      "de": "Hase"
+    },
+    "category": {
+      "es": "Mascotas",
+      "en": "Pets",
+      "pt": "Animais de estimação",
+      "fr": "Animaux domestiques",
+      "de": "Haustiere"
+    }
+  },
+  {
+    "emoji": "🏐",
+    "word": {
+      "es": "Voley",
+      "en": "Volleyball",
+      "pt": "Vôlei",
+      "fr": "Volleyball",
+      "de": "Volleyball"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🌶️",
+    "word": {
+      "es": "Ají picante",
+      "en": "Hot pepper",
+      "pt": "Pimenta",
+      "fr": "Piment fort",
+      "de": "Paprika (scharf)"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🐨",
+    "word": {
+      "es": "Koala",
+      "en": "Koala",
+      "pt": "Koala",
+      "fr": "Koala",
+      "de": "Koala"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🎹",
+    "word": {
+      "es": "Piano",
+      "en": "Piano",
+      "pt": "Piano",
+      "fr": "Piano",
+      "de": "Klavier"
+    },
+    "category": {
+      "es": "Música",
+      "en": "Music",
+      "pt": "Música",
+      "fr": "Musique",
+      "de": "Musik"
+    }
+  },
+  {
+    "emoji": "🍍",
+    "word": {
+      "es": "Piña",
+      "en": "Pineapple",
+      "pt": "Abacaxi",
+      "fr": "Ananas",
+      "de": "Ananas"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐷",
+    "word": {
+      "es": "Cerdo",
+      "en": "Pig",
+      "pt": "Porco",
+      "fr": "Cochon",
+      "de": "Schwein"
+    },
+    "category": {
+      "es": "Mascotas/Granja",
+      "en": "Pets/Farm",
+      "pt": "Animais de estimação/Fazenda",
+      "fr": "Animaux domestiques/Ferme",
+      "de": "Haustiere/Bauernhof"
+    }
+  },
+  {
+    "emoji": "🏉",
+    "word": {
+      "es": "Rugby",
+      "en": "Rugby",
+      "pt": "Rugby",
+      "fr": "Rugby",
+      "de": "Rugby"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🫑",
+    "word": {
+      "es": "Morrón",
+      "en": "Bell pepper",
+      "pt": "Pimentão",
+      "fr": "Poivron",
+      "de": "Paprika"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🦈",
+    "word": {
+      "es": "Tiburón",
+      "en": "Shark",
+      "pt": "Tubarão",
+      "fr": "Requin",
+      "de": "Hai"
+    },
+    "category": {
+      "es": "Salvajes/Marinos",
+      "en": "Wild/Marine",
+      "pt": "Selvagens/Marinhos",
+      "fr": "Sauvages/Marins",
+      "de": "Wildtiere/Meerestiere"
+    }
+  },
+  {
+    "emoji": "🐜",
+    "word": {
+      "es": "Hormiga",
+      "en": "Ant",
+      "pt": "Formiga",
+      "fr": "Fourmi",
+      "de": "Ameise"
+    },
+    "category": {
+      "es": "Insectos/Bichos",
+      "en": "Insects/Bugs",
+      "pt": "Insetos",
+      "fr": "Insectes",
+      "de": "Insekten"
+    }
+  },
+  {
+    "emoji": "🥭",
+    "word": {
+      "es": "Mango",
+      "en": "Mango",
+      "pt": "Manga",
+      "fr": "Mangue",
+      "de": "Mango"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐯",
+    "word": {
+      "es": "Tigre",
+      "en": "Tiger",
+      "pt": "Tigre",
+      "fr": "Tigre",
+      "de": "Tiger"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🏓",
+    "word": {
+      "es": "Ping pong",
+      "en": "Ping pong",
+      "pt": "Ping pong",
+      "fr": "Ping-pong",
+      "de": "Tischtennis"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🥒",
+    "word": {
+      "es": "Pepino",
+      "en": "Cucumber",
+      "pt": "Pepino",
+      "fr": "Concombre",
+      "de": "Gurke"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🎨",
+    "word": {
+      "es": "Arte",
+      "en": "Art",
+      "pt": "Arte",
+      "fr": "Art",
+      "de": "Kunst"
+    },
+    "category": {
+      "es": "Entretenimiento",
+      "en": "Entertainment",
+      "pt": "Entretenimento",
+      "fr": "Divertissement",
+      "de": "Unterhaltung"
+    }
+  },
+  {
+    "emoji": "🐙",
+    "word": {
+      "es": "Pulpo",
+      "en": "Octopus",
+      "pt": "Polvo",
+      "fr": "Pieuvre",
+      "de": "Krake"
+    },
+    "category": {
+      "es": "Salvajes/Marinos",
+      "en": "Wild/Marine",
+      "pt": "Selvagens/Marinhos",
+      "fr": "Sauvages/Marins",
+      "de": "Wildtiere/Meerestiere"
+    }
+  },
+  {
+    "emoji": "🍎",
+    "word": {
+      "es": "Manzana roja",
+      "en": "Red apple",
+      "pt": "Maçã vermelha",
+      "fr": "Pomme rouge",
+      "de": "Roter Apfel"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🦁",
+    "word": {
+      "es": "León",
+      "en": "Lion",
+      "pt": "Leão",
+      "fr": "Lion",
+      "de": "Löwe"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🏸",
+    "word": {
+      "es": "Badminton",
+      "en": "Badminton",
+      "pt": "Badminton",
+      "fr": "Badminton",
+      "de": "Badminton"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🥬",
+    "word": {
+      "es": "Verdura de hoja",
+      "en": "Leafy greens",
+      "pt": "Verduras folhosas",
+      "fr": "Légumes à feuilles",
+      "de": "Blattgemüse"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🐝",
+    "word": {
+      "es": "Abeja",
+      "en": "Bee",
+      "pt": "Abelha",
+      "fr": "Abeille",
+      "de": "Biene"
+    },
+    "category": {
+      "es": "Insectos/Bichos",
+      "en": "Insects/Bugs",
+      "pt": "Insetos",
+      "fr": "Insectes",
+      "de": "Insekten"
+    }
+  },
+  {
+    "emoji": "🐢",
+    "word": {
+      "es": "Tortuga",
+      "en": "Turtle",
+      "pt": "Tartaruga",
+      "fr": "Tortue",
+      "de": "Schildkröte"
+    },
+    "category": {
+      "es": "Salvajes/Reptiles",
+      "en": "Wild/Reptiles",
+      "pt": "Selvagens/Répteis",
+      "fr": "Sauvages/Reptiles",
+      "de": "Wildtiere/Reptilien"
+    }
+  },
+  {
+    "emoji": "🍏",
+    "word": {
+      "es": "Manzana verde",
+      "en": "Green apple",
+      "pt": "Maçã verde",
+      "fr": "Pomme verte",
+      "de": "Grüner Apfel"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐸",
+    "word": {
+      "es": "Rana",
+      "en": "Frog",
+      "pt": "Sapo",
+      "fr": "Grenouille",
+      "de": "Frosch"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "⛳",
+    "word": {
+      "es": "Golf",
+      "en": "Golf",
+      "pt": "Golfe",
+      "fr": "Golf",
+      "de": "Golf"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🥦",
+    "word": {
+      "es": "Brócoli",
+      "en": "Broccoli",
+      "pt": "Brócolis",
+      "fr": "Brocoli",
+      "de": "Brokkoli"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🧩",
+    "word": {
+      "es": "Rompecabezas",
+      "en": "Puzzle",
+      "pt": "Quebra-cabeça",
+      "fr": "Puzzle",
+      "de": "Puzzle"
+    },
+    "category": {
+      "es": "Entretenimiento",
+      "en": "Entertainment",
+      "pt": "Entretenimento",
+      "fr": "Divertissement",
+      "de": "Unterhaltung"
+    }
+  },
+  {
+    "emoji": "🦑",
+    "word": {
+      "es": "Calamar",
+      "en": "Squid",
+      "pt": "Lula",
+      "fr": "Calmar",
+      "de": "Tintenfisch"
+    },
+    "category": {
+      "es": "Salvajes/Marinos",
+      "en": "Wild/Marine",
+      "pt": "Selvagens/Marinhos",
+      "fr": "Sauvages/Marins",
+      "de": "Wildtiere/Meerestiere"
+    }
+  },
+  {
+    "emoji": "🍐",
+    "word": {
+      "es": "Pera",
+      "en": "Pear",
+      "pt": "Pera",
+      "fr": "Poire",
+      "de": "Birne"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐵",
+    "word": {
+      "es": "Mono",
+      "en": "Monkey",
+      "pt": "Macaco",
+      "fr": "Singe",
+      "de": "Affe"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🥊",
+    "word": {
+      "es": "Boxeo",
+      "en": "Boxing",
+      "pt": "Boxe",
+      "fr": "Boxe",
+      "de": "Boxen"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🧄",
+    "word": {
+      "es": "Ajo",
+      "en": "Garlic",
+      "pt": "Alho",
+      "fr": "Ail",
+      "de": "Knoblauch"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🪲",
+    "word": {
+      "es": "Escarabajo",
+      "en": "Beetle",
+      "pt": "Besouro",
+      "fr": "Scarabée",
+      "de": "Käfer"
+    },
+    "category": {
+      "es": "Insectos/Bichos",
+      "en": "Insects/Bugs",
+      "pt": "Insetos",
+      "fr": "Insectes",
+      "de": "Insekten"
+    }
+  },
+  {
+    "emoji": "🐍",
+    "word": {
+      "es": "Serpiente",
+      "en": "Snake",
+      "pt": "Serpente",
+      "fr": "Serpent",
+      "de": "Schlange"
+    },
+    "category": {
+      "es": "Salvajes/Reptiles",
+      "en": "Wild/Reptiles",
+      "pt": "Selvagens/Répteis",
+      "fr": "Sauvages/Reptiles",
+      "de": "Wildtiere/Reptilien"
+    }
+  },
+  {
+    "emoji": "🍑",
+    "word": {
+      "es": "Durazno",
+      "en": "Peach",
+      "pt": "Pêssego",
+      "fr": "Pêche",
+      "de": "Pfirsich"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐧",
+    "word": {
+      "es": "Pingüino",
+      "en": "Penguin",
+      "pt": "Pinguim",
+      "fr": "Manchot",
+      "de": "Pinguin"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🛹",
+    "word": {
+      "es": "Skate",
+      "en": "Skateboard",
+      "pt": "Skate",
+      "fr": "Skateboard",
+      "de": "Skateboard"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🧅",
+    "word": {
+      "es": "Cebolla",
+      "en": "Onion",
+      "pt": "Cebola",
+      "fr": "Oignon",
+      "de": "Zwiebel"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "♟️",
+    "word": {
+      "es": "Ajedrez",
+      "en": "Chess",
+      "pt": "Xadrez",
+      "fr": "Échecs",
+      "de": "Schach"
+    },
+    "category": {
+      "es": "Entretenimiento",
+      "en": "Entertainment",
+      "pt": "Entretenimento",
+      "fr": "Divertissement",
+      "de": "Unterhaltung"
+    }
+  },
+  {
+    "emoji": "🦞",
+    "word": {
+      "es": "Langosta",
+      "en": "Lobster",
+      "pt": "Lagosta",
+      "fr": "Homard",
+      "de": "Hummer"
+    },
+    "category": {
+      "es": "Salvajes/Marinos",
+      "en": "Wild/Marine",
+      "pt": "Selvagens/Marinhos",
+      "fr": "Sauvages/Marins",
+      "de": "Wildtiere/Meerestiere"
+    }
+  },
+  {
+    "emoji": "🍒",
+    "word": {
+      "es": "Cerezas",
+      "en": "Cherries",
+      "pt": "Cerejas",
+      "fr": "Cerises",
+      "de": "Kirschen"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐦",
+    "word": {
+      "es": "Pájaro",
+      "en": "Bird",
+      "pt": "Pássaro",
+      "fr": "Oiseau",
+      "de": "Vogel"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🏋️",
+    "word": {
+      "es": "Pesas",
+      "en": "Weightlifting",
+      "pt": "Levantamento de peso",
+      "fr": "Haltérophilie",
+      "de": "Gewichtheben"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🍄",
+    "word": {
+      "es": "Hongo",
+      "en": "Mushroom",
+      "pt": "Cogumelo",
+      "fr": "Champignon",
+      "de": "Pilz"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🐞",
+    "word": {
+      "es": "Vaquita de san antonio",
+      "en": "Ladybug",
+      "pt": "Joaninha",
+      "fr": "Coccinelle",
+      "de": "Marienkäfer"
+    },
+    "category": {
+      "es": "Insectos/Bichos",
+      "en": "Insects/Bugs",
+      "pt": "Insetos",
+      "fr": "Insectes",
+      "de": "Insekten"
+    }
+  },
+  {
+    "emoji": "🦖",
+    "word": {
+      "es": "Tiranosaurio rex",
+      "en": "Tyrannosaurus rex",
+      "pt": "Tiranossauro rex",
+      "fr": "Tyrannosaurus rex",
+      "de": "Tyrannosaurus rex"
+    },
+    "category": {
+      "es": "Salvajes/Prehistóricos",
+      "en": "Wild/Prehistoric",
+      "pt": "Selvagens/Pré-históricos",
+      "fr": "Sauvages/Préhistoriques",
+      "de": "Wildtiere/Prähistorisch"
+    }
+  },
+  {
+    "emoji": "🍓",
+    "word": {
+      "es": "Frutilla",
+      "en": "Strawberry",
+      "pt": "Morango",
+      "fr": "Fraise",
+      "de": "Erdbeere"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐺",
+    "word": {
+      "es": "Lobo",
+      "en": "Wolf",
+      "pt": "Lobo",
+      "fr": "Loup",
+      "de": "Wolf"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🎿",
+    "word": {
+      "es": "Esquí",
+      "en": "Skiing",
+      "pt": "Esqui",
+      "fr": "Ski",
+      "de": "Ski"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🥜",
+    "word": {
+      "es": "Maní",
+      "en": "Peanut",
+      "pt": "Amendoim",
+      "fr": "Cacahuète",
+      "de": "Erdnuss"
+    },
+    "category": {
+      "es": "Frutos Secos",
+      "en": "Nuts",
+      "pt": "Nozes",
+      "fr": "Fruits à coque",
+      "de": "Nüsse"
+    }
+  },
+  {
+    "emoji": "🎬",
+    "word": {
+      "es": "Claqueta",
+      "en": "Clapperboard",
+      "pt": "Claquete",
+      "fr": "Clap de cinéma",
+      "de": "Filmklappe"
+    },
+    "category": {
+      "es": "Entretenimiento",
+      "en": "Entertainment",
+      "pt": "Entretenimento",
+      "fr": "Divertissement",
+      "de": "Unterhaltung"
+    }
+  },
+  {
+    "emoji": "🦀",
+    "word": {
+      "es": "Cangrejo",
+      "en": "Crab",
+      "pt": "Caranguejo",
+      "fr": "Crabe",
+      "de": "Krabbe"
+    },
+    "category": {
+      "es": "Salvajes/Marinos",
+      "en": "Wild/Marine",
+      "pt": "Selvagens/Marinhos",
+      "fr": "Sauvages/Marins",
+      "de": "Wildtiere/Meerestiere"
+    }
+  },
+  {
+    "emoji": "🫐",
+    "word": {
+      "es": "Arándanos",
+      "en": "Blueberries",
+      "pt": "Mirtilos",
+      "fr": "Myrtilles",
+      "de": "Blaubeeren"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🐗",
+    "word": {
+      "es": "Jabalí",
+      "en": "Boar",
+      "pt": "Javali",
+      "fr": "Sanglier",
+      "de": "Wildschwein"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🚴",
+    "word": {
+      "es": "Ciclismo",
+      "en": "Cycling",
+      "pt": "Ciclismo",
+      "fr": "Cyclisme",
+      "de": "Radfahren"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🫘",
+    "word": {
+      "es": "Chauchas",
+      "en": "Green beans",
+      "pt": "Vagem",
+      "fr": "Haricots verts",
+      "de": "Grüne Bohnen"
+    },
+    "category": {
+      "es": "Verduras",
+      "en": "Vegetables",
+      "pt": "Vegetais",
+      "fr": "Légumes",
+      "de": "Gemüse"
+    }
+  },
+  {
+    "emoji": "🦗",
+    "word": {
+      "es": "Grillo",
+      "en": "Cricket",
+      "pt": "Grilo",
+      "fr": "Grillon",
+      "de": "Grille"
+    },
+    "category": {
+      "es": "Insectos/Bichos",
+      "en": "Insects/Bugs",
+      "pt": "Insetos",
+      "fr": "Insectes",
+      "de": "Insekten"
+    }
+  },
+  {
+    "emoji": "🦎",
+    "word": {
+      "es": "Lagartija",
+      "en": "Lizard",
+      "pt": "Lagarto",
+      "fr": "Lézard",
+      "de": "Eidechse"
+    },
+    "category": {
+      "es": "Salvajes/Reptiles",
+      "en": "Wild/Reptiles",
+      "pt": "Selvagens/Répteis",
+      "fr": "Sauvages/Reptiles",
+      "de": "Wildtiere/Reptilien"
+    }
+  },
+  {
+    "emoji": "🥝",
+    "word": {
+      "es": "Kiwi",
+      "en": "Kiwi",
+      "pt": "Kiwi",
+      "fr": "Kiwi",
+      "de": "Kiwi"
+    },
+    "category": {
+      "es": "Frutas",
+      "en": "Fruits",
+      "pt": "Frutas",
+      "fr": "Fruits",
+      "de": "Früchte"
+    }
+  },
+  {
+    "emoji": "🦄",
+    "word": {
+      "es": "Unicornio",
+      "en": "Unicorn",
+      "pt": "Unicórnio",
+      "fr": "Licorne",
+      "de": "Einhorn"
+    },
+    "category": {
+      "es": "Salvajes/Fantasía",
+      "en": "Wild/Fantasy",
+      "pt": "Selvagens/Fantasia",
+      "fr": "Sauvages/Fantaisie",
+      "de": "Wildtiere/Fantasie"
+    }
+  },
+  {
+    "emoji": "🏆",
+    "word": {
+      "es": "Trofeo",
+      "en": "Trophy",
+      "pt": "Troféu",
+      "fr": "Trophée",
+      "de": "Pokal"
+    },
+    "category": {
+      "es": "Premios",
+      "en": "Awards",
+      "pt": "Prêmios",
+      "fr": "Prix",
+      "de": "Preise"
+    }
+  },
+  {
+    "emoji": "🌰",
+    "word": {
+      "es": "Castaña",
+      "en": "Chestnut",
+      "pt": "Castanha",
+      "fr": "Châtaigne",
+      "de": "Kastanie"
+    },
+    "category": {
+      "es": "Frutos Secos",
+      "en": "Nuts",
+      "pt": "Nozes",
+      "fr": "Fruits à coque",
+      "de": "Nüsse"
+    }
+  },
+  {
+    "emoji": "🎫",
+    "word": {
+      "es": "Ticket",
+      "en": "Ticket",
+      "pt": "Bilhete",
+      "fr": "Billet",
+      "de": "Ticket"
+    },
+    "category": {
+      "es": "Entretenimiento",
+      "en": "Entertainment",
+      "pt": "Entretenimento",
+      "fr": "Divertissement",
+      "de": "Unterhaltung"
+    }
+  },
+  {
+    "emoji": "🐡",
+    "word": {
+      "es": "Pez globo",
+      "en": "Pufferfish",
+      "pt": "Baiacu",
+      "fr": "Poisson-globe",
+      "de": "Kugelfisch"
+    },
+    "category": {
+      "es": "Salvajes/Marinos",
+      "en": "Wild/Marine",
+      "pt": "Selvagens/Marinhos",
+      "fr": "Sauvages/Marins",
+      "de": "Wildtiere/Meerestiere"
+    }
+  },
+  {
+    "emoji": "🍅",
+    "word": {
+      "es": "Tomate",
+      "en": "Tomato",
+      "pt": "Tomate",
+      "fr": "Tomate",
+      "de": "Tomate"
+    },
+    "category": {
+      "es": "Frutas/Verduras",
+      "en": "Fruits/Vegetables",
+      "pt": "Frutas/Vegetais",
+      "fr": "Fruits/Légumes",
+      "de": "Früchte/Gemüse"
+    }
+  },
+  {
+    "emoji": "🦓",
+    "word": {
+      "es": "Cebra",
+      "en": "Zebra",
+      "pt": "Zebra",
+      "fr": "Zèbre",
+      "de": "Zebra"
+    },
+    "category": {
+      "es": "Salvajes",
+      "en": "Wild animals",
+      "pt": "Animais selvagens",
+      "fr": "Animaux sauvages",
+      "de": "Wildtiere"
+    }
+  },
+  {
+    "emoji": "🤸",
+    "word": {
+      "es": "Gimnasia",
+      "en": "Gymnastics",
+      "pt": "Ginástica",
+      "fr": "Gymnastique",
+      "de": "Turnen"
+    },
+    "category": {
+      "es": "Deportes",
+      "en": "Sports",
+      "pt": "Esportes",
+      "fr": "Sports",
+      "de": "Sport"
+    }
+  },
+  {
+    "emoji": "🪳",
+    "word": {
+      "es": "Cucaracha",
+      "en": "Cockroach",
+      "pt": "Barata",
+      "fr": "Cafard",
+      "de": "Kakerlake"
+    },
+    "category": {
+      "es": "Insectos/Bichos",
+      "en": "Insects/Bugs",
+      "pt": "Insetos",
+      "fr": "Insectes",
+      "de": "Insekten"
+    }
+  }
+]

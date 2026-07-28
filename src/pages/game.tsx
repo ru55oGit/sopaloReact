@@ -12,6 +12,7 @@ import WordSearchGrid from "../components/WordSearchGrid";
 import { useLanguage } from "../i18n/LanguageContext";
 import { getSopaloDayContext, SopaloRound, RoundClue } from "../data/sopaloRounds";
 import { ImageCategoryKey } from "../data/imaginaloRounds";
+import { EmojinaloCategoryKey } from "../data/emojinaloRounds";
 import { generateWordSearchGrid, normalizeForGrid, WordSearchGridResult } from "../utils/wordSearchGrid";
 import {
   DayKey,
@@ -100,8 +101,19 @@ export default function Game() {
     [t]
   );
 
+  const emojinaloLabels: Record<EmojinaloCategoryKey, string> = useMemo(
+    () => ({
+      country: t.categoryCountry,
+      capital: t.categoryCapital,
+      whatis: t.categoryWhatis,
+      movie: t.categoryMovie,
+      series: t.categorySeries,
+    }),
+    [t]
+  );
+
   const dayContext = useMemo(
-    () => getSopaloDayContext(dayKey, new Date(), currentLanguage, categoryLabels, t.definitionLabel, t.emojiLabel),
+    () => getSopaloDayContext(dayKey, new Date(), currentLanguage, categoryLabels, t.definitionLabel, t.emojiLabel, emojinaloLabels),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [dayKey, currentLanguage]
   );
@@ -268,7 +280,7 @@ export default function Game() {
                       onClick={() => setZoomedImage({ loader: clue.image!.loader })}
                     />
                   )}
-                  {clue.emoji && <Typography sx={{ fontSize: 26 }}>{clue.emoji}</Typography>}
+                  {clue.emoji && <Typography sx={{ fontSize: 26, whiteSpace: "nowrap" }}>{clue.emoji}</Typography>}
                   {clue.text && <Typography sx={{ fontSize: 14, color: "#333" }}>{clue.text}</Typography>}
                   <Box sx={{ display: "flex", flexWrap: "wrap", columnGap: "24px", rowGap: "4px", minWidth: 0 }}>
                     {clue.words.map((w, i) => (

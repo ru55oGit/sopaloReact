@@ -5,6 +5,12 @@ Todos los cambios notables de este proyecto se documentan en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [Unreleased]
+### Added
+- Ronda 2: pistas de Emojinalo (bandera->país, bandera->capital, emoji->qué es, emoji->película/serie), 100 niveles por categoría
+  - Países: los primeros 100 del ranking FIFA, en ese orden
+  - Capitales: los mismos 100 países, pero en orden alfabético (no el de ranking), para que el país de la pista "país" no sea siempre el mismo que el de la pista "capital" ese día
+  - Qué es / Película: primeros 100 niveles de Emojinalo tal cual, sin reordenar
+  - La pista de Película/Serie usa el título "Película" o "Serie" según corresponda (el dato ya viene etiquetado en Emojinalo)
 
 ## [2026-07-27]
 ### Changed

@@ -1,0 +1,1702 @@
+[
+  {
+    "country": {
+      "es": "Argentina",
+      "en": "Argentina",
+      "pt": "Argentina",
+      "fr": "Argentine",
+      "de": "Argentinien"
+    },
+    "flag": "🇦🇷",
+    "capital": {
+      "es": "Buenos|Aires",
+      "en": "Buenos|Aires",
+      "pt": "Buenos|Aires",
+      "fr": "Buenos|Aires",
+      "de": "Buenos|Aires"
+    }
+  },
+  {
+    "country": {
+      "es": "Francia",
+      "en": "France",
+      "pt": "França",
+      "fr": "France",
+      "de": "Frankreich"
+    },
+    "flag": "🇫🇷",
+    "capital": {
+      "es": "París",
+      "en": "Paris",
+      "pt": "Paris",
+      "fr": "Paris",
+      "de": "Paris"
+    }
+  },
+  {
+    "country": {
+      "es": "Brasil",
+      "en": "Brazil",
+      "pt": "Brasil",
+      "fr": "Brésil",
+      "de": "Brasilien"
+    },
+    "flag": "🇧🇷",
+    "capital": {
+      "es": "Brasilia",
+      "en": "Brasília",
+      "pt": "Brasília",
+      "fr": "Brasília",
+      "de": "Brasília"
+    }
+  },
+  {
+    "country": {
+      "es": "Inglaterra",
+      "en": "England",
+      "pt": "Inglaterra",
+      "fr": "Angleterre",
+      "de": "England"
+    },
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "capital": {
+      "es": "Londres",
+      "en": "London",
+      "pt": "Londres",
+      "fr": "Londres",
+      "de": "London"
+    }
+  },
+  {
+    "country": {
+      "es": "Bélgica",
+      "en": "Belgium",
+      "pt": "Bélgica",
+      "fr": "Belgique",
+      "de": "Belgien"
+    },
+    "flag": "🇧🇪",
+    "capital": {
+      "es": "Bruselas",
+      "en": "Brussels",
+      "pt": "Bruxelas",
+      "fr": "Bruxelles",
+      "de": "Brüssel"
+    }
+  },
+  {
+    "country": {
+      "es": "Países Bajos",
+      "en": "Netherlands",
+      "pt": "Países Baixos",
+      "fr": "Pays-Bas",
+      "de": "Niederlande"
+    },
+    "flag": "🇳🇱",
+    "capital": {
+      "es": "Ámsterdam",
+      "en": "Amsterdam",
+      "pt": "Amsterdã",
+      "fr": "Amsterdam",
+      "de": "Amsterdam"
+    }
+  },
+  {
+    "country": {
+      "es": "Portugal",
+      "en": "Portugal",
+      "pt": "Portugal",
+      "fr": "Portugal",
+      "de": "Portugal"
+    },
+    "flag": "🇵🇹",
+    "capital": {
+      "es": "Lisboa",
+      "en": "Lisbon",
+      "pt": "Lisboa",
+      "fr": "Lisbonne",
+      "de": "Lissabon"
+    }
+  },
+  {
+    "country": {
+      "es": "España",
+      "en": "Spain",
+      "pt": "Espanha",
+      "fr": "Espagne",
+      "de": "Spanien"
+    },
+    "flag": "🇪🇸",
+    "capital": {
+      "es": "Madrid",
+      "en": "Madrid",
+      "pt": "Madrid",
+      "fr": "Madrid",
+      "de": "Madrid"
+    }
+  },
+  {
+    "country": {
+      "es": "Italia",
+      "en": "Italy",
+      "pt": "Itália",
+      "fr": "Italie",
+      "de": "Italien"
+    },
+    "flag": "🇮🇹",
+    "capital": {
+      "es": "Roma",
+      "en": "Rome",
+      "pt": "Roma",
+      "fr": "Rome",
+      "de": "Rom"
+    }
+  },
+  {
+    "country": {
+      "es": "Croacia",
+      "en": "Croatia",
+      "pt": "Croácia",
+      "fr": "Croatie",
+      "de": "Kroatien"
+    },
+    "flag": "🇭🇷",
+    "capital": {
+      "es": "Zagreb",
+      "en": "Zagreb",
+      "pt": "Zagreb",
+      "fr": "Zagreb",
+      "de": "Zagreb"
+    }
+  },
+  {
+    "country": {
+      "es": "Estados Unidos",
+      "en": "United States",
+      "pt": "Estados Unidos",
+      "fr": "États-Unis",
+      "de": "Vereinigte Staaten"
+    },
+    "flag": "🇺🇸",
+    "capital": {
+      "es": "Washington",
+      "en": "Washington",
+      "pt": "Washington",
+      "fr": "Washington",
+      "de": "Washington"
+    }
+  },
+  {
+    "country": {
+      "es": "México",
+      "en": "Mexico",
+      "pt": "México",
+      "fr": "Mexique",
+      "de": "Mexiko"
+    },
+    "flag": "🇲🇽",
+    "capital": {
+      "es": "Ciudad de|México",
+      "en": "Mexico|City",
+      "pt": "Cidade do|México",
+      "fr": "Mexico",
+      "de": "Mexiko-|Stadt"
+    }
+  },
+  {
+    "country": {
+      "es": "Marruecos",
+      "en": "Morocco",
+      "pt": "Marrocos",
+      "fr": "Maroc",
+      "de": "Marokko"
+    },
+    "flag": "🇲🇦",
+    "capital": {
+      "es": "Rabat",
+      "en": "Rabat",
+      "pt": "Rabat",
+      "fr": "Rabat",
+      "de": "Rabat"
+    }
+  },
+  {
+    "country": {
+      "es": "Suiza",
+      "en": "Switzerland",
+      "pt": "Suíça",
+      "fr": "Suisse",
+      "de": "Schweiz"
+    },
+    "flag": "🇨🇭",
+    "capital": {
+      "es": "Berna",
+      "en": "Bern",
+      "pt": "Berna",
+      "fr": "Berne",
+      "de": "Bern"
+    }
+  },
+  {
+    "country": {
+      "es": "Colombia",
+      "en": "Colombia",
+      "pt": "Colômbia",
+      "fr": "Colombie",
+      "de": "Kolumbien"
+    },
+    "flag": "🇨🇴",
+    "capital": {
+      "es": "Bogotá",
+      "en": "Bogota",
+      "pt": "Bogotá",
+      "fr": "Bogota",
+      "de": "Bogotá"
+    }
+  },
+  {
+    "country": {
+      "es": "Alemania",
+      "en": "Germany",
+      "pt": "Alemanha",
+      "fr": "Allemagne",
+      "de": "Deutschland"
+    },
+    "flag": "🇩🇪",
+    "capital": {
+      "es": "Berlín",
+      "en": "Berlin",
+      "pt": "Berlim",
+      "fr": "Berlin",
+      "de": "Berlin"
+    }
+  },
+  {
+    "country": {
+      "es": "Uruguay",
+      "en": "Uruguay",
+      "pt": "Uruguai",
+      "fr": "Uruguay",
+      "de": "Uruguay"
+    },
+    "flag": "🇺🇾",
+    "capital": {
+      "es": "Montevideo",
+      "en": "Montevideo",
+      "pt": "Montevidéu",
+      "fr": "Montevideo",
+      "de": "Montevideo"
+    }
+  },
+  {
+    "country": {
+      "es": "Japón",
+      "en": "Japan",
+      "pt": "Japão",
+      "fr": "Japon",
+      "de": "Japan"
+    },
+    "flag": "🇯🇵",
+    "capital": {
+      "es": "Tokio",
+      "en": "Tokyo",
+      "pt": "Tóquio",
+      "fr": "Tokyo",
+      "de": "Tokio"
+    }
+  },
+  {
+    "country": {
+      "es": "Senegal",
+      "en": "Senegal",
+      "pt": "Senegal",
+      "fr": "Sénégal",
+      "de": "Senegal"
+    },
+    "flag": "🇸🇳",
+    "capital": {
+      "es": "Dakar",
+      "en": "Dakar",
+      "pt": "Dacar",
+      "fr": "Dakar",
+      "de": "Dakar"
+    }
+  },
+  {
+    "country": {
+      "es": "Irán",
+      "en": "Iran",
+      "pt": "Irã",
+      "fr": "Iran",
+      "de": "Iran"
+    },
+    "flag": "🇮🇷",
+    "capital": {
+      "es": "Teherán",
+      "en": "Tehran",
+      "pt": "Teerão",
+      "fr": "Téhéran",
+      "de": "Teheran"
+    }
+  },
+  {
+    "country": {
+      "es": "Dinamarca",
+      "en": "Denmark",
+      "pt": "Dinamarca",
+      "fr": "Danemark",
+      "de": "Dänemark"
+    },
+    "flag": "🇩🇰",
+    "capital": {
+      "es": "Copenhague",
+      "en": "Copenhagen",
+      "pt": "Copenhague",
+      "fr": "Copenhague",
+      "de": "Kopenhagen"
+    }
+  },
+  {
+    "country": {
+      "es": "Austria",
+      "en": "Austria",
+      "pt": "Áustria",
+      "fr": "Autriche",
+      "de": "Österreich"
+    },
+    "flag": "🇦🇹",
+    "capital": {
+      "es": "Viena",
+      "en": "Vienna",
+      "pt": "Viena",
+      "fr": "Vienne",
+      "de": "Wien"
+    }
+  },
+  {
+    "country": {
+      "es": "Australia",
+      "en": "Australia",
+      "pt": "Austrália",
+      "fr": "Australie",
+      "de": "Australien"
+    },
+    "flag": "🇦🇺",
+    "capital": {
+      "es": "Canberra",
+      "en": "Canberra",
+      "pt": "Canberra",
+      "fr": "Canberra",
+      "de": "Canberra"
+    }
+  },
+  {
+    "country": {
+      "es": "Ucrania",
+      "en": "Ukraine",
+      "pt": "Ucrânia",
+      "fr": "Ukraine",
+      "de": "Ukraine"
+    },
+    "flag": "🇺🇦",
+    "capital": {
+      "es": "Kiev",
+      "en": "Kyiv",
+      "pt": "Kiev",
+      "fr": "Kiev",
+      "de": "Kiew"
+    }
+  },
+  {
+    "country": {
+      "es": "Suecia",
+      "en": "Sweden",
+      "pt": "Suécia",
+      "fr": "Suède",
+      "de": "Schweden"
+    },
+    "flag": "🇸🇪",
+    "capital": {
+      "es": "Estocolmo",
+      "en": "Stockholm",
+      "pt": "Estocolmo",
+      "fr": "Stockholm",
+      "de": "Stockholm"
+    }
+  },
+  {
+    "country": {
+      "es": "Polonia",
+      "en": "Poland",
+      "pt": "Polônia",
+      "fr": "Pologne",
+      "de": "Polen"
+    },
+    "flag": "🇵🇱",
+    "capital": {
+      "es": "Varsovia",
+      "en": "Warsaw",
+      "pt": "Varsóvia",
+      "fr": "Varsovie",
+      "de": "Warschau"
+    }
+  },
+  {
+    "country": {
+      "es": "Túnez",
+      "en": "Tunisia",
+      "pt": "Tunísia",
+      "fr": "Tunisie",
+      "de": "Tunesien"
+    },
+    "flag": "🇹🇳",
+    "capital": {
+      "es": "Túnez",
+      "en": "Tunis",
+      "pt": "Túnis",
+      "fr": "Tunis",
+      "de": "Tunis"
+    }
+  },
+  {
+    "country": {
+      "es": "Turquía",
+      "en": "Turkey",
+      "pt": "Turquia",
+      "fr": "Turquie",
+      "de": "Türkei"
+    },
+    "flag": "🇹🇷",
+    "capital": {
+      "es": "Ankara",
+      "en": "Ankara",
+      "pt": "Ancara",
+      "fr": "Ankara",
+      "de": "Ankara"
+    }
+  },
+  {
+    "country": {
+      "es": "Rusia",
+      "en": "Russia",
+      "pt": "Rússia",
+      "fr": "Russie",
+      "de": "Russland"
+    },
+    "flag": "🇷🇺",
+    "capital": {
+      "es": "Moscú",
+      "en": "Moscow",
+      "pt": "Moscou",
+      "fr": "Moscou",
+      "de": "Moskau"
+    }
+  },
+  {
+    "country": {
+      "es": "Chile",
+      "en": "Chile",
+      "pt": "Chile",
+      "fr": "Chili",
+      "de": "Chile"
+    },
+    "flag": "🇨🇱",
+    "capital": {
+      "es": "Santiago",
+      "en": "Santiago",
+      "pt": "Santiago",
+      "fr": "Santiago",
+      "de": "Santiago"
+    }
+  },
+  {
+    "country": {
+      "es": "Corea del Sur",
+      "en": "South Korea",
+      "pt": "Coreia do Sul",
+      "fr": "Corée du Sud",
+      "de": "Südkorea"
+    },
+    "flag": "🇰🇷",
+    "capital": {
+      "es": "Seúl",
+      "en": "Seoul",
+      "pt": "Seul",
+      "fr": "Séoul",
+      "de": "Seoul"
+    }
+  },
+  {
+    "country": {
+      "es": "Nigeria",
+      "en": "Nigeria",
+      "pt": "Nigéria",
+      "fr": "Nigeria",
+      "de": "Nigeria"
+    },
+    "flag": "🇳🇬",
+    "capital": {
+      "es": "Abuya",
+      "en": "Abuja",
+      "pt": "Abuja",
+      "fr": "Abuja",
+      "de": "Abuja"
+    }
+  },
+  {
+    "country": {
+      "es": "República Checa",
+      "en": "Czech Republic",
+      "pt": "República Tcheca",
+      "fr": "République tchèque",
+      "de": "Tschechien"
+    },
+    "flag": "🇨🇿",
+    "capital": {
+      "es": "Praga",
+      "en": "Prague",
+      "pt": "Praga",
+      "fr": "Prague",
+      "de": "Prag"
+    }
+  },
+  {
+    "country": {
+      "es": "Perú",
+      "en": "Peru",
+      "pt": "Peru",
+      "fr": "Pérou",
+      "de": "Peru"
+    },
+    "flag": "🇵🇪",
+    "capital": {
+      "es": "Lima",
+      "en": "Lima",
+      "pt": "Lima",
+      "fr": "Lima",
+      "de": "Lima"
+    }
+  },
+  {
+    "country": {
+      "es": "Noruega",
+      "en": "Norway",
+      "pt": "Noruega",
+      "fr": "Norvège",
+      "de": "Norwegen"
+    },
+    "flag": "🇳🇴",
+    "capital": {
+      "es": "Oslo",
+      "en": "Oslo",
+      "pt": "Oslo",
+      "fr": "Oslo",
+      "de": "Oslo"
+    }
+  },
+  {
+    "country": {
+      "es": "Ecuador",
+      "en": "Ecuador",
+      "pt": "Equador",
+      "fr": "Équateur",
+      "de": "Ecuador"
+    },
+    "flag": "🇪🇨",
+    "capital": {
+      "es": "Quito",
+      "en": "Quito",
+      "pt": "Quito",
+      "fr": "Quito",
+      "de": "Quito"
+    }
+  },
+  {
+    "country": {
+      "es": "Camerún",
+      "en": "Cameroon",
+      "pt": "Camarões",
+      "fr": "Cameroun",
+      "de": "Kamerun"
+    },
+    "flag": "🇨🇲",
+    "capital": {
+      "es": "Yaundé",
+      "en": "Yaounde",
+      "pt": "Iaundê",
+      "fr": "Yaoundé",
+      "de": "Jaunde"
+    }
+  },
+  {
+    "country": {
+      "es": "Serbia",
+      "en": "Serbia",
+      "pt": "Sérvia",
+      "fr": "Serbie",
+      "de": "Serbien"
+    },
+    "flag": "🇷🇸",
+    "capital": {
+      "es": "Belgrado",
+      "en": "Belgrade",
+      "pt": "Belgrado",
+      "fr": "Belgrade",
+      "de": "Belgrad"
+    }
+  },
+  {
+    "country": {
+      "es": "Hungría",
+      "en": "Hungary",
+      "pt": "Hungria",
+      "fr": "Hongrie",
+      "de": "Ungarn"
+    },
+    "flag": "🇭🇺",
+    "capital": {
+      "es": "Budapest",
+      "en": "Budapest",
+      "pt": "Budapeste",
+      "fr": "Budapest",
+      "de": "Budapest"
+    }
+  },
+  {
+    "country": {
+      "es": "Egipto",
+      "en": "Egypt",
+      "pt": "Egito",
+      "fr": "Égypte",
+      "de": "Ägypten"
+    },
+    "flag": "🇪🇬",
+    "capital": {
+      "es": "El Cairo",
+      "en": "Cairo",
+      "pt": "Cairo",
+      "fr": "Le Caire",
+      "de": "Kairo"
+    }
+  },
+  {
+    "country": {
+      "es": "Paraguay",
+      "en": "Paraguay",
+      "pt": "Paraguai",
+      "fr": "Paraguay",
+      "de": "Paraguay"
+    },
+    "flag": "🇵🇾",
+    "capital": {
+      "es": "Asunción",
+      "en": "Asuncion",
+      "pt": "Assunção",
+      "fr": "Asuncion",
+      "de": "Asunción"
+    }
+  },
+  {
+    "country": {
+      "es": "Naciones Unidas",
+      "en": "United Nations",
+      "pt": "Nações Unidas",
+      "fr": "Nations Unies",
+      "de": "Vereinte Nationen"
+    },
+    "flag": "🇺🇳",
+    "capital": {
+      "es": "Nueva York",
+      "en": "New York",
+      "pt": "Nova York",
+      "fr": "New York",
+      "de": "New York"
+    }
+  },
+  {
+    "country": {
+      "es": "Ghana",
+      "en": "Ghana",
+      "pt": "Gana",
+      "fr": "Ghana",
+      "de": "Ghana"
+    },
+    "flag": "🇬🇭",
+    "capital": {
+      "es": "Acra",
+      "en": "Accra",
+      "pt": "Acra",
+      "fr": "Accra",
+      "de": "Accra"
+    }
+  },
+  {
+    "country": {
+      "es": "Costa Rica",
+      "en": "Costa Rica",
+      "pt": "Costa Rica",
+      "fr": "Costa Rica",
+      "de": "Costa Rica"
+    },
+    "flag": "🇨🇷",
+    "capital": {
+      "es": "San José",
+      "en": "San Jose",
+      "pt": "San José",
+      "fr": "San José",
+      "de": "San José"
+    }
+  },
+  {
+    "country": {
+      "es": "Arabia Saudí",
+      "en": "Saudi Arabia",
+      "pt": "Arábia Saudita",
+      "fr": "Arabie saoudite",
+      "de": "Saudi-Arabien"
+    },
+    "flag": "🇸🇦",
+    "capital": {
+      "es": "Riad",
+      "en": "Riyadh",
+      "pt": "Riade",
+      "fr": "Riyad",
+      "de": "Riad"
+    }
+  },
+  {
+    "country": {
+      "es": "Escocia",
+      "en": "Scotland",
+      "pt": "Escócia",
+      "fr": "Écosse",
+      "de": "Schottland"
+    },
+    "flag": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+    "capital": {
+      "es": "Edimburgo",
+      "en": "Edinburgh",
+      "pt": "Edimburgo",
+      "fr": "Édimbourg",
+      "de": "Edinburgh"
+    }
+  },
+  {
+    "country": {
+      "es": "Finlandia",
+      "en": "Finland",
+      "pt": "Finlândia",
+      "fr": "Finlande",
+      "de": "Finnland"
+    },
+    "flag": "🇫🇮",
+    "capital": {
+      "es": "Helsinki",
+      "en": "Helsinki",
+      "pt": "Helsinque",
+      "fr": "Helsinki",
+      "de": "Helsinki"
+    }
+  },
+  {
+    "country": {
+      "es": "Islandia",
+      "en": "Iceland",
+      "pt": "Islândia",
+      "fr": "Islande",
+      "de": "Island"
+    },
+    "flag": "🇮🇸",
+    "capital": {
+      "es": "Reikiavik",
+      "en": "Reykjavik",
+      "pt": "Reiquiavique",
+      "fr": "Reykjavik",
+      "de": "Reykjavík"
+    }
+  },
+  {
+    "country": {
+      "es": "Bosnia y Herzegovina",
+      "en": "Bosnia and Herzegovina",
+      "pt": "Bósnia e Herzegovina",
+      "fr": "Bosnie-Herzégovine",
+      "de": "Bosnien und Herzegowina"
+    },
+    "flag": "🇧🇦",
+    "capital": {
+      "es": "Sarajevo",
+      "en": "Sarajevo",
+      "pt": "Sarajevo",
+      "fr": "Sarajevo",
+      "de": "Sarajevo"
+    }
+  },
+  {
+    "country": {
+      "es": "Gales",
+      "en": "Wales",
+      "pt": "País de Gales",
+      "fr": "Pays de Galles",
+      "de": "Wales"
+    },
+    "flag": "🏴󠁧󠁢󠁷󠁬󠁳󠁿",
+    "capital": {
+      "es": "Cardiff",
+      "en": "Cardiff",
+      "pt": "Cardiff",
+      "fr": "Cardiff",
+      "de": "Cardiff"
+    }
+  },
+  {
+    "country": {
+      "es": "Eslovenia",
+      "en": "Slovenia",
+      "pt": "Eslovênia",
+      "fr": "Slovénie",
+      "de": "Slowenien"
+    },
+    "flag": "🇸🇮",
+    "capital": {
+      "es": "Liubliana",
+      "en": "Ljubljana",
+      "pt": "Liubliana",
+      "fr": "Ljubljana",
+      "de": "Ljubljana"
+    }
+  },
+  {
+    "country": {
+      "es": "Irlanda",
+      "en": "Ireland",
+      "pt": "Irlanda",
+      "fr": "Irlande",
+      "de": "Irland"
+    },
+    "flag": "🇮🇪",
+    "capital": {
+      "es": "Dublín",
+      "en": "Dublin",
+      "pt": "Dublin",
+      "fr": "Dublin",
+      "de": "Dublin"
+    }
+  },
+  {
+    "country": {
+      "es": "Albania",
+      "en": "Albania",
+      "pt": "Albânia",
+      "fr": "Albanie",
+      "de": "Albanien"
+    },
+    "flag": "🇦🇱",
+    "capital": {
+      "es": "Tirana",
+      "en": "Tirana",
+      "pt": "Tirana",
+      "fr": "Tirana",
+      "de": "Tirana"
+    }
+  },
+  {
+    "country": {
+      "es": "Bulgaria",
+      "en": "Bulgaria",
+      "pt": "Bulgária",
+      "fr": "Bulgarie",
+      "de": "Bulgarien"
+    },
+    "flag": "🇧🇬",
+    "capital": {
+      "es": "Sofía",
+      "en": "Sofia",
+      "pt": "Sófia",
+      "fr": "Sofia",
+      "de": "Sofia"
+    }
+  },
+  {
+    "country": {
+      "es": "Eslovaquia",
+      "en": "Slovakia",
+      "pt": "Eslováquia",
+      "fr": "Slovaquie",
+      "de": "Slowakei"
+    },
+    "flag": "🇸🇰",
+    "capital": {
+      "es": "Bratislava",
+      "en": "Bratislava",
+      "pt": "Bratislava",
+      "fr": "Bratislava",
+      "de": "Bratislava"
+    }
+  },
+  {
+    "country": {
+      "es": "Venezuela",
+      "en": "Venezuela",
+      "pt": "Venezuela",
+      "fr": "Venezuela",
+      "de": "Venezuela"
+    },
+    "flag": "🇻🇪",
+    "capital": {
+      "es": "Caracas",
+      "en": "Caracas",
+      "pt": "Caracas",
+      "fr": "Caracas",
+      "de": "Caracas"
+    }
+  },
+  {
+    "country": {
+      "es": "Unión Europea",
+      "en": "European Union",
+      "pt": "União Europeia",
+      "fr": "Union européenne",
+      "de": "Europäische Union"
+    },
+    "flag": "🇪🇺",
+    "capital": {
+      "es": "Bruselas",
+      "en": "Brussels",
+      "pt": "Bruxelas",
+      "fr": "Bruxelles",
+      "de": "Brüssel"
+    }
+  },
+  {
+    "country": {
+      "es": "China",
+      "en": "China",
+      "pt": "China",
+      "fr": "Chine",
+      "de": "China"
+    },
+    "flag": "🇨🇳",
+    "capital": {
+      "es": "Pekín",
+      "en": "Beijing",
+      "pt": "Pequim",
+      "fr": "Pékin",
+      "de": "Peking"
+    }
+  },
+  {
+    "country": {
+      "es": "India",
+      "en": "India",
+      "pt": "Índia",
+      "fr": "Inde",
+      "de": "Indien"
+    },
+    "flag": "🇮🇳",
+    "capital": {
+      "es": "Nueva Delhi",
+      "en": "New Delhi",
+      "pt": "Nova Déli",
+      "fr": "New Delhi",
+      "de": "Neu-Delhi"
+    }
+  },
+  {
+    "country": {
+      "es": "Qatar",
+      "en": "Qatar",
+      "pt": "Catar",
+      "fr": "Qatar",
+      "de": "Katar"
+    },
+    "flag": "🇶🇦",
+    "capital": {
+      "es": "Doha",
+      "en": "Doha",
+      "pt": "Doha",
+      "fr": "Doha",
+      "de": "Doha"
+    }
+  },
+  {
+    "country": {
+      "es": "Emiratos Árabes Unidos",
+      "en": "United Arab Emirates",
+      "pt": "Emirados Árabes Unidos",
+      "fr": "Émirats arabes unis",
+      "de": "Vereinigte Arabische Emirate"
+    },
+    "flag": "🇦🇪",
+    "capital": {
+      "es": "Abu Dabi",
+      "en": "Abu Dhabi",
+      "pt": "Abu Dhabi",
+      "fr": "Abou Dabi",
+      "de": "Abu Dhabi"
+    }
+  },
+  {
+    "country": {
+      "es": "Jamaica",
+      "en": "Jamaica",
+      "pt": "Jamaica",
+      "fr": "Jamaïque",
+      "de": "Jamaika"
+    },
+    "flag": "🇯🇲",
+    "capital": {
+      "es": "Kingston",
+      "en": "Kingston",
+      "pt": "Kingston",
+      "fr": "Kingston",
+      "de": "Kingston"
+    }
+  },
+  {
+    "country": {
+      "es": "Canadá",
+      "en": "Canada",
+      "pt": "Canadá",
+      "fr": "Canada",
+      "de": "Kanada"
+    },
+    "flag": "🇨🇦",
+    "capital": {
+      "es": "Ottawa",
+      "en": "Ottawa",
+      "pt": "Ottawa",
+      "fr": "Ottawa",
+      "de": "Ottawa"
+    }
+  },
+  {
+    "country": {
+      "es": "Bolivia",
+      "en": "Bolivia",
+      "pt": "Bolívia",
+      "fr": "Bolivie",
+      "de": "Bolivien"
+    },
+    "flag": "🇧🇴",
+    "capital": {
+      "es": "Sucre",
+      "en": "Sucre",
+      "pt": "Sucre",
+      "fr": "Sucre",
+      "de": "Sucre"
+    }
+  },
+  {
+    "country": {
+      "es": "Panamá",
+      "en": "Panama",
+      "pt": "Panamá",
+      "fr": "Panama",
+      "de": "Panama"
+    },
+    "flag": "🇵🇦",
+    "capital": {
+      "es": "Panamá",
+      "en": "Panama City",
+      "pt": "Cidade do Panamá",
+      "fr": "Panama",
+      "de": "Panama-|Stadt"
+    }
+  },
+  {
+    "country": {
+      "es": "El Salvador",
+      "en": "El Salvador",
+      "pt": "El Salvador",
+      "fr": "Salvador",
+      "de": "El Salvador"
+    },
+    "flag": "🇸🇻",
+    "capital": {
+      "es": "San Salvador",
+      "en": "San Salvador",
+      "pt": "San Salvador",
+      "fr": "San Salvador",
+      "de": "San Salvador"
+    }
+  },
+  {
+    "country": {
+      "es": "Guatemala",
+      "en": "Guatemala",
+      "pt": "Guatemala",
+      "fr": "Guatemala",
+      "de": "Guatemala"
+    },
+    "flag": "🇬🇹",
+    "capital": {
+      "es": "Guatemala",
+      "en": "Guatemala|City",
+      "pt": "Cidade da|Guatemala",
+      "fr": "Guatemala",
+      "de": "Guatemala-|Stadt"
+    }
+  },
+  {
+    "country": {
+      "es": "Honduras",
+      "en": "Honduras",
+      "pt": "Honduras",
+      "fr": "Honduras",
+      "de": "Honduras"
+    },
+    "flag": "🇭🇳",
+    "capital": {
+      "es": "Tegucigalpa",
+      "en": "Tegucigalpa",
+      "pt": "Tegucigalpa",
+      "fr": "Tegucigalpa",
+      "de": "Tegucigalpa"
+    }
+  },
+  {
+    "country": {
+      "es": "Nicaragua",
+      "en": "Nicaragua",
+      "pt": "Nicarágua",
+      "fr": "Nicaragua",
+      "de": "Nicaragua"
+    },
+    "flag": "🇳🇮",
+    "capital": {
+      "es": "Managua",
+      "en": "Managua",
+      "pt": "Manágua",
+      "fr": "Managua",
+      "de": "Managua"
+    }
+  },
+  {
+    "country": {
+      "es": "Georgia",
+      "en": "Georgia",
+      "pt": "Geórgia",
+      "fr": "Géorgie",
+      "de": "Georgien"
+    },
+    "flag": "🇬🇪",
+    "capital": {
+      "es": "Tiflis",
+      "en": "Tbilisi",
+      "pt": "Tbilisi",
+      "fr": "Tbilissi",
+      "de": "Tiflis"
+    }
+  },
+  {
+    "country": {
+      "es": "Rumania",
+      "en": "Romania",
+      "pt": "Romênia",
+      "fr": "Roumanie",
+      "de": "Rumänien"
+    },
+    "flag": "🇷🇴",
+    "capital": {
+      "es": "Bucarest",
+      "en": "Bucharest",
+      "pt": "Bucareste",
+      "fr": "Bucarest",
+      "de": "Bukarest"
+    }
+  },
+  {
+    "country": {
+      "es": "Grecia",
+      "en": "Greece",
+      "pt": "Grécia",
+      "fr": "Grèce",
+      "de": "Griechenland"
+    },
+    "flag": "🇬🇷",
+    "capital": {
+      "es": "Atenas",
+      "en": "Athens",
+      "pt": "Atenas",
+      "fr": "Athènes",
+      "de": "Athen"
+    }
+  },
+  {
+    "country": {
+      "es": "Macedonia del Norte",
+      "en": "North Macedonia",
+      "pt": "Macedónia do Norte",
+      "fr": "Macédoine du Nord",
+      "de": "Nordmazedonien"
+    },
+    "flag": "🇲🇰",
+    "capital": {
+      "es": "Skopie",
+      "en": "Skopje",
+      "pt": "Skopje",
+      "fr": "Skopje",
+      "de": "Skopje"
+    }
+  },
+  {
+    "country": {
+      "es": "Montenegro",
+      "en": "Montenegro",
+      "pt": "Montenegro",
+      "fr": "Monténégro",
+      "de": "Montenegro"
+    },
+    "flag": "🇲🇪",
+    "capital": {
+      "es": "Podgorica",
+      "en": "Podgorica",
+      "pt": "Podgorica",
+      "fr": "Podgorica",
+      "de": "Podgorica"
+    }
+  },
+  {
+    "country": {
+      "es": "Luxemburgo",
+      "en": "Luxembourg",
+      "pt": "Luxemburgo",
+      "fr": "Luxembourg",
+      "de": "Luxemburg"
+    },
+    "flag": "🇱🇺",
+    "capital": {
+      "es": "Luxemburgo",
+      "en": "Luxembourg|City",
+      "pt": "Luxemburgo",
+      "fr": "Luxembourg",
+      "de": "Luxemburg"
+    }
+  },
+  {
+    "country": {
+      "es": "Malta",
+      "en": "Malta",
+      "pt": "Malta",
+      "fr": "Malte",
+      "de": "Malta"
+    },
+    "flag": "🇲🇹",
+    "capital": {
+      "es": "La Valeta",
+      "en": "Valletta",
+      "pt": "Valeta",
+      "fr": "La Valette",
+      "de": "Valletta"
+    }
+  },
+  {
+    "country": {
+      "es": "Moldavia",
+      "en": "Moldova",
+      "pt": "Moldávia",
+      "fr": "Moldavie",
+      "de": "Moldau"
+    },
+    "flag": "🇲🇩",
+    "capital": {
+      "es": "Chisinau",
+      "en": "Chisinau",
+      "pt": "Chișinău",
+      "fr": "Chisinau",
+      "de": "Chișinău"
+    }
+  },
+  {
+    "country": {
+      "es": "Bielorrusia",
+      "en": "Belarus",
+      "pt": "Bielorrússia",
+      "fr": "Biélorussie",
+      "de": "Belarus"
+    },
+    "flag": "🇧🇾",
+    "capital": {
+      "es": "Minsk",
+      "en": "Minsk",
+      "pt": "Minsk",
+      "fr": "Minsk",
+      "de": "Minsk"
+    }
+  },
+  {
+    "country": {
+      "es": "Estonia",
+      "en": "Estonia",
+      "pt": "Estônia",
+      "fr": "Estonie",
+      "de": "Estland"
+    },
+    "flag": "🇪🇪",
+    "capital": {
+      "es": "Tallin",
+      "en": "Tallinn",
+      "pt": "Tallinn",
+      "fr": "Tallinn",
+      "de": "Tallinn"
+    }
+  },
+  {
+    "country": {
+      "es": "Letonia",
+      "en": "Latvia",
+      "pt": "Letônia",
+      "fr": "Lettonie",
+      "de": "Lettland"
+    },
+    "flag": "🇱🇻",
+    "capital": {
+      "es": "Riga",
+      "en": "Riga",
+      "pt": "Riga",
+      "fr": "Riga",
+      "de": "Riga"
+    }
+  },
+  {
+    "country": {
+      "es": "Lituania",
+      "en": "Lithuania",
+      "pt": "Lituânia",
+      "fr": "Lituanie",
+      "de": "Litauen"
+    },
+    "flag": "🇱🇹",
+    "capital": {
+      "es": "Vilna",
+      "en": "Vilnius",
+      "pt": "Vilnius",
+      "fr": "Vilnius",
+      "de": "Vilnius"
+    }
+  },
+  {
+    "country": {
+      "es": "Kazajistán",
+      "en": "Kazakhstan",
+      "pt": "Cazaquistão",
+      "fr": "Kazakhstan",
+      "de": "Kasachstan"
+    },
+    "flag": "🇰🇿",
+    "capital": {
+      "es": "Nur|Sultan",
+      "en": "Nur|Sultan",
+      "pt": "Nur|Sultan",
+      "fr": "Nur|Sultan",
+      "de": "Nur-|Sultan"
+    }
+  },
+  {
+    "country": {
+      "es": "Uzbekistán",
+      "en": "Uzbekistan",
+      "pt": "Uzbequistão",
+      "fr": "Ouzbékistan",
+      "de": "Usbekistan"
+    },
+    "flag": "🇺🇿",
+    "capital": {
+      "es": "Tashkent",
+      "en": "Tashkent",
+      "pt": "Tashkent",
+      "fr": "Tachkent",
+      "de": "Taschkent"
+    }
+  },
+  {
+    "country": {
+      "es": "Kirguistán",
+      "en": "Kyrgyzstan",
+      "pt": "Quirguistão",
+      "fr": "Kirghizistan",
+      "de": "Kirgisistan"
+    },
+    "flag": "🇰🇬",
+    "capital": {
+      "es": "Biskek",
+      "en": "Bishkek",
+      "pt": "Bishkek",
+      "fr": "Bichkek",
+      "de": "Bischkek"
+    }
+  },
+  {
+    "country": {
+      "es": "Tayikistán",
+      "en": "Tajikistan",
+      "pt": "Tajiquistão",
+      "fr": "Tadjikistan",
+      "de": "Tadschikistan"
+    },
+    "flag": "🇹🇯",
+    "capital": {
+      "es": "Dushanbe",
+      "en": "Dushanbe",
+      "pt": "Duchanbe",
+      "fr": "Douchabé",
+      "de": "Duschanbe"
+    }
+  },
+  {
+    "country": {
+      "es": "Turkmenistán",
+      "en": "Turkmenistan",
+      "pt": "Turquemenistão",
+      "fr": "Turkménistan",
+      "de": "Turkmenistan"
+    },
+    "flag": "🇹🇲",
+    "capital": {
+      "es": "Asjabad",
+      "en": "Ashgabat",
+      "pt": "Ashgabat",
+      "fr": "Achgabat",
+      "de": "Aschgabat"
+    }
+  },
+  {
+    "country": {
+      "es": "Azerbaiyán",
+      "en": "Azerbaijan",
+      "pt": "Azerbaijão",
+      "fr": "Azerbaïdjan",
+      "de": "Aserbaidschan"
+    },
+    "flag": "🇦🇿",
+    "capital": {
+      "es": "Bakú",
+      "en": "Baku",
+      "pt": "Baku",
+      "fr": "Bakou",
+      "de": "Baku"
+    }
+  },
+  {
+    "country": {
+      "es": "Armenia",
+      "en": "Armenia",
+      "pt": "Armênia",
+      "fr": "Arménie",
+      "de": "Armenien"
+    },
+    "flag": "🇦🇲",
+    "capital": {
+      "es": "Ereván",
+      "en": "Yerevan",
+      "pt": "Erevan",
+      "fr": "Érévan",
+      "de": "Eriwan"
+    }
+  },
+  {
+    "country": {
+      "es": "Afganistán",
+      "en": "Afghanistan",
+      "pt": "Afeganistão",
+      "fr": "Afghanistan",
+      "de": "Afghanistan"
+    },
+    "flag": "🇦🇫",
+    "capital": {
+      "es": "Kabul",
+      "en": "Kabul",
+      "pt": "Cabul",
+      "fr": "Kaboul",
+      "de": "Kabul"
+    }
+  },
+  {
+    "country": {
+      "es": "Pakistán",
+      "en": "Pakistan",
+      "pt": "Paquistão",
+      "fr": "Pakistan",
+      "de": "Pakistan"
+    },
+    "flag": "🇵🇰",
+    "capital": {
+      "es": "Islamabad",
+      "en": "Islamabad",
+      "pt": "Islamabad",
+      "fr": "Islamabad",
+      "de": "Islamabad"
+    }
+  },
+  {
+    "country": {
+      "es": "Bangladesh",
+      "en": "Bangladesh",
+      "pt": "Bangladesh",
+      "fr": "Bangladesh",
+      "de": "Bangladesch"
+    },
+    "flag": "🇧🇩",
+    "capital": {
+      "es": "Daca",
+      "en": "Dhaka",
+      "pt": "Dhaka",
+      "fr": "Dhaka",
+      "de": "Dhaka"
+    }
+  },
+  {
+    "country": {
+      "es": "Sri Lanka",
+      "en": "Sri Lanka",
+      "pt": "Sri Lanka",
+      "fr": "Sri Lanka",
+      "de": "Sri Lanka"
+    },
+    "flag": "🇱🇰",
+    "capital": {
+      "es": "Colombo",
+      "en": "Colombo",
+      "pt": "Colombo",
+      "fr": "Colombo",
+      "de": "Colombo"
+    }
+  },
+  {
+    "country": {
+      "es": "Nepal",
+      "en": "Nepal",
+      "pt": "Nepal",
+      "fr": "Népal",
+      "de": "Nepal"
+    },
+    "flag": "🇳🇵",
+    "capital": {
+      "es": "Katmandú",
+      "en": "Kathmandu",
+      "pt": "Catmandu",
+      "fr": "Katmandou",
+      "de": "Kathmandu"
+    }
+  },
+  {
+    "country": {
+      "es": "Birmania (Myanmar)",
+      "en": "Myanmar (Burma)",
+      "pt": "Myanmar (Birmânia)",
+      "fr": "Myanmar (Birmanie)",
+      "de": "Myanmar (Birma)"
+    },
+    "flag": "🇲🇲",
+    "capital": {
+      "es": "Naipyidó",
+      "en": "Naypyidaw",
+      "pt": "Naypyidaw",
+      "fr": "Naypyidaw",
+      "de": "Naypyidaw"
+    }
+  },
+  {
+    "country": {
+      "es": "Tailandia",
+      "en": "Thailand",
+      "pt": "Tailândia",
+      "fr": "Thaïlande",
+      "de": "Thailand"
+    },
+    "flag": "🇹🇭",
+    "capital": {
+      "es": "Bangkok",
+      "en": "Bangkok",
+      "pt": "Bangkok",
+      "fr": "Bangkok",
+      "de": "Bangkok"
+    }
+  },
+  {
+    "country": {
+      "es": "Vietnam",
+      "en": "Vietnam",
+      "pt": "Vietnã",
+      "fr": "Viêt Nam",
+      "de": "Vietnam"
+    },
+    "flag": "🇻🇳",
+    "capital": {
+      "es": "Hanói",
+      "en": "Hanoi",
+      "pt": "Hanói",
+      "fr": "Hanoï",
+      "de": "Hanoi"
+    }
+  },
+  {
+    "country": {
+      "es": "Laos",
+      "en": "Laos",
+      "pt": "Laos",
+      "fr": "Laos",
+      "de": "Laos"
+    },
+    "flag": "🇱🇦",
+    "capital": {
+      "es": "Vientiane",
+      "en": "Vientiane",
+      "pt": "Vientiane",
+      "fr": "Vientiane",
+      "de": "Vientiane"
+    }
+  },
+  {
+    "country": {
+      "es": "Camboya",
+      "en": "Cambodia",
+      "pt": "Camboja",
+      "fr": "Cambodge",
+      "de": "Kambodscha"
+    },
+    "flag": "🇰🇭",
+    "capital": {
+      "es": "Nom Pen",
+      "en": "Phnom Penh",
+      "pt": "Phnom Penh",
+      "fr": "Phnom Penh",
+      "de": "Phnom Penh"
+    }
+  },
+  {
+    "country": {
+      "es": "Malasia",
+      "en": "Malaysia",
+      "pt": "Malásia",
+      "fr": "Malaisie",
+      "de": "Malaysia"
+    },
+    "flag": "🇲🇾",
+    "capital": {
+      "es": "Kuala Lumpur",
+      "en": "Kuala Lumpur",
+      "pt": "Kuala Lumpur",
+      "fr": "Kuala Lumpur",
+      "de": "Kuala Lumpur"
+    }
+  },
+  {
+    "country": {
+      "es": "Singapur",
+      "en": "Singapore",
+      "pt": "Singapura",
+      "fr": "Singapour",
+      "de": "Singapur"
+    },
+    "flag": "🇸🇬",
+    "capital": {
+      "es": "Singapur",
+      "en": "Singapore",
+      "pt": "Singapura",
+      "fr": "Singapour",
+      "de": "Singapur"
+    }
+  }
+]
