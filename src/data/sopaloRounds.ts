@@ -1,8 +1,9 @@
 import { ComponentType } from "react";
-import { getActiveRoscoContext, getBonusSetForDay, RoscoEntry } from "./weeklyRoscos";
+import { getActiveRoscoContext } from "./weeklyRoscos";
 import { getImaginaloRoundClues, ImageCategoryKey } from "./imaginaloRounds";
 import { getEmojinaloRoundClues, EmojinaloCategoryKey } from "./emojinaloRounds";
 import { getFamososRoundClues, FamososCategoryKey } from "./famososRounds";
+import { getPreguntasRoundClues } from "./preguntasRounds";
 import { DayKey, ROUNDS_PER_DAY, WEEK_DAYS } from "../utils/weeklyRoscoState";
 
 // Cada ronda del día es un conjunto de "pistas" (clues). Cada pista puede
@@ -17,9 +18,10 @@ export interface RoundClue {
   emoji?: string;
   text?: string;
   photo?: string;
+  hideBlanks?: boolean;
 }
 
-export type RoundKind = "images" | "emojinalo" | "famosos" | "legacy";
+export type RoundKind = "images" | "emojinalo" | "famosos" | "preguntas";
 
 export interface SopaloRound {
   kind: RoundKind;
@@ -30,45 +32,6 @@ export interface SopaloDayContext {
   dayKey: DayKey;
   scopeKey: string;
   rounds: SopaloRound[]; // length ROUNDS_PER_DAY
-}
-
-// Ordenamos por longitud (más cortas primero) para que, dentro de lo posible,
-// las palabras entren cómodas en la grilla (incluida la diagonal).
-function pickGridSafeEntries(entries: RoscoEntry[]): RoscoEntry[] {
-  return [...entries]
-    .filter((e) => e.word.trim().length >= 3)
-    .sort((a, b) => a.word.trim().length - b.word.trim().length);
-}
-
-// 4 definiciones por nivel: el rosco del día solo tiene 26 palabras (una por
-// letra), así que con varios niveles no alcanza para todas sin repetir en
-// TODO el día. Indexamos en rueda (módulo) para garantizar que las 4 del
-// MISMO nivel sean siempre distintas entre sí; una repetición ocasional
-// entre niveles distintos del mismo día es un costo aceptable.
-const DEF_SLOTS_PER_ROUND = 4;
-
-function buildLegacyRound(
-  roundIndex: number,
-  defPool: RoscoEntry[],
-  emojiPool: RoscoEntry[],
-  definitionLabel: string,
-  emojiLabel: string
-): SopaloRound {
-  const pickDef = (slot: number) => defPool[(roundIndex + slot * ROUNDS_PER_DAY) % defPool.length];
-  const emoji = emojiPool[roundIndex % emojiPool.length];
-
-  const defClues: RoundClue[] = Array.from({ length: DEF_SLOTS_PER_ROUND }, (_, slot) => {
-    const entry = pickDef(slot);
-    return { label: definitionLabel, words: [entry.word], text: entry.definition };
-  });
-
-  return {
-    kind: "legacy",
-    clues: [
-      ...defClues,
-      { label: emojiLabel, words: [emoji.word], emoji: emoji.definition },
-    ],
-  };
 }
 
 function buildImagesRound(
@@ -121,22 +84,34 @@ function buildFamososRound(
   };
 }
 
+function buildPreguntasRound(
+  dayIndex: number,
+  referenceDate: Date,
+  questionLabel: string
+): SopaloRound {
+  const preguntasClues = getPreguntasRoundClues(dayIndex, referenceDate);
+  return {
+    kind: "preguntas",
+    clues: preguntasClues.map((c) => ({
+      label: questionLabel,
+      words: c.words,
+      text: c.text,
+      hideBlanks: true,
+    })),
+  };
+}
+
 export function getSopaloDayContext(
   dayKey: DayKey,
   referenceDate = new Date(),
   language = "es",
   categoryLabels: Record<ImageCategoryKey, string> = { funkos: "Funkos", escudos: "Escudos", sombras: "Sombras", logos: "Logos" },
-  definitionLabel = "Definición",
-  emojiLabel = "Emoji",
   emojinaloLabels: Record<EmojinaloCategoryKey, string> = { country: "País", capital: "Capital", whatis: "Qué es", movie: "Película", series: "Serie" },
-  famososLabels: Record<FamososCategoryKey, string> = { famosos: "Famosos", personajes: "Personajes" }
+  famososLabels: Record<FamososCategoryKey, string> = { famosos: "Famosos", personajes: "Personajes" },
+  questionLabel = "Pregunta"
 ): SopaloDayContext {
   const roscoContext = getActiveRoscoContext(referenceDate, language);
   const dayIndex = WEEK_DAYS.findIndex((d) => d.key === dayKey);
-  const emojiSet = getBonusSetForDay(dayIndex, referenceDate, language);
-
-  const defPool = pickGridSafeEntries(roscoContext.roscos[dayKey]);
-  const emojiPool = pickGridSafeEntries(emojiSet);
 
   const rounds: SopaloRound[] = Array.from({ length: ROUNDS_PER_DAY }, (_, i) => {
     if (i === 0) {
@@ -148,7 +123,7 @@ export function getSopaloDayContext(
     if (i === 2) {
       return buildFamososRound(dayIndex, referenceDate, famososLabels);
     }
-    return buildLegacyRound(i, defPool, emojiPool, definitionLabel, emojiLabel);
+    return buildPreguntasRound(dayIndex, referenceDate, questionLabel);
   });
 
   return {

@@ -145,7 +145,7 @@ export default function Game() {
   );
 
   const dayContext = useMemo(
-    () => getSopaloDayContext(dayKey, new Date(), currentLanguage, categoryLabels, t.definitionLabel, t.emojiLabel, emojinaloLabels, famososLabels),
+    () => getSopaloDayContext(dayKey, new Date(), currentLanguage, categoryLabels, emojinaloLabels, famososLabels, t.questionLabel),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [dayKey, currentLanguage]
   );
@@ -306,7 +306,11 @@ export default function Game() {
                     {clueDone ? "✓" : idx + 1}
                   </Box>
                 </Box>
-                <Box sx={{ display: "flex", alignItems: "center", gap: 1.25, flex: 1, minWidth: 0 }}>
+                <Box sx={
+                  clue.hideBlanks
+                    ? { display: "flex", flexDirection: "column", gap: 0.5, flex: 1, minWidth: 0 }
+                    : { display: "flex", alignItems: "center", gap: 1.25, flex: 1, minWidth: 0 }
+                }>
                   {clue.image && (
                     <ImageClueThumb
                       loader={clue.image.loader}
@@ -320,11 +324,17 @@ export default function Game() {
                     />
                   )}
                   {clue.emoji && <Typography sx={{ fontSize: 26, whiteSpace: "nowrap" }}>{clue.emoji}</Typography>}
-                  {clue.text && <Typography sx={{ fontSize: 14, color: "#333" }}>{clue.text}</Typography>}
+                  {clue.text && (
+                    <Typography sx={{ fontSize: 14, color: "#333", ...(clue.hideBlanks ? {} : { flex: 1, minWidth: 0 }) }}>
+                      {clue.text}
+                    </Typography>
+                  )}
                   <Box sx={{ display: "flex", flexWrap: "wrap", columnGap: "24px", rowGap: "4px", minWidth: 0 }}>
-                    {clue.words.map((w, i) => (
-                      <HangmanWord key={i} word={w} found={revealed || foundWords.includes(normalizeForGrid(w))} />
-                    ))}
+                    {clue.words.map((w, i) => {
+                      const found = revealed || foundWords.includes(normalizeForGrid(w));
+                      if (!found && clue.hideBlanks) return null;
+                      return <HangmanWord key={i} word={w} found={found} />;
+                    })}
                   </Box>
                 </Box>
               </Box>

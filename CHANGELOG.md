@@ -14,6 +14,12 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - Ronda 3: pistas de Famosos (93 niveles) y Personajes (106 niveles, Marvel + Los Simpson), con foto en vez de ilustración/emoji
   - Fotos identificadas a mano a partir de los nombres de archivo (curados originalmente para otro juego); 5 famosos no identificables se descartaron
   - El contenedor de imagen (thumbnail y zoom) pasa a ser circular (border-radius 50%) en las 3 rondas visuales
+- Ronda 4: pistas de preguntas y respuestas (871 niveles), copiadas de un archivo `preguntas.json` provisto por el usuario, sacando las que tenían respuesta numérica
+  - A diferencia de las otras rondas, no muestra los guiones de la palabra a adivinar mientras no se encontró; solo la pregunta
+### Fixed
+- Ronda de preguntas: la respuesta va en su propia línea debajo de la pregunta (antes, al lado, rompía el diseño con preguntas largas)
+### Removed
+- Ronda de definiciones/emoji del rosco semanal ("legacy"): quedó reemplazada por la Ronda 4 de preguntas, ya no se usa en ninguna ronda
 
 ## [2026-07-27]
 ### Changed

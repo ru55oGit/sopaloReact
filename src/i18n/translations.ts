@@ -38,8 +38,7 @@ export interface Translation {
 
   // Game
   roundLabel: (n: number, total: number) => string;
-  definitionLabel: string;
-  emojiLabel: string;
+  questionLabel: string;
   categoryFunkos: string;
   categoryEscudos: string;
   categorySombras: string;
@@ -90,8 +89,7 @@ const es: Translation = {
   howToPlayText: "Cada ronda te muestra dos definiciones y un emoji: tenés que encontrar las tres palabras escondidas en la grilla. Deslizá desde la primera letra de la palabra hasta la última, en línea recta (horizontal, vertical o diagonal). Si te trabás, podés apretar \"Ver anuncio para descubrir las palabras\" y te las mostramos. Completá las 7 rondas para terminar el día.",
 
   roundLabel: (n, total) => `Ronda ${n}/${total}`,
-  definitionLabel: "Definición",
-  emojiLabel: "Emoji",
+  questionLabel: "Pregunta",
   categoryFunkos: "Funkos",
   categoryEscudos: "Escudos",
   categorySombras: "Sombras",
@@ -142,8 +140,7 @@ const en: Translation = {
   howToPlayText: "Each round shows you two definitions and an emoji: find all three hidden words in the grid. Swipe from the word's first letter to its last, in a straight line (horizontal, vertical or diagonal). Stuck? Tap \"Watch an ad to reveal the words\" and we'll show them to you. Complete all 7 rounds to finish the day.",
 
   roundLabel: (n, total) => `Round ${n}/${total}`,
-  definitionLabel: "Definition",
-  emojiLabel: "Emoji",
+  questionLabel: "Question",
   categoryFunkos: "Funkos",
   categoryEscudos: "Crests",
   categorySombras: "Shadows",
@@ -194,8 +191,7 @@ const pt: Translation = {
   howToPlayText: "Cada rodada mostra duas definições e um emoji: encontre as três palavras escondidas na grade. Deslize da primeira letra da palavra até a última, em linha reta (horizontal, vertical ou diagonal). Se travar, toque em \"Assistir a um anúncio para revelar as palavras\" e nós te mostramos. Complete as 7 rodadas para terminar o dia.",
 
   roundLabel: (n, total) => `Rodada ${n}/${total}`,
-  definitionLabel: "Definição",
-  emojiLabel: "Emoji",
+  questionLabel: "Pergunta",
   categoryFunkos: "Funkos",
   categoryEscudos: "Escudos",
   categorySombras: "Sombras",
@@ -246,8 +242,7 @@ const fr: Translation = {
   howToPlayText: "Chaque manche te montre deux définitions et un emoji : trouve les trois mots cachés dans la grille. Glisse depuis la première lettre du mot jusqu'à la dernière, en ligne droite (horizontale, verticale ou diagonale). Bloqué ? Appuie sur « Regarder une pub pour révéler les mots » et on te les montre. Termine les 7 manches pour finir la journée.",
 
   roundLabel: (n, total) => `Manche ${n}/${total}`,
-  definitionLabel: "Définition",
-  emojiLabel: "Emoji",
+  questionLabel: "Question",
   categoryFunkos: "Funkos",
   categoryEscudos: "Écussons",
   categorySombras: "Ombres",
@@ -298,8 +293,7 @@ const de: Translation = {
   howToPlayText: "Jede Runde zeigt dir zwei Definitionen und ein Emoji: Finde alle drei versteckten Wörter im Raster. Wische vom ersten bis zum letzten Buchstaben des Wortes in gerader Linie (horizontal, vertikal oder diagonal). Kommst du nicht weiter, tippe auf „Werbung ansehen, um die Wörter aufzudecken“ und wir zeigen sie dir. Schließe alle 7 Runden ab, um den Tag zu beenden.",
 
   roundLabel: (n, total) => `Runde ${n}/${total}`,
-  definitionLabel: "Definition",
-  emojiLabel: "Emoji",
+  questionLabel: "Frage",
   categoryFunkos: "Funkos",
   categoryEscudos: "Wappen",
   categorySombras: "Schatten",
