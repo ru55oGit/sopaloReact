@@ -49,6 +49,8 @@ export interface Translation {
   categoryWhatis: string;
   categoryMovie: string;
   categorySeries: string;
+  categoryFamosos: string;
+  categoryPersonajes: string;
   revealButton: string;
   successTitle: string;
   nextRoundIn: (s: number) => string;
@@ -99,6 +101,8 @@ const es: Translation = {
   categoryWhatis: "Qué es",
   categoryMovie: "Película",
   categorySeries: "Serie",
+  categoryFamosos: "Famosos",
+  categoryPersonajes: "Personajes",
   revealButton: "Ver anuncio para descubrir las palabras",
   successTitle: "¡Muy bien!",
   nextRoundIn: (s) => `Siguiente ronda en ${s}...`,
@@ -149,6 +153,8 @@ const en: Translation = {
   categoryWhatis: "What is it",
   categoryMovie: "Movie",
   categorySeries: "TV Show",
+  categoryFamosos: "Celebrities",
+  categoryPersonajes: "Characters",
   revealButton: "Watch an ad to reveal the words",
   successTitle: "Well done!",
   nextRoundIn: (s) => `Next round in ${s}...`,
@@ -199,6 +205,8 @@ const pt: Translation = {
   categoryWhatis: "O que é",
   categoryMovie: "Filme",
   categorySeries: "Série",
+  categoryFamosos: "Famosos",
+  categoryPersonajes: "Personagens",
   revealButton: "Assistir a um anúncio para revelar as palavras",
   successTitle: "Muito bem!",
   nextRoundIn: (s) => `Próxima rodada em ${s}...`,
@@ -249,6 +257,8 @@ const fr: Translation = {
   categoryWhatis: "Qu'est-ce que c'est",
   categoryMovie: "Film",
   categorySeries: "Série",
+  categoryFamosos: "Célébrités",
+  categoryPersonajes: "Personnages",
   revealButton: "Regarder une pub pour révéler les mots",
   successTitle: "Bien joué !",
   nextRoundIn: (s) => `Manche suivante dans ${s}...`,
@@ -299,6 +309,8 @@ const de: Translation = {
   categoryWhatis: "Was ist das",
   categoryMovie: "Film",
   categorySeries: "Serie",
+  categoryFamosos: "Prominente",
+  categoryPersonajes: "Figuren",
   revealButton: "Werbung ansehen, um die Wörter aufzudecken",
   successTitle: "Gut gemacht!",
   nextRoundIn: (s) => `Nächste Runde in ${s}...`,

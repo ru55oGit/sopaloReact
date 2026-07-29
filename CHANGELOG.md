@@ -11,6 +11,9 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
   - Capitales: los mismos 100 países, pero en orden alfabético (no el de ranking), para que el país de la pista "país" no sea siempre el mismo que el de la pista "capital" ese día
   - Qué es / Película: primeros 100 niveles de Emojinalo tal cual, sin reordenar
   - La pista de Película/Serie usa el título "Película" o "Serie" según corresponda (el dato ya viene etiquetado en Emojinalo)
+- Ronda 3: pistas de Famosos (93 niveles) y Personajes (106 niveles, Marvel + Los Simpson), con foto en vez de ilustración/emoji
+  - Fotos identificadas a mano a partir de los nombres de archivo (curados originalmente para otro juego); 5 famosos no identificables se descartaron
+  - El contenedor de imagen (thumbnail y zoom) pasa a ser circular (border-radius 50%) en las 3 rondas visuales
 
 ## [2026-07-27]
 ### Changed

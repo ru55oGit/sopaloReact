@@ -2,6 +2,7 @@ import { ComponentType } from "react";
 import { getActiveRoscoContext, getBonusSetForDay, RoscoEntry } from "./weeklyRoscos";
 import { getImaginaloRoundClues, ImageCategoryKey } from "./imaginaloRounds";
 import { getEmojinaloRoundClues, EmojinaloCategoryKey } from "./emojinaloRounds";
+import { getFamososRoundClues, FamososCategoryKey } from "./famososRounds";
 import { DayKey, ROUNDS_PER_DAY, WEEK_DAYS } from "../utils/weeklyRoscoState";
 
 // Cada ronda del día es un conjunto de "pistas" (clues). Cada pista puede
@@ -15,9 +16,10 @@ export interface RoundClue {
   image?: { category: ImageCategoryKey; loader: () => Promise<{ default: ComponentType }> };
   emoji?: string;
   text?: string;
+  photo?: string;
 }
 
-export type RoundKind = "images" | "emojinalo" | "legacy";
+export type RoundKind = "images" | "emojinalo" | "famosos" | "legacy";
 
 export interface SopaloRound {
   kind: RoundKind;
@@ -103,6 +105,22 @@ function buildEmojinaloRound(
   };
 }
 
+function buildFamososRound(
+  dayIndex: number,
+  referenceDate: Date,
+  famososLabels: Record<FamososCategoryKey, string>
+): SopaloRound {
+  const famososClues = getFamososRoundClues(dayIndex, referenceDate);
+  return {
+    kind: "famosos",
+    clues: famososClues.map((c) => ({
+      label: famososLabels[c.category],
+      words: c.words,
+      photo: c.photo,
+    })),
+  };
+}
+
 export function getSopaloDayContext(
   dayKey: DayKey,
   referenceDate = new Date(),
@@ -110,7 +128,8 @@ export function getSopaloDayContext(
   categoryLabels: Record<ImageCategoryKey, string> = { funkos: "Funkos", escudos: "Escudos", sombras: "Sombras", logos: "Logos" },
   definitionLabel = "Definición",
   emojiLabel = "Emoji",
-  emojinaloLabels: Record<EmojinaloCategoryKey, string> = { country: "País", capital: "Capital", whatis: "Qué es", movie: "Película", series: "Serie" }
+  emojinaloLabels: Record<EmojinaloCategoryKey, string> = { country: "País", capital: "Capital", whatis: "Qué es", movie: "Película", series: "Serie" },
+  famososLabels: Record<FamososCategoryKey, string> = { famosos: "Famosos", personajes: "Personajes" }
 ): SopaloDayContext {
   const roscoContext = getActiveRoscoContext(referenceDate, language);
   const dayIndex = WEEK_DAYS.findIndex((d) => d.key === dayKey);
@@ -125,6 +144,9 @@ export function getSopaloDayContext(
     }
     if (i === 1) {
       return buildEmojinaloRound(dayIndex, referenceDate, language, emojinaloLabels);
+    }
+    if (i === 2) {
+      return buildFamososRound(dayIndex, referenceDate, famososLabels);
     }
     return buildLegacyRound(i, defPool, emojiPool, definitionLabel, emojiLabel);
   });

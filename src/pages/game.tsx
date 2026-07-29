@@ -13,6 +13,7 @@ import { useLanguage } from "../i18n/LanguageContext";
 import { getSopaloDayContext, SopaloRound, RoundClue } from "../data/sopaloRounds";
 import { ImageCategoryKey } from "../data/imaginaloRounds";
 import { EmojinaloCategoryKey } from "../data/emojinaloRounds";
+import { FamososCategoryKey } from "../data/famososRounds";
 import { generateWordSearchGrid, normalizeForGrid, WordSearchGridResult } from "../utils/wordSearchGrid";
 import {
   DayKey,
@@ -71,7 +72,7 @@ function ImageClueThumb({
     <Box
       onClick={onClick}
       sx={{
-        width: size, height: size, flexShrink: 0, borderRadius: "8px", overflow: "hidden",
+        width: size, height: size, flexShrink: 0, borderRadius: "50%", overflow: "hidden",
         backgroundColor: "#fff", border: "1px solid #eee",
         cursor: onClick ? "zoom-in" : "default",
       }}
@@ -79,6 +80,29 @@ function ImageClueThumb({
       <Suspense fallback={<Box sx={{ width: "100%", height: "100%" }} />}>
         <Comp />
       </Suspense>
+    </Box>
+  );
+}
+
+function PhotoClueThumb({
+  src,
+  size = 64,
+  onClick,
+}: {
+  src: string;
+  size?: number;
+  onClick?: () => void;
+}) {
+  return (
+    <Box
+      onClick={onClick}
+      sx={{
+        width: size, height: size, flexShrink: 0, borderRadius: "50%", overflow: "hidden",
+        backgroundColor: "#fff", border: "1px solid #eee",
+        cursor: onClick ? "zoom-in" : "default",
+      }}
+    >
+      <img src={src} alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
     </Box>
   );
 }
@@ -112,8 +136,16 @@ export default function Game() {
     [t]
   );
 
+  const famososLabels: Record<FamososCategoryKey, string> = useMemo(
+    () => ({
+      famosos: t.categoryFamosos,
+      personajes: t.categoryPersonajes,
+    }),
+    [t]
+  );
+
   const dayContext = useMemo(
-    () => getSopaloDayContext(dayKey, new Date(), currentLanguage, categoryLabels, t.definitionLabel, t.emojiLabel, emojinaloLabels),
+    () => getSopaloDayContext(dayKey, new Date(), currentLanguage, categoryLabels, t.definitionLabel, t.emojiLabel, emojinaloLabels, famososLabels),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [dayKey, currentLanguage]
   );
@@ -136,7 +168,8 @@ export default function Game() {
   const [foundWords, setFoundWords] = useState<string[]>([]);
   const [revealed, setRevealed] = useState(false);
   const [countdown, setCountdown] = useState(NEXT_ROUND_DELAY_SECONDS);
-  const [zoomedImage, setZoomedImage] = useState<{ loader: () => Promise<{ default: ComponentType }> } | null>(null);
+  type ZoomedImage = { kind: "svg"; loader: () => Promise<{ default: ComponentType }> } | { kind: "photo"; src: string };
+  const [zoomedImage, setZoomedImage] = useState<ZoomedImage | null>(null);
 
   const round: SopaloRound | undefined = dayContext.rounds[roundIndex];
   const totalWords = round ? totalWordsInRound(round) : 0;
@@ -277,7 +310,13 @@ export default function Game() {
                   {clue.image && (
                     <ImageClueThumb
                       loader={clue.image.loader}
-                      onClick={() => setZoomedImage({ loader: clue.image!.loader })}
+                      onClick={() => setZoomedImage({ kind: "svg", loader: clue.image!.loader })}
+                    />
+                  )}
+                  {clue.photo && (
+                    <PhotoClueThumb
+                      src={clue.photo}
+                      onClick={() => setZoomedImage({ kind: "photo", src: clue.photo! })}
                     />
                   )}
                   {clue.emoji && <Typography sx={{ fontSize: 26, whiteSpace: "nowrap" }}>{clue.emoji}</Typography>}
@@ -345,7 +384,8 @@ export default function Game() {
           >
             <CloseRoundedIcon />
           </IconButton>
-          {zoomedImage && <ImageClueThumb loader={zoomedImage.loader} size={280} />}
+          {zoomedImage?.kind === "svg" && <ImageClueThumb loader={zoomedImage.loader} size={280} />}
+          {zoomedImage?.kind === "photo" && <PhotoClueThumb src={zoomedImage.src} size={280} />}
         </Box>
       </Modal>
     </Layout>
