@@ -18,6 +18,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
   - A diferencia de las otras rondas, no muestra los guiones de la palabra a adivinar mientras no se encontró; solo la pregunta
 ### Fixed
 - Ronda de preguntas: la respuesta va en su propia línea debajo de la pregunta (antes, al lado, rompía el diseño con preguntas largas)
+- Ronda de preguntas: evitar que 2 preguntas con la misma respuesta caigan juntas en la misma ronda (se detectó con "Antartida" repetida; el fix es genérico, no depende de arreglar cada dato duplicado a mano)
 ### Removed
 - Ronda de definiciones/emoji del rosco semanal ("legacy"): quedó reemplazada por la Ronda 4 de preguntas, ya no se usa en ninguna ronda
 

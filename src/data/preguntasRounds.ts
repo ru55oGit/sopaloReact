@@ -22,6 +22,10 @@ export interface PreguntaClue {
   text: string;
 }
 
+function normalizeAnswer(respuesta: string): string {
+  return respuesta.trim().toUpperCase().replace(/\|/g, " ");
+}
+
 export function getPreguntasRoundClues(dayIndex: number, referenceDate = new Date()): PreguntaClue[] {
   const weekStart = getWeekStart(referenceDate);
   const weeksSinceBase = Math.round(
@@ -29,9 +33,21 @@ export function getPreguntasRoundClues(dayIndex: number, referenceDate = new Dat
   );
   const dayCounter = weeksSinceBase * 7 + dayIndex;
 
-  return Array.from({ length: SLOTS_PER_ROUND }, (_, slot) => {
-    const idx = ((dayCounter * SLOTS_PER_ROUND + slot) % PREGUNTAS.length + PREGUNTAS.length) % PREGUNTAS.length;
+  // Algunas preguntas distintas comparten la misma respuesta (p. ej. "el
+  // continente blanco" y "el continente menos poblado" son las dos
+  // "Antartida"). Si dos clues de la MISMA ronda tuvieran la misma
+  // respuesta, encontrar una marcaría ambas resueltas a la vez. Escaneamos
+  // hacia adelante desde el índice base y saltamos cualquier entrada cuya
+  // respuesta (normalizada) ya haya salido ese día.
+  const usedAnswers = new Set<string>();
+  const clues: PreguntaClue[] = [];
+  for (let offset = 0; clues.length < SLOTS_PER_ROUND && offset < PREGUNTAS.length; offset++) {
+    const idx = ((dayCounter * SLOTS_PER_ROUND + offset) % PREGUNTAS.length + PREGUNTAS.length) % PREGUNTAS.length;
     const entry = PREGUNTAS[idx];
-    return { words: splitAnswerWords(entry.respuesta), text: entry.pregunta };
-  });
+    const key = normalizeAnswer(entry.respuesta);
+    if (usedAnswers.has(key)) continue;
+    usedAnswers.add(key);
+    clues.push({ words: splitAnswerWords(entry.respuesta), text: entry.pregunta });
+  }
+  return clues;
 }
