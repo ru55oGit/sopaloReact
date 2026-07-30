@@ -21,6 +21,8 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - Ronda de preguntas: evitar que 2 preguntas con la misma respuesta caigan juntas en la misma ronda (se detectó con "Antartida" repetida; el fix es genérico, no depende de arreglar cada dato duplicado a mano)
 ### Removed
 - Ronda de definiciones/emoji del rosco semanal ("legacy"): quedó reemplazada por la Ronda 4 de preguntas, ya no se usa en ninguna ronda
+### Changed
+- Home: agregar emoji de momento del día al saludo (☀️/🌤️/🌙), mismo tratamiento que ya tenía Enganchalo
 
 ## [2026-07-27]
 ### Changed
