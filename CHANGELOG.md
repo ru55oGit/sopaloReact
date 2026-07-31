@@ -13,9 +13,9 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
   - La pista de Película/Serie usa el título "Película" o "Serie" según corresponda (el dato ya viene etiquetado en Emojinalo)
 - Ronda 3: pistas de Famosos (93 niveles) y Personajes (106 niveles, Marvel + Los Simpson), con foto en vez de ilustración/emoji
   - Fotos identificadas a mano a partir de los nombres de archivo (curados originalmente para otro juego); 5 famosos no identificables se descartaron
-  - El contenedor de imagen (thumbnail y zoom) pasa a ser circular (border-radius 50%) en las 3 rondas visuales
 - Ronda 4: pistas de preguntas y respuestas (871 niveles), copiadas de un archivo `preguntas.json` provisto por el usuario, sacando las que tenían respuesta numérica
   - A diferencia de las otras rondas, no muestra los guiones de la palabra a adivinar mientras no se encontró; solo la pregunta
+- Pistas con emoji (banderas, "qué es", película/serie): fondo blanco igual que las imágenes, zoom al tocar (mismo modal), y cuando son más de 3 emojis se achican y pasan a 2 líneas en vez de amontonarse en una sola
 ### Fixed
 - Ronda de preguntas: la respuesta va en su propia línea debajo de la pregunta (antes, al lado, rompía el diseño con preguntas largas)
 - Ronda de preguntas: evitar que 2 preguntas con la misma respuesta caigan juntas en la misma ronda (se detectó con "Antartida" repetida; el fix es genérico, no depende de arreglar cada dato duplicado a mano)
@@ -23,6 +23,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - Ronda de definiciones/emoji del rosco semanal ("legacy"): quedó reemplazada por la Ronda 4 de preguntas, ya no se usa en ninguna ronda
 ### Changed
 - Home: agregar emoji de momento del día al saludo (☀️/🌤️/🌙), mismo tratamiento que ya tenía Enganchalo
+- El contenedor de imagen (thumbnail y zoom) probó ser circular (border-radius 50%) y se volvió a "8px" (rounded square) tras ver cómo quedaba en la práctica
 
 ## [2026-07-27]
 ### Changed

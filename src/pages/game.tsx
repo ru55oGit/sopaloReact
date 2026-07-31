@@ -72,7 +72,7 @@ function ImageClueThumb({
     <Box
       onClick={onClick}
       sx={{
-        width: size, height: size, flexShrink: 0, borderRadius: "50%", overflow: "hidden",
+        width: size, height: size, flexShrink: 0, borderRadius: "8px", overflow: "hidden",
         backgroundColor: "#fff", border: "1px solid #eee",
         cursor: onClick ? "zoom-in" : "default",
       }}
@@ -97,12 +97,62 @@ function PhotoClueThumb({
     <Box
       onClick={onClick}
       sx={{
-        width: size, height: size, flexShrink: 0, borderRadius: "50%", overflow: "hidden",
+        width: size, height: size, flexShrink: 0, borderRadius: "8px", overflow: "hidden",
         backgroundColor: "#fff", border: "1px solid #eee",
         cursor: onClick ? "zoom-in" : "default",
       }}
     >
       <img src={src} alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+    </Box>
+  );
+}
+
+// Separa un string de emojis en sus unidades visuales (grafemas), respetando
+// secuencias ZWJ/variation selectors (ej. "🧑🏽‍🦱" o "➡️" son 1 sola unidad,
+// no varios code points sueltos).
+interface GraphemeSegmenter {
+  segment(input: string): Iterable<{ segment: string }>;
+}
+interface IntlWithSegmenter {
+  Segmenter?: new (locale?: string, options?: { granularity?: string }) => GraphemeSegmenter;
+}
+
+function splitEmoji(value: string): string[] {
+  const SegmenterCtor = (Intl as unknown as IntlWithSegmenter).Segmenter;
+  if (SegmenterCtor) {
+    const segmenter = new SegmenterCtor(undefined, { granularity: "grapheme" });
+    return Array.from(segmenter.segment(value), (s) => s.segment);
+  }
+  return Array.from(value);
+}
+
+function EmojiClueBox({
+  emoji,
+  size = 64,
+  onClick,
+}: {
+  emoji: string;
+  size?: number;
+  onClick?: () => void;
+}) {
+  const units = splitEmoji(emoji);
+  const many = units.length > 3;
+  return (
+    <Box
+      onClick={onClick}
+      sx={{
+        width: size, height: size, flexShrink: 0, borderRadius: "8px", overflow: "hidden",
+        backgroundColor: "#fff", border: "1px solid #eee",
+        cursor: onClick ? "zoom-in" : "default",
+        display: "flex", flexWrap: many ? "wrap" : "nowrap", alignItems: "center", justifyContent: "center",
+        alignContent: "center", gap: many ? "2px" : 0, p: many ? "4px" : 0,
+      }}
+    >
+      {units.map((unit, i) => (
+        <Typography key={i} sx={{ fontSize: many ? size * 0.24 : size * 0.42, lineHeight: 1 }}>
+          {unit}
+        </Typography>
+      ))}
     </Box>
   );
 }
@@ -168,7 +218,7 @@ export default function Game() {
   const [foundWords, setFoundWords] = useState<string[]>([]);
   const [revealed, setRevealed] = useState(false);
   const [countdown, setCountdown] = useState(NEXT_ROUND_DELAY_SECONDS);
-  type ZoomedImage = { kind: "svg"; loader: () => Promise<{ default: ComponentType }> } | { kind: "photo"; src: string };
+  type ZoomedImage = { kind: "svg"; loader: () => Promise<{ default: ComponentType }> } | { kind: "photo"; src: string } | { kind: "emoji"; emoji: string };
   const [zoomedImage, setZoomedImage] = useState<ZoomedImage | null>(null);
 
   const round: SopaloRound | undefined = dayContext.rounds[roundIndex];
@@ -323,7 +373,12 @@ export default function Game() {
                       onClick={() => setZoomedImage({ kind: "photo", src: clue.photo! })}
                     />
                   )}
-                  {clue.emoji && <Typography sx={{ fontSize: 26, whiteSpace: "nowrap" }}>{clue.emoji}</Typography>}
+                  {clue.emoji && (
+                    <EmojiClueBox
+                      emoji={clue.emoji}
+                      onClick={() => setZoomedImage({ kind: "emoji", emoji: clue.emoji! })}
+                    />
+                  )}
                   {clue.text && (
                     <Typography sx={{ fontSize: 14, color: "#333", ...(clue.hideBlanks ? {} : { flex: 1, minWidth: 0 }) }}>
                       {clue.text}
@@ -396,6 +451,7 @@ export default function Game() {
           </IconButton>
           {zoomedImage?.kind === "svg" && <ImageClueThumb loader={zoomedImage.loader} size={280} />}
           {zoomedImage?.kind === "photo" && <PhotoClueThumb src={zoomedImage.src} size={280} />}
+          {zoomedImage?.kind === "emoji" && <EmojiClueBox emoji={zoomedImage.emoji} size={280} />}
         </Box>
       </Modal>
     </Layout>
