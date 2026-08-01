@@ -19,6 +19,8 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 ### Fixed
 - Ronda de preguntas: la respuesta va en su propia línea debajo de la pregunta (antes, al lado, rompía el diseño con preguntas largas)
 - Ronda de preguntas: evitar que 2 preguntas con la misma respuesta caigan juntas en la misma ronda (se detectó con "Antartida" repetida; el fix es genérico, no depende de arreglar cada dato duplicado a mano)
+- Bug grande: una ronda no avanzaba a la siguiente si alguna respuesta repetía una palabra (ej. "Colo Colo") aunque las 4 pistas ya mostraran el check verde. `totalWordsInRound` sumaba la palabra dos veces, pero `foundWords` (y la propia grilla) tratan una palabra repetida como un solo hallazgo, así que el conteo nunca llegaba. Ahora `totalWordsInRound` cuenta palabras únicas, igual que `foundWords`.
+- Al tocar "Ver anuncio para descubrir las palabras", las palabras reveladas pero todavía no encontradas en la grilla se mostraban en rojo, igual que las ya resueltas, sin forma de distinguir cuál faltaba buscar. Ahora las reveladas-sin-buscar se muestran en negro, y las realmente encontradas siguen en rojo.
 ### Removed
 - Ronda de definiciones/emoji del rosco semanal ("legacy"): quedó reemplazada por la Ronda 4 de preguntas, ya no se usa en ninguna ronda
 ### Changed

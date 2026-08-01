@@ -32,20 +32,34 @@ const NEXT_ROUND_DELAY_SECONDS = 5;
 
 type Phase = "playing" | "success" | "day_complete";
 
+// Cuenta palabras ÚNICAS (normalizadas), no la suma cruda de clue.words.length.
+// Si una respuesta repite una palabra (ej. "Colo Colo") o dos pistas
+// comparten una palabra, la grilla y foundWords tratan esa palabra como un
+// solo hallazgo (encontrar una instancia marca todas las apariciones), así
+// que el total tiene que contar lo mismo o la ronda nunca llega a "success".
 function totalWordsInRound(round: SopaloRound): number {
-  return round.clues.reduce((sum, c) => sum + c.words.length, 0);
+  const unique = new Set(round.clues.flatMap((c) => c.words).map(normalizeForGrid));
+  return unique.size;
 }
 
 function roundWordsKey(round: SopaloRound): string {
   return round.clues.flatMap((c) => c.words).map(normalizeForGrid).join("|");
 }
 
-// Muestra la palabra encontrada, o guiones (uno por letra, tipo ahorcado)
-// mientras no se encontró todavía.
-function HangmanWord({ word, found }: { word: string; found: boolean }) {
-  if (found) {
+// Muestra la palabra encontrada (por el jugador, en rojo), revelada por el
+// botón de anuncio pero todavía no encontrada en la grilla (en negro, para
+// distinguirla de las ya resueltas), o guiones mientras no pasó ninguna.
+function HangmanWord({ word, foundByPlayer, revealed }: { word: string; foundByPlayer: boolean; revealed: boolean }) {
+  if (foundByPlayer) {
     return (
       <Typography sx={{ fontSize: 15, color: ACCENT, fontWeight: 800, letterSpacing: -1 }}>
+        {word.toUpperCase()}
+      </Typography>
+    );
+  }
+  if (revealed) {
+    return (
+      <Typography sx={{ fontSize: 15, color: "#222", fontWeight: 800, letterSpacing: -1 }}>
         {word.toUpperCase()}
       </Typography>
     );
@@ -386,9 +400,9 @@ export default function Game() {
                   )}
                   <Box sx={{ display: "flex", flexWrap: "wrap", columnGap: "24px", rowGap: "4px", minWidth: 0 }}>
                     {clue.words.map((w, i) => {
-                      const found = revealed || foundWords.includes(normalizeForGrid(w));
-                      if (!found && clue.hideBlanks) return null;
-                      return <HangmanWord key={i} word={w} found={found} />;
+                      const foundByPlayer = foundWords.includes(normalizeForGrid(w));
+                      if (!foundByPlayer && !revealed && clue.hideBlanks) return null;
+                      return <HangmanWord key={i} word={w} foundByPlayer={foundByPlayer} revealed={revealed} />;
                     })}
                   </Box>
                 </Box>
