@@ -2,7 +2,7 @@ import { ComponentType } from "react";
 import { getActiveRoscoContext } from "./weeklyRoscos";
 import { getImaginaloRoundClues, ImageCategoryKey } from "./imaginaloRounds";
 import { getEmojinaloRoundClues, EmojinaloCategoryKey } from "./emojinaloRounds";
-import { getFamososRoundClues, FamososCategoryKey } from "./famososRounds";
+import { getFrutasRoundClues, FrutasCategoryKey } from "./frutasRounds";
 import { getPreguntasRoundClues } from "./preguntasRounds";
 import { DayKey, ROUNDS_PER_DAY, WEEK_DAYS } from "../utils/weeklyRoscoState";
 
@@ -21,7 +21,7 @@ export interface RoundClue {
   hideBlanks?: boolean;
 }
 
-export type RoundKind = "images" | "emojinalo" | "famosos" | "preguntas";
+export type RoundKind = "images" | "emojinalo" | "frutas" | "preguntas";
 
 export interface SopaloRound {
   kind: RoundKind;
@@ -68,16 +68,16 @@ function buildEmojinaloRound(
   };
 }
 
-function buildFamososRound(
+function buildFrutasRound(
   dayIndex: number,
   referenceDate: Date,
-  famososLabels: Record<FamososCategoryKey, string>
+  frutasLabels: Record<FrutasCategoryKey, string>
 ): SopaloRound {
-  const famososClues = getFamososRoundClues(dayIndex, referenceDate);
+  const frutasClues = getFrutasRoundClues(dayIndex, referenceDate);
   return {
-    kind: "famosos",
-    clues: famososClues.map((c) => ({
-      label: famososLabels[c.category],
+    kind: "frutas",
+    clues: frutasClues.map((c) => ({
+      label: frutasLabels[c.category],
       words: c.words,
       photo: c.photo,
     })),
@@ -107,7 +107,7 @@ export function getSopaloDayContext(
   language = "es",
   categoryLabels: Record<ImageCategoryKey, string> = { funkos: "Funkos", escudos: "Escudos", sombras: "Sombras", logos: "Logos" },
   emojinaloLabels: Record<EmojinaloCategoryKey, string> = { country: "País", capital: "Capital", whatis: "Qué es", movie: "Película", series: "Serie" },
-  famososLabels: Record<FamososCategoryKey, string> = { famosos: "Famosos", personajes: "Personajes" },
+  frutasLabels: Record<FrutasCategoryKey, string> = { frutas: "Frutas y Vegetales", animales: "Animales" },
   questionLabel = "Pregunta"
 ): SopaloDayContext {
   const roscoContext = getActiveRoscoContext(referenceDate, language);
@@ -121,7 +121,7 @@ export function getSopaloDayContext(
       return buildEmojinaloRound(dayIndex, referenceDate, language, emojinaloLabels);
     }
     if (i === 2) {
-      return buildFamososRound(dayIndex, referenceDate, famososLabels);
+      return buildFrutasRound(dayIndex, referenceDate, frutasLabels);
     }
     return buildPreguntasRound(dayIndex, referenceDate, questionLabel);
   });

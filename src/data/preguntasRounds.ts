@@ -3,7 +3,7 @@ import { splitAnswerWords } from "./imaginaloRounds";
 import preguntasData from "./preguntas.json";
 
 // Mismo ancla que weeklyRoscos.ts / imaginaloRounds.ts / emojinaloRounds.ts /
-// famososRounds.ts (CYCLE_BASE_DATE), para que el ciclado semanal sea
+// frutasRounds.ts (CYCLE_BASE_DATE), para que el ciclado semanal sea
 // consistente entre las distintas fuentes del día.
 const CYCLE_BASE_DATE = "2025-12-29";
 const MS_PER_WEEK = 7 * 24 * 60 * 60 * 1000;

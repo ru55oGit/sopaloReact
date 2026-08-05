@@ -13,7 +13,7 @@ import { useLanguage } from "../i18n/LanguageContext";
 import { getSopaloDayContext, SopaloRound, RoundClue } from "../data/sopaloRounds";
 import { ImageCategoryKey } from "../data/imaginaloRounds";
 import { EmojinaloCategoryKey } from "../data/emojinaloRounds";
-import { FamososCategoryKey } from "../data/famososRounds";
+import { FrutasCategoryKey } from "../data/frutasRounds";
 import { generateWordSearchGrid, normalizeForGrid, WordSearchGridResult } from "../utils/wordSearchGrid";
 import {
   DayKey,
@@ -150,7 +150,7 @@ function EmojiClueBox({
   onClick?: () => void;
 }) {
   const units = splitEmoji(emoji);
-  const many = units.length > 3;
+  const many = units.length >= 3;
   return (
     <Box
       onClick={onClick}
@@ -200,16 +200,16 @@ export default function Game() {
     [t]
   );
 
-  const famososLabels: Record<FamososCategoryKey, string> = useMemo(
+  const frutasLabels: Record<FrutasCategoryKey, string> = useMemo(
     () => ({
-      famosos: t.categoryFamosos,
-      personajes: t.categoryPersonajes,
+      frutas: t.categoryFrutas,
+      animales: t.categoryAnimales,
     }),
     [t]
   );
 
   const dayContext = useMemo(
-    () => getSopaloDayContext(dayKey, new Date(), currentLanguage, categoryLabels, emojinaloLabels, famososLabels, t.questionLabel),
+    () => getSopaloDayContext(dayKey, new Date(), currentLanguage, categoryLabels, emojinaloLabels, frutasLabels, t.questionLabel),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [dayKey, currentLanguage]
   );

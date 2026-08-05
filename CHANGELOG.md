@@ -5,6 +5,10 @@ Todos los cambios notables de este proyecto se documentan en este archivo.
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [Unreleased]
+### Changed
+- Ronda 3: reemplazar Famosos/Personajes por Frutas y Vegetales (90 fotos) y Animales (103 fotos), fotos nuevas provistas por el usuario en vez de las curadas para otro juego
+  - Se descartaron 3 duplicados exactos (misma foto en .jpg y .png: uva, uvilla, zapote) y se ignoró una subcarpeta de borradores (`frutas/frutas svg/`) que quedó de un intento anterior
+  - Sin superposición de palabras entre ambas categorías ni duplicados dentro de cada una
 ### Added
 - Ronda 2: pistas de Emojinalo (bandera->país, bandera->capital, emoji->qué es, emoji->película/serie), 100 niveles por categoría
   - Países: los primeros 100 del ranking FIFA, en ese orden
@@ -17,6 +21,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
   - A diferencia de las otras rondas, no muestra los guiones de la palabra a adivinar mientras no se encontró; solo la pregunta
 - Pistas con emoji (banderas, "qué es", película/serie): fondo blanco igual que las imágenes, zoom al tocar (mismo modal), y cuando son más de 3 emojis se achican y pasan a 2 líneas en vez de amontonarse en una sola
 ### Fixed
+- Pistas con emoji: cuando eran exactamente 3 (no 4+), se mostraban en una sola línea sin achicarse y se recortaban en el thumbnail y en el zoom. Ahora el umbral para achicar y permitir 2 líneas es "3 o más" en vez de "más de 3"
 - Ronda de preguntas: la respuesta va en su propia línea debajo de la pregunta (antes, al lado, rompía el diseño con preguntas largas)
 - Ronda de preguntas: evitar que 2 preguntas con la misma respuesta caigan juntas en la misma ronda (se detectó con "Antartida" repetida; el fix es genérico, no depende de arreglar cada dato duplicado a mano)
 - Bug grande: una ronda no avanzaba a la siguiente si alguna respuesta repetía una palabra (ej. "Colo Colo") aunque las 4 pistas ya mostraran el check verde. `totalWordsInRound` sumaba la palabra dos veces, pero `foundWords` (y la propia grilla) tratan una palabra repetida como un solo hallazgo, así que el conteo nunca llegaba. Ahora `totalWordsInRound` cuenta palabras únicas, igual que `foundWords`.
