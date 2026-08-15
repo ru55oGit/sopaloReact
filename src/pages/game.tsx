@@ -294,10 +294,8 @@ export default function Game() {
     });
   }
 
-  // Monetag Multitag (script cargado en index.html) monetiza clicks de forma
-  // pasiva en toda la página, sin una función "mostrar anuncio y esperar" que
-  // podamos invocar acá: el click en este botón ya dispara sus formatos
-  // (popunder/push) de fondo mientras revelamos las palabras al toque.
+  // TODO: cuando esté AppLixir, llamar initializeAndOpenPlayer() acá y
+  // revelar recién en el callback de éxito (rewarded video real).
   function handleRevealWords() {
     setRevealed(true);
   }

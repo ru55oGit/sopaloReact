@@ -7,7 +7,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 ## [Unreleased]
 ### Added
 - Home: si se llega con `?from=boludeando` en la URL (viene del hub "Dejá de Boludear"), se muestra un botón de volver arriba a la izquierda (blanco, flecha roja, radius 8px) que lleva de vuelta al hub
-- Monetag Multitag: agregar tag de monetización (AdSense sigue sin aprobar el sitio después de semanas). No tiene una función "mostrar anuncio y esperar" invocable, monetiza clicks en toda la página de forma pasiva
+- Probado Monetag Multitag como alternativa a AdSense, pero se sacó por invasivo (popunder/push disparados por cualquier click, no rewarded real). Se evalúa AppLixir en su lugar, especializado en rewarded video para HTML5/React con callback genuino
 ### Changed
 - Ronda 3: reemplazar Famosos/Personajes por Frutas y Vegetales (90 fotos) y Animales (103 fotos), fotos nuevas provistas por el usuario en vez de las curadas para otro juego
   - Se descartaron 3 duplicados exactos (misma foto en .jpg y .png: uva, uvilla, zapote) y se ignoró una subcarpeta de borradores (`frutas/frutas svg/`) que quedó de un intento anterior
