@@ -294,7 +294,10 @@ export default function Game() {
     });
   }
 
-  // TODO: cuando esté AdSense, mostrar un rewarded ad acá antes de revelar.
+  // Monetag Multitag (script cargado en index.html) monetiza clicks de forma
+  // pasiva en toda la página, sin una función "mostrar anuncio y esperar" que
+  // podamos invocar acá: el click en este botón ya dispara sus formatos
+  // (popunder/push) de fondo mientras revelamos las palabras al toque.
   function handleRevealWords() {
     setRevealed(true);
   }
