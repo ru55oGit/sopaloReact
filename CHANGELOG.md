@@ -9,6 +9,7 @@ El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1
 - Home: si se llega con `?from=boludeando` en la URL (viene del hub "Dejá de Boludear"), se muestra un botón de volver arriba a la izquierda (blanco, flecha roja, radius 8px) que lleva de vuelta al hub
 - Probado Monetag Multitag como alternativa a AdSense, pero se sacó por invasivo (popunder/push disparados por cualquier click, no rewarded real). Se evalúa AppLixir en su lugar, especializado en rewarded video para HTML5/React con callback genuino
 ### Changed
+- AdSense: sacar el script del `index.html` (se cargaba en todo el sitio) y cargarlo solo desde Home y Privacidad (componente `AdsenseScript`) — nunca en `/game`, que es una pantalla de juego sin texto. Mismo fix que en Enganchalo, que Google rechazó por "anuncios servidos por Google en pantallas sin contenido del editor"
 - Ronda 3: reemplazar Famosos/Personajes por Frutas y Vegetales (90 fotos) y Animales (103 fotos), fotos nuevas provistas por el usuario en vez de las curadas para otro juego
   - Se descartaron 3 duplicados exactos (misma foto en .jpg y .png: uva, uvilla, zapote) y se ignoró una subcarpeta de borradores (`frutas/frutas svg/`) que quedó de un intento anterior
   - Sin superposición de palabras entre ambas categorías ni duplicados dentro de cada una

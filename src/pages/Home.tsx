@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import PlayArrowRoundedIcon from "@mui/icons-material/PlayArrowRounded";
 import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
 import Layout from "../components/Layout";
+import AdsenseScript from "../components/AdsenseScript";
 import DaySopaPreview from "../components/DaySopaPreview";
 import MiniSopaFraction from "../components/MiniSopaFraction";
 import LanguageSelector from "../components/LanguageSelector";
@@ -67,6 +68,7 @@ export default function Home() {
 
   return (
     <Layout>
+      <AdsenseScript />
       {fromHub && (
         <Box
           component="a"
