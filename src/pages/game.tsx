@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import OndemandVideoRoundedIcon from "@mui/icons-material/OndemandVideoRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 import Layout from "../components/Layout";
+import HowToPlayCollapse from "../components/HowToPlayCollapse";
 import WordSearchGrid from "../components/WordSearchGrid";
 import { useLanguage } from "../i18n/LanguageContext";
 import { getSopaloDayContext, SopaloRound, RoundClue } from "../data/sopaloRounds";
@@ -447,6 +448,8 @@ export default function Game() {
             {t.revealButton}
           </Button>
         )}
+
+        <HowToPlayCollapse title={t.howToPlayTitle} body={t.howToPlayText} />
       </Box>
 
       <Modal
