@@ -1,6 +1,7 @@
 import { getWeekStart } from "./weeklyRoscos";
 import { splitAnswerWords } from "./imaginaloRounds";
 import preguntasData from "./preguntas.json";
+import preguntasEnData from "./preguntas_en.json";
 
 // Mismo ancla que weeklyRoscos.ts / imaginaloRounds.ts / emojinaloRounds.ts /
 // frutasRounds.ts (CYCLE_BASE_DATE), para que el ciclado semanal sea
@@ -17,6 +18,16 @@ interface PreguntaEntry {
 
 const PREGUNTAS = preguntasData as PreguntaEntry[];
 
+// pt todavía no tiene banco propio: cae a es hasta que se cure.
+const PREGUNTAS_BY_LANGUAGE: Record<string, PreguntaEntry[]> = {
+  es: PREGUNTAS,
+  en: preguntasEnData as PreguntaEntry[],
+};
+
+function getPreguntasForLanguage(language: string): PreguntaEntry[] {
+  return PREGUNTAS_BY_LANGUAGE[language] ?? PREGUNTAS;
+}
+
 export interface PreguntaClue {
   words: string[];
   text: string;
@@ -26,7 +37,12 @@ function normalizeAnswer(respuesta: string): string {
   return respuesta.trim().toUpperCase().replace(/\|/g, " ");
 }
 
-export function getPreguntasRoundClues(dayIndex: number, referenceDate = new Date()): PreguntaClue[] {
+export function getPreguntasRoundClues(
+  dayIndex: number,
+  referenceDate = new Date(),
+  language = "es"
+): PreguntaClue[] {
+  const pool = getPreguntasForLanguage(language);
   const weekStart = getWeekStart(referenceDate);
   const weeksSinceBase = Math.round(
     (new Date(weekStart).getTime() - new Date(CYCLE_BASE_DATE).getTime()) / MS_PER_WEEK
@@ -41,9 +57,9 @@ export function getPreguntasRoundClues(dayIndex: number, referenceDate = new Dat
   // respuesta (normalizada) ya haya salido ese día.
   const usedAnswers = new Set<string>();
   const clues: PreguntaClue[] = [];
-  for (let offset = 0; clues.length < SLOTS_PER_ROUND && offset < PREGUNTAS.length; offset++) {
-    const idx = ((dayCounter * SLOTS_PER_ROUND + offset) % PREGUNTAS.length + PREGUNTAS.length) % PREGUNTAS.length;
-    const entry = PREGUNTAS[idx];
+  for (let offset = 0; clues.length < SLOTS_PER_ROUND && offset < pool.length; offset++) {
+    const idx = ((dayCounter * SLOTS_PER_ROUND + offset) % pool.length + pool.length) % pool.length;
+    const entry = pool[idx];
     const key = normalizeAnswer(entry.respuesta);
     if (usedAnswers.has(key)) continue;
     usedAnswers.add(key);

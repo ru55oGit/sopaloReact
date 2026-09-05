@@ -88,9 +88,10 @@ function buildFrutasRound(
 function buildPreguntasRound(
   dayIndex: number,
   referenceDate: Date,
+  language: string,
   questionLabel: string
 ): SopaloRound {
-  const preguntasClues = getPreguntasRoundClues(dayIndex, referenceDate);
+  const preguntasClues = getPreguntasRoundClues(dayIndex, referenceDate, language);
   return {
     kind: "preguntas",
     clues: preguntasClues.map((c) => ({
@@ -124,7 +125,7 @@ export function getSopaloDayContext(
     if (i === 2) {
       return buildFrutasRound(dayIndex, referenceDate, language, frutasLabels);
     }
-    return buildPreguntasRound(dayIndex, referenceDate, questionLabel);
+    return buildPreguntasRound(dayIndex, referenceDate, language, questionLabel);
   });
 
   return {
