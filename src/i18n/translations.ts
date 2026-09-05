@@ -320,6 +320,7 @@ export const availableLanguages: Array<{ code: SupportedLanguage; name: string; 
   { code: "es", name: "Español", flag: "🇦🇷" },
   { code: "en", name: "English", flag: "🇺🇸" },
   { code: "pt", name: "Português", flag: "🇧🇷" },
-  { code: "fr", name: "Français", flag: "🇫🇷" },
-  { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  // fr/de ocultos del selector (siguen soportados en `translations`, solo no se ofrecen en la UI)
+  // { code: "fr", name: "Français", flag: "🇫🇷" },
+  // { code: "de", name: "Deutsch", flag: "🇩🇪" },
 ];
