@@ -400,7 +400,7 @@ export default function Game() {
                       {clue.text}
                     </Typography>
                   )}
-                  <Box sx={{ display: "flex", flexWrap: "wrap", columnGap: "24px", rowGap: "4px", minWidth: 0 }}>
+                  <Box sx={{ display: "flex", flexWrap: "wrap", columnGap: "12px", rowGap: "4px", minWidth: 0 }}>
                     {clue.words.map((w, i) => {
                       const foundByPlayer = foundWords.includes(normalizeForGrid(w));
                       if (!foundByPlayer && !revealed && clue.hideBlanks) return null;
