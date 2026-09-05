@@ -2,6 +2,7 @@ import { getWeekStart } from "./weeklyRoscos";
 import { splitAnswerWords } from "./imaginaloRounds";
 import preguntasData from "./preguntas.json";
 import preguntasEnData from "./preguntas_en.json";
+import preguntasPtData from "./preguntas_pt.json";
 
 // Mismo ancla que weeklyRoscos.ts / imaginaloRounds.ts / emojinaloRounds.ts /
 // frutasRounds.ts (CYCLE_BASE_DATE), para que el ciclado semanal sea
@@ -18,10 +19,10 @@ interface PreguntaEntry {
 
 const PREGUNTAS = preguntasData as PreguntaEntry[];
 
-// pt todavía no tiene banco propio: cae a es hasta que se cure.
 const PREGUNTAS_BY_LANGUAGE: Record<string, PreguntaEntry[]> = {
   es: PREGUNTAS,
   en: preguntasEnData as PreguntaEntry[],
+  pt: preguntasPtData as PreguntaEntry[],
 };
 
 function getPreguntasForLanguage(language: string): PreguntaEntry[] {
