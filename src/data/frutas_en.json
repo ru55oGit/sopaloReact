@@ -1,0 +1,362 @@
+[
+  {
+    "file": "Carambola",
+    "name": "Star fruit"
+  },
+  {
+    "file": "Feijoa",
+    "name": "Feijoa"
+  },
+  {
+    "file": "Frambuesa",
+    "name": "Raspberry"
+  },
+  {
+    "file": "Guanabana",
+    "name": "Soursop"
+  },
+  {
+    "file": "Lichi",
+    "name": "Lychee"
+  },
+  {
+    "file": "Mangostan",
+    "name": "Mangosteen"
+  },
+  {
+    "file": "Maracuya",
+    "name": "Passion fruit"
+  },
+  {
+    "file": "Nectarina",
+    "name": "Nectarine"
+  },
+  {
+    "file": "Pitahaya",
+    "name": "Dragon fruit"
+  },
+  {
+    "file": "acerola",
+    "name": "Acerola"
+  },
+  {
+    "file": "aguacate",
+    "name": "Avocado"
+  },
+  {
+    "file": "ajo",
+    "name": "Garlic"
+  },
+  {
+    "file": "alcachofa",
+    "name": "Artichoke"
+  },
+  {
+    "file": "anana",
+    "name": "Pineapple"
+  },
+  {
+    "file": "anona",
+    "name": "Custard apple"
+  },
+  {
+    "file": "apio",
+    "name": "Celery"
+  },
+  {
+    "file": "arandanos",
+    "name": "Blueberries"
+  },
+  {
+    "file": "arvejas",
+    "name": "Peas"
+  },
+  {
+    "file": "banana",
+    "name": "Banana"
+  },
+  {
+    "file": "berenjena",
+    "name": "Eggplant"
+  },
+  {
+    "file": "brocoli",
+    "name": "Broccoli"
+  },
+  {
+    "file": "cabutia",
+    "name": "Kabocha squash"
+  },
+  {
+    "file": "calabaza",
+    "name": "Pumpkin"
+  },
+  {
+    "file": "caqui",
+    "name": "Persimmon"
+  },
+  {
+    "file": "cebolla",
+    "name": "Onion"
+  },
+  {
+    "file": "cereza",
+    "name": "Cherry"
+  },
+  {
+    "file": "champinon",
+    "name": "Mushroom"
+  },
+  {
+    "file": "chaucha",
+    "name": "Green bean"
+  },
+  {
+    "file": "chirimoya",
+    "name": "Cherimoya"
+  },
+  {
+    "file": "choclo",
+    "name": "Corn"
+  },
+  {
+    "file": "cidra",
+    "name": "Citron"
+  },
+  {
+    "file": "ciruela",
+    "name": "Plum"
+  },
+  {
+    "file": "coco",
+    "name": "Coconut"
+  },
+  {
+    "file": "coliflor",
+    "name": "Cauliflower"
+  },
+  {
+    "file": "damasco",
+    "name": "Apricot"
+  },
+  {
+    "file": "datil",
+    "name": "Date"
+  },
+  {
+    "file": "durazno",
+    "name": "Peach"
+  },
+  {
+    "file": "endivia",
+    "name": "Endive"
+  },
+  {
+    "file": "escaramujo",
+    "name": "Rosehip"
+  },
+  {
+    "file": "escarola",
+    "name": "Escarole"
+  },
+  {
+    "file": "esparrago",
+    "name": "Asparagus"
+  },
+  {
+    "file": "espinaca",
+    "name": "Spinach"
+  },
+  {
+    "file": "frutilla",
+    "name": "Strawberry"
+  },
+  {
+    "file": "garbanzos",
+    "name": "Chickpeas"
+  },
+  {
+    "file": "granada",
+    "name": "Pomegranate"
+  },
+  {
+    "file": "grosella",
+    "name": "Currant"
+  },
+  {
+    "file": "guayaba",
+    "name": "Guava"
+  },
+  {
+    "file": "habas",
+    "name": "Fava beans"
+  },
+  {
+    "file": "higo",
+    "name": "Fig"
+  },
+  {
+    "file": "lechuga",
+    "name": "Lettuce"
+  },
+  {
+    "file": "lentejas",
+    "name": "Lentils"
+  },
+  {
+    "file": "lima",
+    "name": "Lime"
+  },
+  {
+    "file": "limon",
+    "name": "Lemon"
+  },
+  {
+    "file": "mandarina",
+    "name": "Tangerine"
+  },
+  {
+    "file": "mango",
+    "name": "Mango"
+  },
+  {
+    "file": "mani",
+    "name": "Peanut"
+  },
+  {
+    "file": "manzana",
+    "name": "Apple"
+  },
+  {
+    "file": "melon",
+    "name": "Melon"
+  },
+  {
+    "file": "membrillo",
+    "name": "Quince"
+  },
+  {
+    "file": "mora",
+    "name": "Blackberry"
+  },
+  {
+    "file": "morron",
+    "name": "Bell pepper"
+  },
+  {
+    "file": "nabo",
+    "name": "Turnip"
+  },
+  {
+    "file": "naranja",
+    "name": "Orange"
+  },
+  {
+    "file": "nispero",
+    "name": "Loquat"
+  },
+  {
+    "file": "nuez",
+    "name": "Walnut"
+  },
+  {
+    "file": "okra",
+    "name": "Okra"
+  },
+  {
+    "file": "oliva",
+    "name": "Olive"
+  },
+  {
+    "file": "papaya",
+    "name": "Papaya"
+  },
+  {
+    "file": "pepino",
+    "name": "Cucumber"
+  },
+  {
+    "file": "pera",
+    "name": "Pear"
+  },
+  {
+    "file": "perejil",
+    "name": "Parsley"
+  },
+  {
+    "file": "pomelo",
+    "name": "Grapefruit"
+  },
+  {
+    "file": "porotos",
+    "name": "Beans"
+  },
+  {
+    "file": "puerro",
+    "name": "Leek"
+  },
+  {
+    "file": "rabanito",
+    "name": "Radish"
+  },
+  {
+    "file": "remolacha",
+    "name": "Beet"
+  },
+  {
+    "file": "repollo",
+    "name": "Cabbage"
+  },
+  {
+    "file": "ruibarbo",
+    "name": "Rhubarb"
+  },
+  {
+    "file": "sandia",
+    "name": "Watermelon"
+  },
+  {
+    "file": "soja",
+    "name": "Soybean"
+  },
+  {
+    "file": "tamarindo",
+    "name": "Tamarind"
+  },
+  {
+    "file": "tomate",
+    "name": "Tomato"
+  },
+  {
+    "file": "tuna",
+    "name": "Prickly pear"
+  },
+  {
+    "file": "uva",
+    "name": "Grape"
+  },
+  {
+    "file": "uvilla",
+    "name": "Cape gooseberry"
+  },
+  {
+    "file": "yaca",
+    "name": "Jackfruit"
+  },
+  {
+    "file": "zanahoria",
+    "name": "Carrot"
+  },
+  {
+    "file": "zapallito",
+    "name": "Pattypan squash"
+  },
+  {
+    "file": "zapote",
+    "name": "Sapote"
+  },
+  {
+    "file": "zucchini",
+    "name": "Zucchini"
+  }
+]

@@ -71,9 +71,10 @@ function buildEmojinaloRound(
 function buildFrutasRound(
   dayIndex: number,
   referenceDate: Date,
+  language: string,
   frutasLabels: Record<FrutasCategoryKey, string>
 ): SopaloRound {
-  const frutasClues = getFrutasRoundClues(dayIndex, referenceDate);
+  const frutasClues = getFrutasRoundClues(dayIndex, referenceDate, language);
   return {
     kind: "frutas",
     clues: frutasClues.map((c) => ({
@@ -121,7 +122,7 @@ export function getSopaloDayContext(
       return buildEmojinaloRound(dayIndex, referenceDate, language, emojinaloLabels);
     }
     if (i === 2) {
-      return buildFrutasRound(dayIndex, referenceDate, frutasLabels);
+      return buildFrutasRound(dayIndex, referenceDate, language, frutasLabels);
     }
     return buildPreguntasRound(dayIndex, referenceDate, questionLabel);
   });

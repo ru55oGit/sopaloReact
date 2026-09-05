@@ -1,0 +1,362 @@
+[
+  {
+    "file": "Carambola",
+    "name": "Carambola"
+  },
+  {
+    "file": "Feijoa",
+    "name": "Feijoa"
+  },
+  {
+    "file": "Frambuesa",
+    "name": "Framboesa"
+  },
+  {
+    "file": "Guanabana",
+    "name": "Graviola"
+  },
+  {
+    "file": "Lichi",
+    "name": "Lichia"
+  },
+  {
+    "file": "Mangostan",
+    "name": "Mangostão"
+  },
+  {
+    "file": "Maracuya",
+    "name": "Maracujá"
+  },
+  {
+    "file": "Nectarina",
+    "name": "Nectarina"
+  },
+  {
+    "file": "Pitahaya",
+    "name": "Pitaia"
+  },
+  {
+    "file": "acerola",
+    "name": "Acerola"
+  },
+  {
+    "file": "aguacate",
+    "name": "Abacate"
+  },
+  {
+    "file": "ajo",
+    "name": "Alho"
+  },
+  {
+    "file": "alcachofa",
+    "name": "Alcachofra"
+  },
+  {
+    "file": "anana",
+    "name": "Abacaxi"
+  },
+  {
+    "file": "anona",
+    "name": "Anona"
+  },
+  {
+    "file": "apio",
+    "name": "Aipo"
+  },
+  {
+    "file": "arandanos",
+    "name": "Mirtilos"
+  },
+  {
+    "file": "arvejas",
+    "name": "Ervilhas"
+  },
+  {
+    "file": "banana",
+    "name": "Banana"
+  },
+  {
+    "file": "berenjena",
+    "name": "Berinjela"
+  },
+  {
+    "file": "brocoli",
+    "name": "Brócolis"
+  },
+  {
+    "file": "cabutia",
+    "name": "Abóbora cabotiá"
+  },
+  {
+    "file": "calabaza",
+    "name": "Abóbora"
+  },
+  {
+    "file": "caqui",
+    "name": "Caqui"
+  },
+  {
+    "file": "cebolla",
+    "name": "Cebola"
+  },
+  {
+    "file": "cereza",
+    "name": "Cereja"
+  },
+  {
+    "file": "champinon",
+    "name": "Cogumelo"
+  },
+  {
+    "file": "chaucha",
+    "name": "Vagem"
+  },
+  {
+    "file": "chirimoya",
+    "name": "Cherimoia"
+  },
+  {
+    "file": "choclo",
+    "name": "Milho"
+  },
+  {
+    "file": "cidra",
+    "name": "Cidra"
+  },
+  {
+    "file": "ciruela",
+    "name": "Ameixa"
+  },
+  {
+    "file": "coco",
+    "name": "Coco"
+  },
+  {
+    "file": "coliflor",
+    "name": "Couve flor"
+  },
+  {
+    "file": "damasco",
+    "name": "Damasco"
+  },
+  {
+    "file": "datil",
+    "name": "Tâmara"
+  },
+  {
+    "file": "durazno",
+    "name": "Pêssego"
+  },
+  {
+    "file": "endivia",
+    "name": "Endívia"
+  },
+  {
+    "file": "escaramujo",
+    "name": "Rosa mosqueta"
+  },
+  {
+    "file": "escarola",
+    "name": "Escarola"
+  },
+  {
+    "file": "esparrago",
+    "name": "Aspargo"
+  },
+  {
+    "file": "espinaca",
+    "name": "Espinafre"
+  },
+  {
+    "file": "frutilla",
+    "name": "Morango"
+  },
+  {
+    "file": "garbanzos",
+    "name": "Grão de bico"
+  },
+  {
+    "file": "granada",
+    "name": "Romã"
+  },
+  {
+    "file": "grosella",
+    "name": "Groselha"
+  },
+  {
+    "file": "guayaba",
+    "name": "Goiaba"
+  },
+  {
+    "file": "habas",
+    "name": "Favas"
+  },
+  {
+    "file": "higo",
+    "name": "Figo"
+  },
+  {
+    "file": "lechuga",
+    "name": "Alface"
+  },
+  {
+    "file": "lentejas",
+    "name": "Lentilhas"
+  },
+  {
+    "file": "lima",
+    "name": "Lima"
+  },
+  {
+    "file": "limon",
+    "name": "Limão"
+  },
+  {
+    "file": "mandarina",
+    "name": "Tangerina"
+  },
+  {
+    "file": "mango",
+    "name": "Manga"
+  },
+  {
+    "file": "mani",
+    "name": "Amendoim"
+  },
+  {
+    "file": "manzana",
+    "name": "Maçã"
+  },
+  {
+    "file": "melon",
+    "name": "Melão"
+  },
+  {
+    "file": "membrillo",
+    "name": "Marmelo"
+  },
+  {
+    "file": "mora",
+    "name": "Amora"
+  },
+  {
+    "file": "morron",
+    "name": "Pimentão"
+  },
+  {
+    "file": "nabo",
+    "name": "Nabo"
+  },
+  {
+    "file": "naranja",
+    "name": "Laranja"
+  },
+  {
+    "file": "nispero",
+    "name": "Nêspera"
+  },
+  {
+    "file": "nuez",
+    "name": "Noz"
+  },
+  {
+    "file": "okra",
+    "name": "Quiabo"
+  },
+  {
+    "file": "oliva",
+    "name": "Azeitona"
+  },
+  {
+    "file": "papaya",
+    "name": "Mamão"
+  },
+  {
+    "file": "pepino",
+    "name": "Pepino"
+  },
+  {
+    "file": "pera",
+    "name": "Pera"
+  },
+  {
+    "file": "perejil",
+    "name": "Salsa"
+  },
+  {
+    "file": "pomelo",
+    "name": "Toranja"
+  },
+  {
+    "file": "porotos",
+    "name": "Feijão"
+  },
+  {
+    "file": "puerro",
+    "name": "Alho poró"
+  },
+  {
+    "file": "rabanito",
+    "name": "Rabanete"
+  },
+  {
+    "file": "remolacha",
+    "name": "Beterraba"
+  },
+  {
+    "file": "repollo",
+    "name": "Repolho"
+  },
+  {
+    "file": "ruibarbo",
+    "name": "Ruibarbo"
+  },
+  {
+    "file": "sandia",
+    "name": "Melancia"
+  },
+  {
+    "file": "soja",
+    "name": "Soja"
+  },
+  {
+    "file": "tamarindo",
+    "name": "Tamarindo"
+  },
+  {
+    "file": "tomate",
+    "name": "Tomate"
+  },
+  {
+    "file": "tuna",
+    "name": "Figo da índia"
+  },
+  {
+    "file": "uva",
+    "name": "Uva"
+  },
+  {
+    "file": "uvilla",
+    "name": "Physalis"
+  },
+  {
+    "file": "yaca",
+    "name": "Jaca"
+  },
+  {
+    "file": "zanahoria",
+    "name": "Cenoura"
+  },
+  {
+    "file": "zapallito",
+    "name": "Moranga"
+  },
+  {
+    "file": "zapote",
+    "name": "Sapoti"
+  },
+  {
+    "file": "zucchini",
+    "name": "Abobrinha"
+  }
+]

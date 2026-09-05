@@ -1,7 +1,11 @@
 import { getWeekStart } from "./weeklyRoscos";
 import { splitAnswerWords } from "./imaginaloRounds";
 import frutasData from "./frutas.json";
+import frutasEnData from "./frutas_en.json";
+import frutasPtData from "./frutas_pt.json";
 import animalesData from "./animales.json";
+import animalesEnData from "./animales_en.json";
+import animalesPtData from "./animales_pt.json";
 
 // Mismo ancla que weeklyRoscos.ts / imaginaloRounds.ts / emojinaloRounds.ts
 // (CYCLE_BASE_DATE), para que el ciclado semanal sea consistente entre las
@@ -18,6 +22,29 @@ interface PhotoEntry {
 
 const FRUTAS = frutasData as PhotoEntry[];
 const ANIMALES = animalesData as PhotoEntry[];
+
+// Traducciones curadas a mano (nombres cortos, no requieren el fallback a
+// español que usa Imaginalo para funkos/sombras). "file" identifica la
+// imagen y es el mismo en los tres idiomas.
+const FRUTAS_BY_LANGUAGE: Record<string, PhotoEntry[]> = {
+  es: FRUTAS,
+  en: frutasEnData as PhotoEntry[],
+  pt: frutasPtData as PhotoEntry[],
+};
+
+const ANIMALES_BY_LANGUAGE: Record<string, PhotoEntry[]> = {
+  es: ANIMALES,
+  en: animalesEnData as PhotoEntry[],
+  pt: animalesPtData as PhotoEntry[],
+};
+
+function getFrutasForLanguage(language: string): PhotoEntry[] {
+  return FRUTAS_BY_LANGUAGE[language] ?? FRUTAS;
+}
+
+function getAnimalesForLanguage(language: string): PhotoEntry[] {
+  return ANIMALES_BY_LANGUAGE[language] ?? ANIMALES;
+}
 
 // Fotos en src/assets/{frutas,animales}/<file>.jpg. eager+query:"?url" para
 // que cada entrada del glob resuelva directo a la URL final del asset (no a
@@ -61,9 +88,15 @@ export interface FrutasClue {
   photo: string;
 }
 
-export function getFrutasRoundClues(dayIndex: number, referenceDate = new Date()): FrutasClue[] {
-  const fruta = FRUTAS[pickIndex(FRUTAS.length, dayIndex, referenceDate)];
-  const animal = ANIMALES[pickIndex(ANIMALES.length, dayIndex, referenceDate)];
+export function getFrutasRoundClues(
+  dayIndex: number,
+  referenceDate = new Date(),
+  language = "es"
+): FrutasClue[] {
+  const frutasPool = getFrutasForLanguage(language);
+  const animalesPool = getAnimalesForLanguage(language);
+  const fruta = frutasPool[pickIndex(frutasPool.length, dayIndex, referenceDate)];
+  const animal = animalesPool[pickIndex(animalesPool.length, dayIndex, referenceDate)];
 
   const frutaUrl = FRUTAS_URL_BY_FILE.get(fruta.file);
   const animalUrl = ANIMALES_URL_BY_FILE.get(animal.file);

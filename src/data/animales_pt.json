@@ -1,0 +1,414 @@
+[
+  {
+    "file": "abeja",
+    "name": "Abelha"
+  },
+  {
+    "file": "aguila",
+    "name": "Águia"
+  },
+  {
+    "file": "alce",
+    "name": "Alce"
+  },
+  {
+    "file": "almejas",
+    "name": "Amêijoas"
+  },
+  {
+    "file": "antilope",
+    "name": "Antílope"
+  },
+  {
+    "file": "arana",
+    "name": "Aranha"
+  },
+  {
+    "file": "ardilla",
+    "name": "Esquilo"
+  },
+  {
+    "file": "armadillo",
+    "name": "Tatu"
+  },
+  {
+    "file": "atun",
+    "name": "Atum"
+  },
+  {
+    "file": "avestruz",
+    "name": "Avestruz"
+  },
+  {
+    "file": "axolote",
+    "name": "Axolote"
+  },
+  {
+    "file": "ballena",
+    "name": "Baleia"
+  },
+  {
+    "file": "bisonte",
+    "name": "Bisão"
+  },
+  {
+    "file": "buho",
+    "name": "Coruja"
+  },
+  {
+    "file": "buitre",
+    "name": "Abutre"
+  },
+  {
+    "file": "burro",
+    "name": "Burro"
+  },
+  {
+    "file": "caballo",
+    "name": "Cavalo"
+  },
+  {
+    "file": "cabra",
+    "name": "Cabra"
+  },
+  {
+    "file": "cacatua",
+    "name": "Cacatua"
+  },
+  {
+    "file": "caiman",
+    "name": "Jacaré"
+  },
+  {
+    "file": "calamar",
+    "name": "Lula"
+  },
+  {
+    "file": "camaleon",
+    "name": "Camaleão"
+  },
+  {
+    "file": "camello",
+    "name": "Camelo"
+  },
+  {
+    "file": "canario",
+    "name": "Canário"
+  },
+  {
+    "file": "cangrejo",
+    "name": "Caranguejo"
+  },
+  {
+    "file": "canguro",
+    "name": "Canguru"
+  },
+  {
+    "file": "cardenal",
+    "name": "Cardeal"
+  },
+  {
+    "file": "castor",
+    "name": "Castor"
+  },
+  {
+    "file": "cebra",
+    "name": "Zebra"
+  },
+  {
+    "file": "cerdo",
+    "name": "Porco"
+  },
+  {
+    "file": "chimpance",
+    "name": "Chimpanzé"
+  },
+  {
+    "file": "chinchilla",
+    "name": "Chinchila"
+  },
+  {
+    "file": "ciempies",
+    "name": "Centopeia"
+  },
+  {
+    "file": "ciervo",
+    "name": "Cervo"
+  },
+  {
+    "file": "cisne",
+    "name": "Cisne"
+  },
+  {
+    "file": "cobayo",
+    "name": "Porquinho da índia"
+  },
+  {
+    "file": "cocodrilo",
+    "name": "Crocodilo"
+  },
+  {
+    "file": "colibri",
+    "name": "Beija flor"
+  },
+  {
+    "file": "conejo",
+    "name": "Coelho"
+  },
+  {
+    "file": "delfin",
+    "name": "Golfinho"
+  },
+  {
+    "file": "dromedario",
+    "name": "Dromedário"
+  },
+  {
+    "file": "elefante",
+    "name": "Elefante"
+  },
+  {
+    "file": "erizo",
+    "name": "Ouriço"
+  },
+  {
+    "file": "erizo_de_mar",
+    "name": "Ouriço do mar"
+  },
+  {
+    "file": "escarabajo",
+    "name": "Besouro"
+  },
+  {
+    "file": "escorpion",
+    "name": "Escorpião"
+  },
+  {
+    "file": "estrella_de_mar",
+    "name": "Estrela do mar"
+  },
+  {
+    "file": "faisan",
+    "name": "Faisão"
+  },
+  {
+    "file": "flamenco",
+    "name": "Flamingo"
+  },
+  {
+    "file": "foca",
+    "name": "Foca"
+  },
+  {
+    "file": "gallo",
+    "name": "Galo"
+  },
+  {
+    "file": "ganso",
+    "name": "Ganso"
+  },
+  {
+    "file": "gato",
+    "name": "Gato"
+  },
+  {
+    "file": "gaviota",
+    "name": "Gaivota"
+  },
+  {
+    "file": "gorila",
+    "name": "Gorila"
+  },
+  {
+    "file": "grulla",
+    "name": "Grou"
+  },
+  {
+    "file": "guacamayo",
+    "name": "Arara"
+  },
+  {
+    "file": "halcon",
+    "name": "Falcão"
+  },
+  {
+    "file": "hamster",
+    "name": "Hamster"
+  },
+  {
+    "file": "hiena",
+    "name": "Hiena"
+  },
+  {
+    "file": "hipopotamo",
+    "name": "Hipopótamo"
+  },
+  {
+    "file": "hormiga",
+    "name": "Formiga"
+  },
+  {
+    "file": "huron",
+    "name": "Furão"
+  },
+  {
+    "file": "ibice",
+    "name": "Íbex"
+  },
+  {
+    "file": "iguana",
+    "name": "Iguana"
+  },
+  {
+    "file": "jabali",
+    "name": "Javali"
+  },
+  {
+    "file": "jirafa",
+    "name": "Girafa"
+  },
+  {
+    "file": "langosta",
+    "name": "Lagosta"
+  },
+  {
+    "file": "lechuza",
+    "name": "Suindara"
+  },
+  {
+    "file": "leon",
+    "name": "Leão"
+  },
+  {
+    "file": "leona",
+    "name": "Leoa"
+  },
+  {
+    "file": "leopardo",
+    "name": "Leopardo"
+  },
+  {
+    "file": "libelula",
+    "name": "Libélula"
+  },
+  {
+    "file": "liebre",
+    "name": "Lebre"
+  },
+  {
+    "file": "llama",
+    "name": "Lhama"
+  },
+  {
+    "file": "lobo",
+    "name": "Lobo"
+  },
+  {
+    "file": "lobo_marino",
+    "name": "Leão marinho"
+  },
+  {
+    "file": "loro",
+    "name": "Papagaio"
+  },
+  {
+    "file": "mapache",
+    "name": "Guaxinim"
+  },
+  {
+    "file": "mariposa",
+    "name": "Borboleta"
+  },
+  {
+    "file": "marmota",
+    "name": "Marmota"
+  },
+  {
+    "file": "medusa",
+    "name": "Água viva"
+  },
+  {
+    "file": "milpies",
+    "name": "Piolho de cobra"
+  },
+  {
+    "file": "mirlo",
+    "name": "Melro"
+  },
+  {
+    "file": "mono",
+    "name": "Macaco"
+  },
+  {
+    "file": "morsa",
+    "name": "Morsa"
+  },
+  {
+    "file": "mosca",
+    "name": "Mosca"
+  },
+  {
+    "file": "mosquito",
+    "name": "Mosquito"
+  },
+  {
+    "file": "mula",
+    "name": "Mula"
+  },
+  {
+    "file": "murcielago",
+    "name": "Morcego"
+  },
+  {
+    "file": "narval",
+    "name": "Narval"
+  },
+  {
+    "file": "orca",
+    "name": "Orca"
+  },
+  {
+    "file": "oruga",
+    "name": "Lagarta"
+  },
+  {
+    "file": "oso_pardo",
+    "name": "Urso pardo"
+  },
+  {
+    "file": "oso_polar",
+    "name": "Urso polar"
+  },
+  {
+    "file": "ostra",
+    "name": "Ostra"
+  },
+  {
+    "file": "oveja",
+    "name": "Ovelha"
+  },
+  {
+    "file": "paloma",
+    "name": "Pombo"
+  },
+  {
+    "file": "pato",
+    "name": "Pato"
+  },
+  {
+    "file": "pavo_real",
+    "name": "Pavão"
+  },
+  {
+    "file": "pinguino",
+    "name": "Pinguim"
+  },
+  {
+    "file": "tigre",
+    "name": "Tigre"
+  },
+  {
+    "file": "tucan",
+    "name": "Tucano"
+  }
+]
