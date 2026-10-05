@@ -31,6 +31,8 @@ export interface Translation {
   dayThu: string;
   dayFri: string;
   daySat: string;
+  removeAdsButton: string;
+  removeAdsButtonBuying: string;
   aboutTitle: string;
   aboutText: string;
   howToPlayTitle: string;
@@ -90,6 +92,8 @@ const es: Translation = {
   statusNotStarted: "Sin jugar",
   daySun: "Domingo", dayMon: "Lunes", dayTue: "Martes", dayWed: "Miércoles",
   dayThu: "Jueves", dayFri: "Viernes", daySat: "Sábado",
+  removeAdsButton: "Sacar los anuncios",
+  removeAdsButtonBuying: "Redirigiendo a MercadoPago...",
   aboutTitle: "¿Qué es Ensopalo?",
   aboutText: "Ensopalo es la sopa de letras diaria de Boludeando. Cada día trae 4 rondas distintas: Funkos, Escudos, Sombras y Logos para adivinar a partir de una imagen; Emojinalo, donde un emoji esconde un país, una capital, una palabra, una película o una serie; Frutas y Animales, para identificar la foto; y Preguntas, cuatro de trivia contrarreloj. En cada pista hay que encontrar la palabra escondida en la grilla, deslizando el dedo desde la primera letra hasta la última.",
   howToPlayTitle: "¿Cómo jugar?",
@@ -154,6 +158,8 @@ const en: Translation = {
   statusNotStarted: "Not played",
   daySun: "Sunday", dayMon: "Monday", dayTue: "Tuesday", dayWed: "Wednesday",
   dayThu: "Thursday", dayFri: "Friday", daySat: "Saturday",
+  removeAdsButton: "Remove ads",
+  removeAdsButtonBuying: "Redirecting to MercadoPago...",
   aboutTitle: "What is Ensopalo?",
   aboutText: "Ensopalo is Boludeando's daily word search. Every day brings 4 different rounds: Funkos, Shields, Shadows and Logos, where you guess from a picture; Emojinalo, where an emoji hides a country, a capital, a word, a movie or a series; Fruits and Animals, where you identify the photo; and Questions, four trivia questions against the clock. In every clue you have to find the hidden word in the grid by swiping from the first letter to the last.",
   howToPlayTitle: "How to play?",
@@ -218,6 +224,8 @@ const pt: Translation = {
   statusNotStarted: "Não jogado",
   daySun: "Domingo", dayMon: "Segunda", dayTue: "Terça", dayWed: "Quarta",
   dayThu: "Quinta", dayFri: "Sexta", daySat: "Sábado",
+  removeAdsButton: "Remover anúncios",
+  removeAdsButtonBuying: "Redirecionando para o MercadoPago...",
   aboutTitle: "O que é o Ensopalo?",
   aboutText: "Ensopalo é o caça-palavras diário do Boludeando. Todo dia traz 4 rodadas diferentes: Funkos, Escudos, Sombras e Logos, onde você adivinha a partir de uma imagem; Emojinalo, em que um emoji esconde um país, uma capital, uma palavra, um filme ou uma série; Frutas e Animais, para identificar a foto; e Perguntas, quatro de trivia contra o tempo. Em cada pista você precisa encontrar a palavra escondida na grade, deslizando o dedo da primeira letra até a última.",
   howToPlayTitle: "Como jogar?",
@@ -282,6 +290,8 @@ const fr: Translation = {
   statusNotStarted: "Pas joué",
   daySun: "Dimanche", dayMon: "Lundi", dayTue: "Mardi", dayWed: "Mercredi",
   dayThu: "Jeudi", dayFri: "Vendredi", daySat: "Samedi",
+  removeAdsButton: "Retirer les publicités",
+  removeAdsButtonBuying: "Redirection vers MercadoPago...",
   aboutTitle: "Qu'est-ce que Ensopalo ?",
   aboutText: "Ensopalo est la grille de mots mêlés quotidienne de Boludeando. Chaque jour propose 4 manches différentes : Funkos, Écussons, Ombres et Logos, où tu devines à partir d'une image ; Emojinalo, où un emoji cache un pays, une capitale, un mot, un film ou une série ; Fruits et Animaux, pour identifier la photo ; et Questions, quatre questions de culture générale contre la montre. Pour chaque indice, il faut trouver le mot caché dans la grille en glissant du doigt depuis la première lettre jusqu'à la dernière.",
   howToPlayTitle: "Comment jouer ?",
@@ -346,6 +356,8 @@ const de: Translation = {
   statusNotStarted: "Nicht gespielt",
   daySun: "Sonntag", dayMon: "Montag", dayTue: "Dienstag", dayWed: "Mittwoch",
   dayThu: "Donnerstag", dayFri: "Freitag", daySat: "Samstag",
+  removeAdsButton: "Werbung entfernen",
+  removeAdsButtonBuying: "Weiterleitung zu MercadoPago...",
   aboutTitle: "Was ist Ensopalo?",
   aboutText: "Ensopalo ist das tägliche Wortsuchrätsel von Boludeando. Jeden Tag gibt es 4 verschiedene Runden: Funkos, Wappen, Schatten und Logos, bei denen du anhand eines Bildes rätst; Emojinalo, bei dem ein Emoji ein Land, eine Hauptstadt, ein Wort, einen Film oder eine Serie versteckt; Obst und Tiere, um das Foto zu erkennen; und Fragen, vier Quizfragen gegen die Zeit. Bei jedem Hinweis musst du das versteckte Wort im Raster finden, indem du vom ersten bis zum letzten Buchstaben wischst.",
   howToPlayTitle: "Wie spielt man?",
