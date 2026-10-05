@@ -27,6 +27,8 @@ import {
   isDayAvailable,
 } from "../utils/weeklyRoscoState";
 import { recordLastPlayed } from "../utils/lastPlayedState";
+import { useRewardedAd } from "../ads/useRewardedAd";
+import RewardedAdModal from "../ads/RewardedAdModal";
 
 const ACCENT = "#e74c3c";
 const NEXT_ROUND_DELAY_SECONDS = 5;
@@ -232,6 +234,15 @@ export default function Game() {
   const [phase, setPhase] = useState<Phase>(initialPhase);
   const [foundWords, setFoundWords] = useState<string[]>([]);
   const [revealed, setRevealed] = useState(false);
+  const {
+    adCreative: revealAdCreative,
+    showingAd: showingRevealAd,
+    canConfirmReward: canConfirmReveal,
+    secondsUntilCanConfirm: revealWaitSeconds,
+    requestAd: requestRevealAd,
+    handleAdWatched: handleRevealAdWatched,
+    handleAdSkipped: handleRevealAdSkipped,
+  } = useRewardedAd("ensopalo-reveal-rewarded", "ensopalo", currentLanguage, () => setRevealed(true), "reveal_words");
   const [countdown, setCountdown] = useState(NEXT_ROUND_DELAY_SECONDS);
   type ZoomedImage = { kind: "svg"; loader: () => Promise<{ default: ComponentType }> } | { kind: "photo"; src: string } | { kind: "emoji"; emoji: string };
   const [zoomedImage, setZoomedImage] = useState<ZoomedImage | null>(null);
@@ -293,12 +304,6 @@ export default function Game() {
       if (next.length >= totalWords) setPhase("success");
       return next;
     });
-  }
-
-  // TODO: cuando esté AppLixir, llamar initializeAndOpenPlayer() acá y
-  // revelar recién en el callback de éxito (rewarded video real).
-  function handleRevealWords() {
-    setRevealed(true);
   }
 
   function restartDay() {
@@ -436,7 +441,7 @@ export default function Game() {
 
         {phase === "playing" && !revealed && (
           <Button
-            onClick={handleRevealWords}
+            onClick={requestRevealAd}
             variant="outlined"
             startIcon={<OndemandVideoRoundedIcon />}
             sx={{
@@ -451,6 +456,18 @@ export default function Game() {
 
         <HowToPlayCollapse title={t.howToPlayTitle} body={t.howToPlayText} />
       </Box>
+
+      <RewardedAdModal
+        open={showingRevealAd}
+        adCreative={revealAdCreative}
+        canConfirmReward={canConfirmReveal}
+        secondsUntilCanConfirm={revealWaitSeconds}
+        onConfirm={handleRevealAdWatched}
+        onSkip={handleRevealAdSkipped}
+        confirmLabel={t.rewardedAdConfirmButton}
+        skipLabel={t.rewardedAdSkipButton}
+        waitLabel={t.rewardedAdWaitLabel}
+      />
 
       <Modal
         open={zoomedImage !== null}

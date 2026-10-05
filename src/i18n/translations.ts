@@ -55,6 +55,9 @@ export interface Translation {
   categoryFrutas: string;
   categoryAnimales: string;
   revealButton: string;
+  rewardedAdConfirmButton: string;
+  rewardedAdSkipButton: string;
+  rewardedAdWaitLabel: (seconds: number) => string;
   successTitle: string;
   nextRoundIn: (s: number) => string;
   dayCompleteTitle: string;
@@ -116,6 +119,9 @@ const es: Translation = {
   categoryFrutas: "Frutas y Vegetales",
   categoryAnimales: "Animales",
   revealButton: "Ver anuncio para descubrir las palabras",
+  rewardedAdConfirmButton: "Reclamar recompensa",
+  rewardedAdSkipButton: "Cerrar",
+  rewardedAdWaitLabel: (seconds) => `Esperá ${seconds}s...`,
   successTitle: "¡Muy bien!",
   nextRoundIn: (s) => `Siguiente ronda en ${s}...`,
   dayCompleteTitle: "¡Día completo!",
@@ -177,6 +183,9 @@ const en: Translation = {
   categoryFrutas: "Fruits & Veggies",
   categoryAnimales: "Animals",
   revealButton: "Watch an ad to reveal the words",
+  rewardedAdConfirmButton: "Claim reward",
+  rewardedAdSkipButton: "Close",
+  rewardedAdWaitLabel: (seconds) => `Wait ${seconds}s...`,
   successTitle: "Well done!",
   nextRoundIn: (s) => `Next round in ${s}...`,
   dayCompleteTitle: "Day complete!",
@@ -238,6 +247,9 @@ const pt: Translation = {
   categoryFrutas: "Frutas e Vegetais",
   categoryAnimales: "Animais",
   revealButton: "Assistir a um anúncio para revelar as palavras",
+  rewardedAdConfirmButton: "Resgatar recompensa",
+  rewardedAdSkipButton: "Fechar",
+  rewardedAdWaitLabel: (seconds) => `Espere ${seconds}s...`,
   successTitle: "Muito bem!",
   nextRoundIn: (s) => `Próxima rodada em ${s}...`,
   dayCompleteTitle: "Dia completo!",
@@ -299,6 +311,9 @@ const fr: Translation = {
   categoryFrutas: "Fruits et Légumes",
   categoryAnimales: "Animaux",
   revealButton: "Regarder une pub pour révéler les mots",
+  rewardedAdConfirmButton: "Réclamer la récompense",
+  rewardedAdSkipButton: "Fermer",
+  rewardedAdWaitLabel: (seconds) => `Attends ${seconds}s...`,
   successTitle: "Bien joué !",
   nextRoundIn: (s) => `Manche suivante dans ${s}...`,
   dayCompleteTitle: "Journée terminée !",
@@ -360,6 +375,9 @@ const de: Translation = {
   categoryFrutas: "Obst & Gemüse",
   categoryAnimales: "Tiere",
   revealButton: "Werbung ansehen, um die Wörter aufzudecken",
+  rewardedAdConfirmButton: "Belohnung einlösen",
+  rewardedAdSkipButton: "Schließen",
+  rewardedAdWaitLabel: (seconds) => `Warte ${seconds}s...`,
   successTitle: "Gut gemacht!",
   nextRoundIn: (s) => `Nächste Runde in ${s}...`,
   dayCompleteTitle: "Tag abgeschlossen!",

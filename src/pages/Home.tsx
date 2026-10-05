@@ -9,6 +9,7 @@ import AdsenseScript from "../components/AdsenseScript";
 import DaySopaPreview from "../components/DaySopaPreview";
 import MiniSopaFraction from "../components/MiniSopaFraction";
 import LanguageSelector from "../components/LanguageSelector";
+import HouseAdBanner from "../ads/HouseAdBanner";
 import { useLanguage } from "../i18n/LanguageContext";
 import {
   DayKey,
@@ -140,13 +141,13 @@ export default function Home() {
         <Box sx={{ borderRadius: "16px", backgroundColor: "#ededed", p: 2, color: "#222" }}>
           <Typography sx={{ fontSize: 28, fontWeight: 800, mb: 2 }}>{t.weeklySection}</Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 1.5 }}>
-            {WEEK_DAYS.map((day) => {
+            {WEEK_DAYS.flatMap((day, dayIndex) => {
               const available = isDayAvailable(day.key);
               const dayContext = getSopaloDayContext(day.key, new Date(), currentLanguage);
               const dayState = getDayState(day.key, dayContext.scopeKey);
               const successCount = dayState.results.filter((r) => r === "success").length;
 
-              return (
+              const card = (
                 <Box
                   key={day.key}
                   onClick={() => available && setSelectedDayKey(day.key)}
@@ -191,6 +192,19 @@ export default function Home() {
                   </Button>
                 </Box>
               );
+
+              // Un banner en el medio de las 7 cards (después de la 4ta),
+              // ocupando las 2 columnas del grid.
+              if (dayIndex === 3) {
+                return [
+                  card,
+                  <Box key="days-banner" sx={{ gridColumn: "1 / -1" }}>
+                    <HouseAdBanner slot="ensopalo-days-banner" gameSlug="ensopalo" locale={currentLanguage} />
+                  </Box>,
+                ];
+              }
+
+              return [card];
             })}
           </Box>
         </Box>
