@@ -170,6 +170,13 @@ export default function Home() {
           </Box>
         </Box>
 
+        <HouseAdBanner
+          slot="ensopalo-home-double-banner"
+          gameSlug="ensopalo"
+          locale={currentLanguage}
+          format="banner_double"
+        />
+
         {/* Semanal */}
         <Box sx={{ borderRadius: "16px", backgroundColor: "#ededed", p: 2, color: "#222" }}>
           <Typography sx={{ fontSize: 28, fontWeight: 800, mb: 2 }}>{t.weeklySection}</Typography>
@@ -225,17 +232,6 @@ export default function Home() {
                   </Button>
                 </Box>
               );
-
-              // Un banner en el medio de las 7 cards (después de la 4ta),
-              // ocupando las 2 columnas del grid.
-              if (dayIndex === 3) {
-                return [
-                  card,
-                  <Box key="days-banner" sx={{ gridColumn: "1 / -1" }}>
-                    <HouseAdBanner slot="ensopalo-days-banner" gameSlug="ensopalo" locale={currentLanguage} />
-                  </Box>,
-                ];
-              }
 
               return [card];
             })}
