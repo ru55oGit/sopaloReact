@@ -242,6 +242,7 @@ export default function Game() {
     requestAd: requestRevealAd,
     handleAdWatched: handleRevealAdWatched,
     handleAdSkipped: handleRevealAdSkipped,
+    handleImageClick: handleRevealImageClick,
   } = useRewardedAd("ensopalo-reveal-rewarded", "ensopalo", currentLanguage, () => setRevealed(true), "reveal_words");
   const [countdown, setCountdown] = useState(NEXT_ROUND_DELAY_SECONDS);
   type ZoomedImage = { kind: "svg"; loader: () => Promise<{ default: ComponentType }> } | { kind: "photo"; src: string } | { kind: "emoji"; emoji: string };
@@ -464,6 +465,7 @@ export default function Game() {
         secondsUntilCanConfirm={revealWaitSeconds}
         onConfirm={handleRevealAdWatched}
         onSkip={handleRevealAdSkipped}
+        onImageClick={handleRevealImageClick}
         confirmLabel={t.rewardedAdConfirmButton}
         skipLabel={t.rewardedAdSkipButton}
         waitLabel={t.rewardedAdWaitLabel}
