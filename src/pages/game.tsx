@@ -237,6 +237,8 @@ export default function Game() {
   const {
     adCreative: revealAdCreative,
     showingAd: showingRevealAd,
+    canShowAd: canShowRevealAd,
+    loadingAd: loadingRevealAd,
     canConfirmReward: canConfirmReveal,
     secondsUntilCanConfirm: revealWaitSeconds,
     requestAd: requestRevealAd,
@@ -443,15 +445,17 @@ export default function Game() {
         {phase === "playing" && !revealed && (
           <Button
             onClick={requestRevealAd}
-            variant="outlined"
+            disabled={!canShowRevealAd}
+            variant="contained"
             startIcon={<OndemandVideoRoundedIcon />}
             sx={{
-              color: "#fff", borderColor: "rgba(255,255,255,0.6)", fontWeight: 700, fontSize: 13,
+              backgroundColor: "#f0b429", color: "#1a1a1a", fontWeight: 800, fontSize: 13,
               py: 1.2, borderRadius: 999, textTransform: "none",
-              "&:hover": { borderColor: "#fff", backgroundColor: "rgba(255,255,255,0.08)" },
+              "&:hover": { backgroundColor: "#d99f1a" },
+              "&.Mui-disabled": { backgroundColor: "rgba(240,180,41,0.35)", color: "rgba(26,26,26,0.5)" },
             }}
           >
-            {t.revealButton}
+            {loadingRevealAd ? "..." : t.revealButton}
           </Button>
         )}
 
