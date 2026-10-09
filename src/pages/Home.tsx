@@ -177,6 +177,19 @@ export default function Home() {
           format="banner_double"
         />
 
+        {!adFree && (
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Button
+              size="small"
+              onClick={handleRemoveAds}
+              disabled={buyingAdFree}
+              sx={{ color: "rgba(255,255,255,0.7)", textTransform: "none", fontSize: 13 }}
+            >
+              {buyingAdFree ? t.removeAdsButtonBuying : t.removeAdsButton}
+            </Button>
+          </Box>
+        )}
+
         {/* Semanal */}
         <Box sx={{ borderRadius: "16px", backgroundColor: "#ededed", p: 2, color: "#222" }}>
           <Typography sx={{ fontSize: 28, fontWeight: 800, mb: 2 }}>{t.weeklySection}</Typography>
@@ -238,18 +251,12 @@ export default function Home() {
           </Box>
         </Box>
 
-        {!adFree && (
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Button
-              size="small"
-              onClick={handleRemoveAds}
-              disabled={buyingAdFree}
-              sx={{ color: "rgba(255,255,255,0.7)", textTransform: "none", fontSize: 13 }}
-            >
-              {buyingAdFree ? t.removeAdsButtonBuying : t.removeAdsButton}
-            </Button>
-          </Box>
-        )}
+        <HouseAdBanner
+          slot="ensopalo-home-double-banner-2"
+          gameSlug="ensopalo"
+          locale={currentLanguage}
+          format="banner_double"
+        />
 
         <Box component="section" sx={{ backgroundColor: "rgba(0,0,0,0.18)", borderRadius: "24px", px: 2, py: 2.5 }}>
           <Typography variant="h5" sx={{ fontWeight: 800, color: "#fff", mb: 1 }}>{t.aboutTitle}</Typography>
