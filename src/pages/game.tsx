@@ -463,6 +463,7 @@ export default function Game() {
       </Box>
 
       <RewardedAdModal
+        locale={currentLanguage}
         open={showingRevealAd}
         adCreative={revealAdCreative}
         canConfirmReward={canConfirmReveal}
