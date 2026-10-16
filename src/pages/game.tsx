@@ -27,6 +27,7 @@ import {
   isDayAvailable,
 } from "../utils/weeklyRoscoState";
 import { recordLastPlayed } from "../utils/lastPlayedState";
+import { track } from "../lib/analytics";
 import { useRewardedAd } from "../ads/useRewardedAd";
 import RewardedAdModal from "../ads/RewardedAdModal";
 
@@ -232,6 +233,18 @@ export default function Game() {
 
   const initialPhase: Phase = roundIndex >= ROUNDS_PER_DAY ? "day_complete" : "playing";
   const [phase, setPhase] = useState<Phase>(initialPhase);
+  // Marca de tiempo de la ronda actual (se renueva en cada ronda nueva y en
+  // restartDay), para calcular duration_sec al llegar a level_complete.
+  const roundStartedAtRef = useRef(Date.now());
+
+  useEffect(() => {
+    if (initialPhase === "playing") {
+      track("game_start", { mode: dayKey });
+      track("level_start", { level: roundIndex + 1 });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const [foundWords, setFoundWords] = useState<string[]>([]);
   const [revealed, setRevealed] = useState(false);
   const {
@@ -286,6 +299,8 @@ export default function Game() {
       if (nextIndex >= ROUNDS_PER_DAY) {
         setPhase("day_complete");
       } else {
+        roundStartedAtRef.current = Date.now();
+        track("level_start", { level: nextIndex + 1 });
         setRoundIndex(nextIndex);
         setFoundWords([]);
         setRevealed(false);
@@ -304,7 +319,11 @@ export default function Game() {
     setFoundWords((prev) => {
       if (prev.includes(word)) return prev;
       const next = [...prev, word];
-      if (next.length >= totalWords) setPhase("success");
+      if (next.length >= totalWords) {
+        const durationSec = Math.round((Date.now() - roundStartedAtRef.current) / 1000);
+        track("level_complete", { level: roundIndex + 1, duration_sec: durationSec, hints_used: revealed ? 1 : 0 });
+        setPhase("success");
+      }
       return next;
     });
   }
@@ -316,6 +335,9 @@ export default function Game() {
     setRevealed(false);
     setPhase("playing");
     saveDayState(dayKey, { currentRoundIndex: 0, results: Array.from({ length: ROUNDS_PER_DAY }, () => "pending") }, dayContext.scopeKey);
+    roundStartedAtRef.current = Date.now();
+    track("game_start", { mode: dayKey });
+    track("level_start", { level: 1 });
   }
 
   if (!isDayAvailable(dayKey)) {
@@ -444,7 +466,10 @@ export default function Game() {
 
         {phase === "playing" && !revealed && (
           <Button
-            onClick={requestRevealAd}
+            onClick={() => {
+              track("hint_used", { level: roundIndex + 1 });
+              requestRevealAd();
+            }}
             disabled={!canShowRevealAd}
             variant="contained"
             startIcon={<OndemandVideoRoundedIcon />}
