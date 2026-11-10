@@ -18,13 +18,13 @@ import { track } from "../lib/analytics";
 import {
   DayKey,
   WEEK_DAYS,
-  ROUNDS_PER_DAY,
+  LEVELS_PER_DAY,
   getCurrentDayKey,
   getDayState,
   getSopaloStatusLabel,
   isDayAvailable,
 } from "../utils/weeklyRoscoState";
-import { getSopaloDayContext } from "../data/sopaloRounds";
+import { getSopaloDayContext, countCompletedLevels } from "../data/sopaloRounds";
 import { getDaysSinceLastPlayed } from "../utils/lastPlayedState";
 
 const ACCENT = "#e74c3c";
@@ -104,12 +104,12 @@ export default function Home() {
     return t.playButton;
   };
 
-  const selectedSuccessCount = selectedDayState.results.filter((r) => r === "success").length;
+  const selectedSuccessCount = countCompletedLevels(selectedDayContext.levels, selectedDayState.levels);
   const selectedStatusWord =
     selectedDayState.status === "completed" ? t.statusCompleted
     : selectedDayState.status === "in_progress" ? t.statusInProgress
     : t.statusNotStarted;
-  const selectedFractionLabel = selectedDayState.status === "not_started" ? "" : `${selectedSuccessCount}/${ROUNDS_PER_DAY}`;
+  const selectedFractionLabel = selectedDayState.status === "not_started" ? "" : `${selectedSuccessCount}/${LEVELS_PER_DAY}`;
 
   return (
     <Layout>
@@ -228,7 +228,7 @@ export default function Home() {
               const available = isDayAvailable(day.key);
               const dayContext = getSopaloDayContext(day.key, new Date(), currentLanguage);
               const dayState = getDayState(day.key, dayContext.scopeKey);
-              const successCount = dayState.results.filter((r) => r === "success").length;
+              const successCount = countCompletedLevels(dayContext.levels, dayState.levels);
 
               const card = (
                 <Box
@@ -251,12 +251,12 @@ export default function Home() {
                     <>
                       <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
                         <MiniSopaFraction
-                          fractionLabel={`${successCount}/${ROUNDS_PER_DAY}`}
-                          completed={successCount === ROUNDS_PER_DAY}
+                          fractionLabel={`${successCount}/${LEVELS_PER_DAY}`}
+                          completed={successCount === LEVELS_PER_DAY}
                         />
                       </Box>
                       <Typography sx={{ fontSize: 11, textAlign: "center", color: "#7a7a7a", fontWeight: 700, mb: 1 }}>
-                        {getSopaloStatusLabel(dayState, statusLabels)}
+                        {getSopaloStatusLabel(dayState.status, successCount, LEVELS_PER_DAY, statusLabels)}
                       </Typography>
                     </>
                   ) : (

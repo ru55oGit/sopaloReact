@@ -1,16 +1,15 @@
 import { ComponentType } from "react";
 import { getActiveRoscoContext } from "./weeklyRoscos";
-import { getImaginaloRoundClues, ImageCategoryKey } from "./imaginaloRounds";
-import { getEmojinaloRoundClues, EmojinaloCategoryKey } from "./emojinaloRounds";
-import { getFrutasRoundClues, FrutasCategoryKey } from "./frutasRounds";
-import { getPreguntasRoundClues } from "./preguntasRounds";
-import { DayKey, ROUNDS_PER_DAY, WEEK_DAYS } from "../utils/weeklyRoscoState";
+import { getImaginaloRoundClues, ImageCategoryKey, ImaginaloClue } from "./imaginaloRounds";
+import { getEmojinaloRoundClues, EmojinaloCategoryKey, EmojinaloClue } from "./emojinaloRounds";
+import { getFrutasRoundClues, FrutasCategoryKey, FrutasClue } from "./frutasRounds";
+import { getPreguntasRoundClues, PreguntaClue } from "./preguntasRounds";
+import { DayKey, LEVELS_PER_DAY, LevelState, WEEK_DAYS } from "../utils/weeklyRoscoState";
+import { normalizeForGrid } from "../utils/wordSearchGrid";
 
-// Cada ronda del día es un conjunto de "pistas" (clues). Cada pista puede
-// pedir 1 o más palabras (una respuesta multi-palabra como "The New York
-// Times" se busca como 4 palabras sueltas en la misma grilla, todas bajo
-// la misma pista/imagen). El total de palabras a encontrar en la ronda ya
-// no es un número fijo: es la suma de palabras de todas sus pistas.
+// Cada pista puede pedir 1 o más palabras (una respuesta multi-palabra como
+// "The New York Times" se busca como 4 palabras sueltas en la misma grilla,
+// todas bajo la misma pista/imagen).
 export interface RoundClue {
   label: string;
   words: string[];
@@ -21,86 +20,43 @@ export interface RoundClue {
   hideBlanks?: boolean;
 }
 
-export type RoundKind = "images" | "emojinalo" | "frutas" | "preguntas";
-
+// Cada posición del carrousel tiene exactamente 3 pistas, combinando una
+// imagen/emoji de 2 fuentes distintas + 1 pregunta de trivia — ver el
+// mapeo fijo en LEVEL_RECIPE más abajo (pedido explícito del usuario, no
+// una distribución genérica).
 export interface SopaloRound {
-  kind: RoundKind;
   clues: RoundClue[];
 }
 
 export interface SopaloDayContext {
   dayKey: DayKey;
   scopeKey: string;
-  rounds: SopaloRound[]; // length ROUNDS_PER_DAY
+  levels: SopaloRound[]; // length LEVELS_PER_DAY
 }
 
-function buildImagesRound(
-  dayIndex: number,
-  referenceDate: Date,
-  language: string,
+function imageClue(
+  clue: ImaginaloClue,
   categoryLabels: Record<ImageCategoryKey, string>
-): SopaloRound {
-  const imaginaloClues = getImaginaloRoundClues(dayIndex, referenceDate, language);
-  return {
-    kind: "images",
-    clues: imaginaloClues.map((c) => ({
-      label: categoryLabels[c.category],
-      words: c.words,
-      image: { category: c.category, loader: c.loader },
-    })),
-  };
+): RoundClue {
+  return { label: categoryLabels[clue.category], words: clue.words, image: { category: clue.category, loader: clue.loader } };
 }
 
-function buildEmojinaloRound(
-  dayIndex: number,
-  referenceDate: Date,
-  language: string,
+function emojiClue(
+  clue: EmojinaloClue,
   emojinaloLabels: Record<EmojinaloCategoryKey, string>
-): SopaloRound {
-  const emojinaloClues = getEmojinaloRoundClues(dayIndex, referenceDate, language);
-  return {
-    kind: "emojinalo",
-    clues: emojinaloClues.map((c) => ({
-      label: emojinaloLabels[c.category],
-      words: c.words,
-      emoji: c.emoji,
-    })),
-  };
+): RoundClue {
+  return { label: emojinaloLabels[clue.category], words: clue.words, emoji: clue.emoji };
 }
 
-function buildFrutasRound(
-  dayIndex: number,
-  referenceDate: Date,
-  language: string,
+function frutasClue(
+  clue: FrutasClue,
   frutasLabels: Record<FrutasCategoryKey, string>
-): SopaloRound {
-  const frutasClues = getFrutasRoundClues(dayIndex, referenceDate, language);
-  return {
-    kind: "frutas",
-    clues: frutasClues.map((c) => ({
-      label: frutasLabels[c.category],
-      words: c.words,
-      photo: c.photo,
-    })),
-  };
+): RoundClue {
+  return { label: frutasLabels[clue.category], words: clue.words, photo: clue.photo };
 }
 
-function buildPreguntasRound(
-  dayIndex: number,
-  referenceDate: Date,
-  language: string,
-  questionLabel: string
-): SopaloRound {
-  const preguntasClues = getPreguntasRoundClues(dayIndex, referenceDate, language);
-  return {
-    kind: "preguntas",
-    clues: preguntasClues.map((c) => ({
-      label: questionLabel,
-      words: c.words,
-      text: c.text,
-      hideBlanks: true,
-    })),
-  };
+function preguntaClue(clue: PreguntaClue, questionLabel: string): RoundClue {
+  return { label: questionLabel, words: clue.words, text: clue.text, hideBlanks: true };
 }
 
 export function getSopaloDayContext(
@@ -115,22 +71,58 @@ export function getSopaloDayContext(
   const roscoContext = getActiveRoscoContext(referenceDate, language);
   const dayIndex = WEEK_DAYS.findIndex((d) => d.key === dayKey);
 
-  const rounds: SopaloRound[] = Array.from({ length: ROUNDS_PER_DAY }, (_, i) => {
-    if (i === 0) {
-      return buildImagesRound(dayIndex, referenceDate, language, categoryLabels);
-    }
-    if (i === 1) {
-      return buildEmojinaloRound(dayIndex, referenceDate, language, emojinaloLabels);
-    }
-    if (i === 2) {
-      return buildFrutasRound(dayIndex, referenceDate, language, frutasLabels);
-    }
-    return buildPreguntasRound(dayIndex, referenceDate, language, questionLabel);
-  });
+  const imaginalo = getImaginaloRoundClues(dayIndex, referenceDate, language);
+  const emojinalo = getEmojinaloRoundClues(dayIndex, referenceDate, language);
+  const frutas = getFrutasRoundClues(dayIndex, referenceDate, language);
+  const preguntas = getPreguntasRoundClues(dayIndex, referenceDate, language);
+
+  const funkos = imaginalo.find((c) => c.category === "funkos")!;
+  const sombras = imaginalo.find((c) => c.category === "sombras")!;
+  const escudos = imaginalo.find((c) => c.category === "escudos")!;
+  const logos = imaginalo.find((c) => c.category === "logos")!;
+  const country = emojinalo.find((c) => c.category === "country")!;
+  const capital = emojinalo.find((c) => c.category === "capital")!;
+  const whatis = emojinalo.find((c) => c.category === "whatis")!;
+  const movieOrSeries = emojinalo.find((c) => c.category === "movie" || c.category === "series")!;
+  const fruta = frutas.find((c) => c.category === "frutas")!;
+  const animal = frutas.find((c) => c.category === "animales")!;
+
+  // Mapeo fijo pedido por el usuario (2026-11-10): cada nivel combina una
+  // imagen/emoji de dos fuentes distintas + 1 pregunta — no es una
+  // distribución genérica, es a propósito así.
+  const levels: SopaloRound[] = [
+    { clues: [imageClue(funkos, categoryLabels), emojiClue(country, emojinaloLabels), preguntaClue(preguntas[0], questionLabel)] },
+    { clues: [imageClue(sombras, categoryLabels), emojiClue(capital, emojinaloLabels), preguntaClue(preguntas[1], questionLabel)] },
+    { clues: [imageClue(escudos, categoryLabels), frutasClue(fruta, frutasLabels), preguntaClue(preguntas[2], questionLabel)] },
+    { clues: [imageClue(logos, categoryLabels), emojiClue(movieOrSeries, emojinaloLabels), preguntaClue(preguntas[3], questionLabel)] },
+    { clues: [emojiClue(whatis, emojinaloLabels), frutasClue(animal, frutasLabels), preguntaClue(preguntas[4], questionLabel)] },
+  ];
 
   return {
     dayKey,
     scopeKey: `${roscoContext.scopeKey}:${dayKey}`,
-    rounds,
+    levels,
   };
+}
+
+// Cuenta palabras ÚNICAS (normalizadas), no la suma cruda de clue.words.length.
+// Si una respuesta repite una palabra (ej. "Colo Colo") o dos pistas del
+// mismo nivel comparten una palabra, la grilla y foundWords tratan esa
+// palabra como un solo hallazgo, así que el total tiene que contar lo mismo
+// o el nivel nunca llega a "completo".
+export function totalWordsInLevel(level: SopaloRound): number {
+  const unique = new Set(level.clues.flatMap((c) => c.words).map(normalizeForGrid));
+  return unique.size;
+}
+
+export function levelWordsKey(level: SopaloRound): string {
+  return level.clues.flatMap((c) => c.words).map(normalizeForGrid).join("|");
+}
+
+export function isLevelComplete(level: SopaloRound, levelState: LevelState): boolean {
+  return levelState.foundWords.length >= totalWordsInLevel(level);
+}
+
+export function countCompletedLevels(levels: SopaloRound[], levelStates: LevelState[]): number {
+  return levels.reduce((count, level, i) => count + (isLevelComplete(level, levelStates[i]) ? 1 : 0), 0);
 }

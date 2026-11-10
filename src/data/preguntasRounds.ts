@@ -10,7 +10,8 @@ import preguntasPtData from "./preguntas_pt.json";
 const CYCLE_BASE_DATE = "2025-12-29";
 const MS_PER_WEEK = 7 * 24 * 60 * 60 * 1000;
 
-const SLOTS_PER_ROUND = 4;
+// 5, una por cada posición del carrousel (ver sopaloRounds.ts).
+const SLOTS_PER_ROUND = 5;
 
 interface PreguntaEntry {
   pregunta: string;

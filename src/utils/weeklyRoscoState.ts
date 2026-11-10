@@ -6,15 +6,28 @@ export interface DayMeta {
   shortLabel: string;
 }
 
-export const ROUNDS_PER_DAY = 4;
+export const LEVELS_PER_DAY = 5;
+// Pistas por posición del carrousel: 1 imagen/emoji de 2 fuentes + 1 pregunta.
+export const CLUES_PER_LEVEL = 3;
 
-export type RoundResult = "pending" | "success";
 export type DayProgressStatus = "not_started" | "in_progress" | "completed";
+
+// Estado de UNA posición del carrousel: qué palabras (normalizadas) ya se
+// encontraron en la grilla compartida de ese nivel, y si se usó el botón de
+// "ver anuncio para descubrir las palabras" (revela las 3 pistas del nivel
+// a la vez, no una por una).
+export interface LevelState {
+  foundWords: string[];
+  revealed: boolean;
+}
 
 export interface DaySopaloState {
   status: DayProgressStatus;
-  currentRoundIndex: number;
-  results: RoundResult[]; // length ROUNDS_PER_DAY
+  // Última posición del carrousel que el jugador miró — no es un puntero de
+  // avance lineal (se puede navegar libremente a cualquier posición), solo
+  // dónde retomar al volver a entrar.
+  currentLevelIndex: number;
+  levels: LevelState[]; // length LEVELS_PER_DAY
   updatedAt: string;
 }
 
@@ -22,7 +35,11 @@ interface WeeklySopaloState {
   days: Partial<Record<DayKey, DaySopaloState>>;
 }
 
-const STORAGE_KEY_PREFIX = "sopalo_week_state_v1";
+// v2: el modelo anterior (una ronda por bloque de categoría, con resultado
+// pending/success y sin progreso de palabras persistido) se reemplaza por 5
+// posiciones de carrousel con progreso real por palabra — el shape vieja no
+// es compatible, de ahí el bump de versión.
+const STORAGE_KEY_PREFIX = "sopalo_week_state_v2";
 
 export const WEEK_DAYS: DayMeta[] = [
   { key: "sun", label: "Domingo", shortLabel: "Dom" },
@@ -51,10 +68,12 @@ export const getDayMeta = (dayKey: DayKey): DayMeta => {
   return WEEK_DAYS.find((day) => day.key === dayKey) ?? WEEK_DAYS[0];
 };
 
+const buildEmptyLevelState = (): LevelState => ({ foundWords: [], revealed: false });
+
 const buildEmptyDayState = (): DaySopaloState => ({
   status: "not_started",
-  currentRoundIndex: 0,
-  results: Array.from({ length: ROUNDS_PER_DAY }, () => "pending"),
+  currentLevelIndex: 0,
+  levels: Array.from({ length: LEVELS_PER_DAY }, buildEmptyLevelState),
   updatedAt: new Date().toISOString(),
 });
 
@@ -62,10 +81,14 @@ const buildEmptyWeekState = (): WeeklySopaloState => ({ days: {} });
 
 const getStorageKey = (scopeKey: string): string => `${STORAGE_KEY_PREFIX}:${scopeKey}`;
 
-export const deriveStatus = (results: RoundResult[]): DayProgressStatus => {
-  const unresolvedCount = results.filter((r) => r === "pending").length;
-  if (unresolvedCount === 0) return "completed";
-  if (unresolvedCount < results.length) return "in_progress";
+// El status real ("completed" = las 5 posiciones resueltas) depende de
+// cuántas palabras tiene cada nivel, algo que vive en sopaloRounds.ts (no
+// acá) — por eso completedCount/total se calculan afuera (ver
+// countCompletedLevels en sopaloRounds.ts) y acá solo se deriva el status a
+// partir de ese conteo ya resuelto.
+export const deriveStatus = (completedCount: number, total: number): DayProgressStatus => {
+  if (completedCount >= total) return "completed";
+  if (completedCount > 0) return "in_progress";
   return "not_started";
 };
 
@@ -84,18 +107,17 @@ export const getWeeklyState = (scopeKey = "default"): WeeklySopaloState => {
       const dayState = parsed.days?.[day.key];
       if (!dayState) continue;
       if (
-        !Array.isArray(dayState.results) ||
-        dayState.results.length !== ROUNDS_PER_DAY ||
-        dayState.currentRoundIndex < 0 ||
-        dayState.currentRoundIndex >= ROUNDS_PER_DAY
+        !Array.isArray(dayState.levels) ||
+        dayState.levels.length !== LEVELS_PER_DAY ||
+        !dayState.levels.every((l) => l && Array.isArray(l.foundWords) && typeof l.revealed === "boolean") ||
+        typeof dayState.currentLevelIndex !== "number" ||
+        dayState.currentLevelIndex < 0 ||
+        dayState.currentLevelIndex >= LEVELS_PER_DAY
       ) {
         continue;
       }
 
-      safeDays[day.key] = {
-        ...dayState,
-        status: deriveStatus(dayState.results),
-      };
+      safeDays[day.key] = dayState;
     }
 
     return { days: safeDays };
@@ -111,17 +133,13 @@ export const getDayState = (dayKey: DayKey, scopeKey = "default"): DaySopaloStat
 
 export const saveDayState = (
   dayKey: DayKey,
-  value: Omit<DaySopaloState, "status" | "updatedAt">,
+  value: Omit<DaySopaloState, "status" | "updatedAt"> & { status: DayProgressStatus },
   scopeKey = "default"
 ): void => {
   if (typeof window === "undefined") return;
 
   const weekState = getWeeklyState(scopeKey);
-  const nextDayState: DaySopaloState = {
-    ...value,
-    status: deriveStatus(value.results),
-    updatedAt: new Date().toISOString(),
-  };
+  const nextDayState: DaySopaloState = { ...value, updatedAt: new Date().toISOString() };
 
   const nextState: WeeklySopaloState = {
     ...weekState,
@@ -132,11 +150,12 @@ export const saveDayState = (
 };
 
 export const getSopaloStatusLabel = (
-  dayState: DaySopaloState,
+  status: DayProgressStatus,
+  completedCount: number,
+  total: number,
   labels = { completed: "Completado", inProgress: "En progreso", notStarted: "Sin jugar" }
 ): string => {
-  const successCount = dayState.results.filter((r) => r === "success").length;
-  if (dayState.status === "completed") return `${labels.completed} ${successCount}/${ROUNDS_PER_DAY}`;
-  if (dayState.status === "in_progress") return `${labels.inProgress} ${successCount}/${ROUNDS_PER_DAY}`;
+  if (status === "completed") return `${labels.completed} ${completedCount}/${total}`;
+  if (status === "in_progress") return `${labels.inProgress} ${completedCount}/${total}`;
   return labels.notStarted;
 };
